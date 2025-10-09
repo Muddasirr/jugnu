@@ -55,39 +55,56 @@ export const Impact = () => {
       <div className="max-w-7xl mx-auto">
         {/* Stories */}
         <div className="space-y-8 mb-20">
-          {stories.map((story) => (
-            <div 
-              key={story.id}
-              className="border border-border rounded-3xl overflow-hidden shadow-sm"
-            >
-              <div className={`grid md:grid-cols-2 gap-0 ${story.imagePosition === "right" ? "" : "md:grid-flow-dense"}`}>
-                {/* Text Content */}
-                <div className={`${story.bgColor} ${story.textColor} p-8 md:p-12 flex flex-col justify-center ${story.imagePosition === "right" ? "" : "md:col-start-2"}`}>
-                  {story.subtitle && (
-                    <p className="text-sm font-semibold mb-4 opacity-90">
-                      {story.subtitle}
-                    </p>
-                  )}
-                  <h3 className="text-2xl md:text-3xl font-bold mb-6">{story.title}</h3>
-                  <div className="text-sm leading-relaxed space-y-4 opacity-90">
-                    {story.description.split('\n\n').map((paragraph, idx) => (
-                      <p key={idx}>{paragraph}</p>
-                    ))}
-                  </div>
-                </div>
-                
-                {/* Image */}
-                <div className={`${story.imagePosition === "right" ? "md:col-start-2" : ""}`}>
-                  <img 
-                    src={story.imageUrl} 
-                    alt={story.title}
-                    className="w-full h-full min-h-[400px] object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          ))}
+  {stories.map((story) => (
+    <div
+      key={story.id}
+      className="border border-border rounded-3xl overflow-hidden shadow-sm"
+    >
+      <div
+        className={`grid md:grid-cols-[1.3fr_2fr] gap-6 items-stretch ${
+          story.imagePosition === "right" ? "" : "md:grid-flow-col-dense"
+        }`}
+      >
+        {/* Text Content */}
+        <div
+          className={`${story.bgColor} ${story.textColor} p-8 md:p-12 flex flex-col justify-center ${
+            story.imagePosition === "right" ? "" : "md:col-start-2"
+          }`}
+        >
+          {story.subtitle && (
+            <p className="text-sm font-semibold mb-4 opacity-90">
+              {story.subtitle}
+            </p>
+          )}
+          <h3 className="text-2xl md:text-3xl font-bold mb-6">
+            {story.title}
+          </h3>
+          <div className="text-sm leading-relaxed space-y-4 opacity-90">
+            {story.description.split("\n\n").map((paragraph, idx) => (
+              <p key={idx}>{paragraph}</p>
+            ))}
+          </div>
         </div>
+
+        {/* Image */}
+        <div
+          className={`${
+            story.imagePosition === "right" ? "md:col-start-2" : ""
+          }`}
+        >
+          <img
+            src={story.imageUrl}
+            alt={story.title}
+            className="w-full h-full min-h-[400px] object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
+
+
 
         {/* How We Create Impact Section */}
         <div className="text-center mb-12">

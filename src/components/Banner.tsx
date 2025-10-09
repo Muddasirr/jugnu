@@ -25,16 +25,20 @@ export const Banner = () => {
 
         {/* Main Heading */}
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8">
-  <span className="text-white">EVERYONE </span>
-  <span className="text-red-600">DESERVE THE SAME</span>
-</h1>
+        <span className="text-white font-medium">EVERYONE </span>
+<span className="text-[#AC1514] font-extrabold underline decoration-[#AC1514] decoration-1 underline-offset-[5px]">
+  DESERVE THE SAME
+</span>
+
+
+  </h1>
 
 
         {/* Subtitle */}
         <div className="text-base md:text-lg font-medium mb-16">
           <p className="text-white/90">STANDING STRONG AGAINST</p>
-          <p className="text-red-600 font-semibold">DOMESTIC VIOLENCE</p>
-        </div>
+          <p className="text-[#AC1514] font-semibold">DOMESTIC VIOLENCE</p>
+          </div>
 
         {/* Scroll Down Indicator */}
         <div className="animate-bounce">

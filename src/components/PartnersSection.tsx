@@ -12,14 +12,15 @@ const logos = [
 
 const PartnersSection = () => {
   return (
-    <section className="bg-white text-center py-16 px-6">
+    <section className="bg-white text-center py-16 ">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">
-        <span className="text-[#c8102e]">Working Togethe</span>r for Change
+        <span className="text-[#c8102e]">Working Togethe</span>
+       <span className="text-black">r for Change</span>
       </h2>
-      <p className="text-gray-700 max-w-2xl mx-auto mb-12 text-sm md:text-base">
-        We are proud to work alongside leading organizations, networks, and
-        advocates committed to ending abuse
+      <p className="!text-[#3B3B3B] font-medium text-[16px] max-w-3xl mx-auto mb-12 leading-snug">
+      We are proud to work alongside leading organizations, networks, and advocates committed to ending abuse
       </p>
+
 
       <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-6xl mx-auto">
         {logos.map((logo, index) => (

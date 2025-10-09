@@ -8,7 +8,7 @@ const CommittedSection = () => {
       />
       
       {/* Content Container */}
-      <div className="relative container mx-auto px-6 py-16 md:py-24 lg:py-32">
+      <div className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - spacer for background image */}
           <div className="hidden lg:block" />
@@ -23,9 +23,11 @@ const CommittedSection = () => {
               aria-hidden="true"
             />
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
-              Committed to Global Standards of Equality and Justice
-            </h2>
+            <h2
+  className="text-[42px] font-extrabold text-white mb-8 leading-tight">
+  Committed to Global Standards of Equality and Justice
+</h2>
+
             
             <div className="space-y-6 text-gray-200 text-base md:text-lg leading-relaxed">
               <p>

@@ -8,10 +8,12 @@ import TrainingSection from "@/components/TrainingSection";
 import PhotoCollage from "@/components/PhotoCollage";
 import { Impact } from "@/components/Impact";
 import { Banner } from "@/components/Banner";
+import MenuBar from "@/components/MenuBar";
 export default function LandingPage() {
   return (
     <div>
       <Header/>
+      <MenuBar/>
       <Banner/>
       <CommittedSection/>
       <Impact/>

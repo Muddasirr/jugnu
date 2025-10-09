@@ -26,7 +26,7 @@ const stories = [
 
 export const StoriesSection = () => {
   return (
-    <section className="relative py-16 px-4 bg-[#2a2a2a] text-white overflow-hidden">
+    <section className="relative py-16  bg-[#3B3B3B] text-white overflow-hidden">
       {/* Decorative corner elements */}
       <div className="absolute top-4 left-4 opacity-20">
         <Sparkles size={48} />
@@ -41,36 +41,46 @@ export const StoriesSection = () => {
           <h2 className="text-sm font-semibold tracking-widest mb-4 text-gray-400">
             STORIES OF STRENGTH
           </h2>
-          <p className="text-2xl font-light max-w-4xl mx-auto leading-relaxed">
-            A Comprehensive Collection of Completed Stories That Reflect Our Dedication, Skill, and Excellence
-          </p>
+          <p className="text-2xl font-extrabold max-w-4xl mx-auto leading-relaxed">
+  A Comprehensive Collection of Completed Stories That Reflect Our Dedication, Skill, and Excellence
+</p>
+
         </div>
 
         {/* Stories */}
         <div className="space-y-6">
-          {stories.map((story) => (
-            <div 
-              key={story.id}
-              className="bg-[#3a3a3a] rounded-sm overflow-hidden"
-            >
-              <div className={`grid md:grid-cols-2 items-stretch ${story.imagePosition === "right" ? "md:grid-flow-dense" : ""}`}>
-                <div className={`${story.imagePosition === "right" ? "md:col-start-2" : ""}`}>
-                  <img 
-                    src={story.imageurl}
-                    alt={story.title}
-                    className="w-full h-full min-h-[280px] object-cover"
-                  />
-                </div>
-                <div className="p-8 md:p-12 flex flex-col justify-center">
-                  <h3 className="text-2xl font-normal mb-6">{story.title}</h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {story.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
+  {stories.map((story) => (
+    <div
+      key={story.id}
+      className="bg-[#3a3a3a] rounded-sm overflow-hidden"
+    >
+      <div
+        className={`grid md:grid-cols-2 items-stretch ${
+          story.imagePosition === "right" ? "md:grid-flow-dense" : ""
+        }`}
+      >
+        <div
+          className={`${
+            story.imagePosition === "right" ? "md:col-start-2" : ""
+          }`}
+        >
+          <img
+            src={story.imageurl}
+            alt={story.title}
+            className="w-full h-full min-h-[280px] object-cover md:-mx-8 lg:-mx-16"
+          />
         </div>
+        <div className="p-8 md:p-12 flex flex-col justify-center">
+          <h3 className="text-2xl font-normal mb-6">{story.title}</h3>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            {story.description}
+          </p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
       </div>
     </section>
   );
