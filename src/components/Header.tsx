@@ -6,10 +6,10 @@ const Header: React.FC = () => {
 <header className="bg-[rgba(0,0,0,0.89)] text-white border-b border-gray-800">
 <div className="container mx-auto flex items-center justify-between px-6 py-3">
         {/* Logo */}
-        <div className="font-bold text-lg tracking-wide">LOGO HERE</div>
+        <div className="font-bold text-lg tracking-wide"><img src={"/logojugnu.svg"}style={{width:"60%"}}/></div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-4 text-sm font-medium">
           <a href="#" className="hover:text-gray-300 transition">ABOUT</a>
           <a href="#" className="hover:text-gray-300 transition">PARTNER WITH US</a>
           <a href="#" className="hover:text-gray-300 transition">DONATE</a>

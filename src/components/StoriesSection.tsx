@@ -29,7 +29,7 @@ const stories = [
 
 export const StoriesSection = () => {
   return (
-    <section className="relative py-16 bg-[#3B3B3B] text-white overflow-hidden">
+    <section className="relative py-16 bg-black text-white overflow-hidden">
       {/* Decorative corner elements */}
       <div className="absolute top-4 left-4 opacity-20">
         <Sparkles size={48} />
@@ -55,7 +55,7 @@ export const StoriesSection = () => {
           {stories.map((story) => (
             <div
               key={story.id}
-              className="bg-[#3a3a3a] rounded-sm overflow-hidden w-full"
+              className="bg-black rounded-sm overflow-hidden w-full"
             >
               <div
                 className={`grid md:grid-cols-2 items-stretch w-full ${
