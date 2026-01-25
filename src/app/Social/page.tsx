@@ -18,31 +18,34 @@ import PakistanMap from "@/components/map";
 import SupportCard from "@/components/SupportCard";
 import ResourcesSection from "@/components/ResourcesSection";
 import JugnuPage from "@/components/jugnu";
+import WelcomeSection from "@/components/WelcomeSection";
+import HelpActionSection from "@/components/HelpActionSection";
+import ResourceGridSection from "@/components/ResourceGridSection";
+
 export default function LandingPage() {
   return (
     <div>
-      <Header/>
-      <MenuBar/>
-      <Banner/>
-      
-      <AboutPage/>
-      <CommittedSection/>
-      <SectorsSection/>
-      <WhatWeDoSection/>
-      <JugnuCarouselSection/>
-      <ViolenceBanner/>
-      <PartnersSection/>
+      <Banner />
+      <WelcomeSection />
+      <PakistanMap />
 
-      <TestimonialSection/>
+      <HelpActionSection />
 
-      <Impact/>
-      <SupportCard/>
-      <PakistanMap/>
-      <TrainingSection/>
-      <ResourcesSection/>
-      <StoriesSection/>
-      <PhotoCollage/>
-      <Footer/>
+      <CommittedSection />
+      <ResourceGridSection />
+      <JugnuCarouselSection />
+      <ViolenceBanner />
+      <PartnersSection />
+
+      <TestimonialSection />
+
+      <Impact />
+
+
+      {/* <TrainingSection />
+      <ResourcesSection />
+      <StoriesSection /> */}
+
     </div>
   );
 }
