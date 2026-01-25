@@ -1,3 +1,5 @@
+"use client";
+
 import CommittedSection from "@/components/Committed";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -14,7 +16,9 @@ import { AboutPage } from "@/components/about-page";
 import SectorsSection from "@/components/SectorsSection";
 import WhatWeDoSection from "@/components/Whatwedo";
 import JugnuCarouselSection from "@/components/jugnu-carousel-section";
-import PakistanMap from "@/components/map";
+import dynamic from "next/dynamic";
+
+const PakistanMap = dynamic(() => import("@/components/map"), { ssr: false });
 import SupportCard from "@/components/SupportCard";
 import ResourcesSection from "@/components/ResourcesSection";
 import JugnuPage from "@/components/jugnu";

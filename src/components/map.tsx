@@ -74,7 +74,7 @@ export default function PakistanMap() {
                 center={[30.3753, 69.3451]}
                 zoom={5}
                 style={{ height: "100%", width: "100%" }}
-                whenReady={(event) => setMap(event.target)}
+                ref={setMap}
                 zoomControl={false}
                 attributionControl={false}
                 dragging={false}
@@ -83,7 +83,6 @@ export default function PakistanMap() {
                 boxZoom={false}
                 keyboard={false}
                 touchZoom={false}
-                tap={false}
               >
                 {/* Add markers */}
                 {markerPositions.map((pos, i) => (
