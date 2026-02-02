@@ -25,6 +25,7 @@ import JugnuPage from "@/components/jugnu";
 import WelcomeSection from "@/components/WelcomeSection";
 import HelpActionSection from "@/components/HelpActionSection";
 import ResourceGridSection from "@/components/ResourceGridSection";
+import SocialCampaigns from "@/components/SocialCampaigns";
 
 export default function LandingPage() {
   return (
@@ -37,18 +38,19 @@ export default function LandingPage() {
 
       <CommittedSection />
       <ResourceGridSection />
+      <TrainingSection />
+      <Impact />
       <JugnuCarouselSection />
-      <ViolenceBanner />
-      <PartnersSection />
+      <SocialCampaigns />
+
+
 
       <TestimonialSection />
 
-      <Impact />
 
 
-      {/* <TrainingSection />
-      <ResourcesSection />
-      <StoriesSection /> */}
+
+
 
     </div>
   );
