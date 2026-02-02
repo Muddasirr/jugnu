@@ -17,7 +17,8 @@ import WhatWeDoSection from "@/components/Whatwedo";
 import JugnuCarouselSection from "@/components/jugnu-carousel-section";
 import dynamic from "next/dynamic";
 
-const PakistanMap = dynamic(() => import("@/components/map"), { ssr: false }); import SupportCard from "@/components/SupportCard";
+const PakistanMap = dynamic(() => import("@/components/map"), { ssr: false });
+import SupportCard from "@/components/SupportCard";
 import ResourcesSection from "@/components/ResourcesSection";
 import JugnuPage from "@/components/jugnu";
 import AboutUs from "@/components/aboutus";
