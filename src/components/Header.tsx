@@ -12,11 +12,10 @@ const Header: React.FC = () => {
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-4 text-sm font-medium">
           <Link href="/about" className="hover:text-gray-300 transition">ABOUT</Link>
-          <a href="/volunteer" className="hover:text-gray-300 transition">PARTNER WITH US</a>
-          <a href="#" className="hover:text-gray-300 transition">DONATE</a>
-          <a href="#" className="hover:text-gray-300 transition">PODCAST</a>
-          <a href="#" className="hover:text-gray-300 transition">CONTACT</a>
-          <a href="#" className="hover:text-gray-300 transition">NEWSLETTER</a>
+          <Link href="/getinvolved" className="hover:text-gray-300 transition">GET INVOLVED</Link>
+          <Link href="/podcast" className="hover:text-gray-300 transition">PODCAST</Link>
+          <Link href="/reads" className="hover:text-gray-300 transition">BOOK CLUB</Link>
+          <Link href="/contact" className="hover:text-gray-300 transition">CONTACT</Link>
         </nav>
 
         {/* Social Icons + Buttons */}
