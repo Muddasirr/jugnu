@@ -71,7 +71,7 @@ export default function WelcomeSection() {
                     <div className="relative">
                         <div className="relative h-[400px] md:h-[500px] bg-gray-200 rounded-sm overflow-hidden">
                             <Image
-                                src="/about1.png"
+                                src="/domestic.jpg"
                                 alt="Woman portrait"
                                 fill
                                 className="object-cover"

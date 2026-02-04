@@ -155,12 +155,38 @@ export default function PakistanMap() {
           </div>
         </div>
         <div className="pt-6 border-t border-gray-200">
-          <h3 className="text-lg md:text-xl font-bold text-[#AC1514] mb-3">
+          <h3
+            className="mb-3 text-[#AC1514]"
+            style={{
+              fontFamily: "Merriweather",
+              fontWeight: 700,
+              fontSize: "32px",
+              lineHeight: "140%",
+              letterSpacing: "0px",
+              textDecorationLine: "underline",
+              textDecorationStyle: "solid",
+              textDecorationSkipInk: "auto",
+            }}
+          >
             Disclaimer:
           </h3>
-          <p className="text-xs md:text-sm text-gray-800 leading-relaxed">
-            It must be noted that the numbers quoted are simply those that have been reported in their respective provinces / areas. It must also be remembered that these are the reports that were made "specifically" in regards to the crime mentioned. However, the actual numbers on the ground far exceed these statistics.
-          </p>
+
+<p
+  className="text-black"
+  style={{
+    fontFamily: "Merriweather",
+    fontWeight: 400,
+    fontSize: "24px",
+    lineHeight: "140%",
+    letterSpacing: "0px",
+    textAlign: "justify",
+  }}
+>
+  It must be noted that the numbers quoted are simply those that have been reported
+  in their respective provinces / areas. It must also be remembered that these are
+  the reports that were made “specifically” in regards to the crime mentioned.
+  However, the actual numbers on the ground far exceed these statistics.
+</p>
         </div>
       </div>
     </section>

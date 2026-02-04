@@ -7,10 +7,9 @@ import PodcastPage from "@/components/PodcastPage";
 export default function Podcast() {
     return (
         <div>
-            <Header />
-            <MenuBar />
+          
             <PodcastPage />
-            <Footer />
+           
         </div>
     );
 }
