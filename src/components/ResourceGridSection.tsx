@@ -97,15 +97,18 @@ export default function ResourceGridSection() {
                     </div>
 
                     {/* Header */}
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                        <span className="text-[#AC1514] underline decoration-[#AC1514]">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 underline decoration-black">
+                        <span className="text-[#AC1514]">
                             You're Not Alone
                         </span>{" "}
-                        <span className="text-black">— Support Is Available</span>
+                        <span className="text-black">
+                            — Support Is Available
+                        </span>
                     </h2>
 
+
                     {/* Blue Background Description */}
-                    <div className="bg-blue-100 p-4 md:p-6 mb-8">
+                    <div className="  py-4 md:py-6 mb-8 pr-4">
                         <p className="text-sm md:text-base text-gray-900 leading-relaxed">
                             Find confidential help, guidance, and resources for those facing Domestic or Gender-Based Violence. Access life-saving information, support services, and safe options — for yourself or someone you care about. We're here to connect you with trusted resources, safety planning, and survivor-centered support.
                         </p>
