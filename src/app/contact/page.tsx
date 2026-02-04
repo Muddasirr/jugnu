@@ -4,9 +4,9 @@ import { Facebook, Linkedin, Twitter, Globe, X } from 'lucide-react';
 export default function ContactPage() {
     return (
         <main className="w-full font-serif">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 my-8">
                 {/* Left Column: Survivors */}
-                <section className="bg-black text-white px-8 py-16 md:p-20 flex flex-col justify-center min-h-[600px]">
+                <section className="bg-black text-white px-8 py-8 md:p-20 flex flex-col  min-h-[600px]">
                     <div className="max-w-xl mx-auto md:mx-0 w-full space-y-12">
                         <h1 className="text-3xl md:text-5xl font-bold underline decoration-1 underline-offset-[12px] leading-tight">
                             For Survivors
@@ -33,7 +33,7 @@ export default function ContactPage() {
                 </section>
 
                 {/* Right Column: Corporates */}
-                <section className="bg-[#AC1514] text-white px-8 py-16 md:p-20 flex flex-col justify-center min-h-[600px]">
+                <section className="bg-[#AC1514] text-white px-8 py-8 md:p-20 flex flex-col  min-h-[600px]">
                     <div className="max-w-xl mx-auto md:mx-0 w-full space-y-12">
                         <h1 className="text-3xl md:text-4xl font-bold underline decoration-1 underline-offset-[12px] leading-tight mb-8">
                             For Corporates / ngos / Financial Institutions / Government Departments
