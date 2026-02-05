@@ -7,10 +7,8 @@ import LegalUpdatePage from "@/components/LegalUpdatePage";
 export default function LegalUpdate() {
     return (
         <div>
-            <Header />
-            <MenuBar />
+            
             <LegalUpdatePage />
-            <Footer />
         </div>
     );
 }

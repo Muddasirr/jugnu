@@ -71,8 +71,8 @@ export default function TestimonialsPage() {
     return (
         <div className="bg-white">
             {/* Header Section */}
-            <section className="max-w-5xl mx-auto px-6 md:px-12 py-12 md:py-16">
-                <p className="text-sm md:text-base text-gray-900 leading-relaxed mb-8">
+            <section className="  px-24 py-12">
+                <p className="text-[24px] text-black leading-relaxed mb-8">
                     The Jugnu Project Is Proud To Have Had The Chance To Work With Various{" "}
                     <span className="text-[#AC1514] font-semibold">
                         Organizations, NGOs, Civil Society Organizations, Community Centers And Government Agencies
@@ -87,8 +87,11 @@ export default function TestimonialsPage() {
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="flex gap-4 md:gap-6 relative">
                             {/* Left side - Profile Picture */}
-                            <div className="flex-shrink-0">
-                                <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-200 border-2 border-gray-300">
+                          
+                            {/* Right side - Content */}
+                            <div className="flex-1 pb-8 border-l-4 !border-[#AC1514]  pl-6 md:pl-8">
+                                <div className="flex gap-4" >
+                                 <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-200 border-2  ">
                                     <Image
                                         src={testimonial.image}
                                         alt={testimonial.name}
@@ -96,16 +99,15 @@ export default function TestimonialsPage() {
                                         className="object-cover"
                                     />
                                 </div>
-                            </div>
-
-                            {/* Right side - Content */}
-                            <div className="flex-1 pb-8 border-l-2 border-gray-300 pl-6 md:pl-8">
+                                <div>
                                 <h3 className="text-lg md:text-xl font-bold text-[#AC1514] mb-1">
-                                    {testimonial.name}
+                                    {testimonial.name}XX
                                 </h3>
                                 <p className="text-sm md:text-base text-gray-600 mb-3">
                                     {testimonial.role}
                                 </p>
+                                </div>
+                                </div>
                                 <p className="text-sm md:text-base text-gray-800 leading-relaxed">
                                     {testimonial.text}
                                 </p>

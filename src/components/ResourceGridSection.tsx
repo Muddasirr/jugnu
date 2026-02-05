@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ResourceGridSection() {
     const resources = [
         {
@@ -108,7 +110,7 @@ export default function ResourceGridSection() {
 
 
                     {/* Blue Background Description */}
-                    <div className="  py-4 md:py-6 mb-8 pr-4">
+                    <div className="  p-4 md:p-6 mb-8 ">
                         <p className="text-sm md:text-base text-gray-900 leading-relaxed">
                             Find confidential help, guidance, and resources for those facing Domestic or Gender-Based Violence. Access life-saving information, support services, and safe options — for yourself or someone you care about. We're here to connect you with trusted resources, safety planning, and survivor-centered support.
                         </p>
@@ -130,9 +132,11 @@ export default function ResourceGridSection() {
                                 <p className="text-xs md:text-sm leading-relaxed mb-4 flex-grow">
                                     {resource.description}
                                 </p>
-                                <button className="bg-[#AC1514] text-white px-6 py-2 text-xs font-semibold hover:bg-[#8B0000] transition-all self-start">
-                                    READ MORE
-                                </button>
+                                <Link href="/resources" target="_blank" rel="noopener noreferrer">
+                                    <button className="bg-[#AC1514] rounded-[8px] text-white px-6 py-2 text-xs font-bold hover:bg-[#8B0000] transition-all self-start">
+                                        READ MORE
+                                    </button>
+                                </Link>
                             </div>
                         ))}
                     </div>

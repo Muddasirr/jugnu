@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function WelcomeSection() {
@@ -58,12 +59,15 @@ export default function WelcomeSection() {
 
                         {/* Buttons */}
                         <div className="flex gap-4 pt-4">
-                            <button className="bg-[#AC1514] text-white px-6 py-2.5 text-sm font-semibold hover:bg-[#8B0000] transition-all">
+                            <Link href="/about"> <button className="bg-[#AC1514] rounded-[8px] text-white px-6 py-2.5 text-sm font-bold hover:bg-[#8B0000] transition-all">
                                 ABOUT US
                             </button>
-                            <button className="bg-[#AC1514] text-white px-6 py-2.5 text-sm font-semibold hover:bg-[#8B0000] transition-all">
-                                JUGNU'S STORY
-                            </button>
+                            </Link>
+                            <Link href="https://medium.com/@thejugnuproject/jugnus-story-83b596282713">
+                                <button className="bg-[#AC1514] rounded-[8px] text-white px-6 py-2.5 text-sm font-bold hover:bg-[#8B0000] transition-all">
+                                    JUGNU'S STORY
+                                </button>
+                            </Link>
                         </div>
                     </div>
 

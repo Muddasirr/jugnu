@@ -1,83 +1,79 @@
-import { Shield, Users, Heart, Target } from "lucide-react";
-
-const stories = [
-  {
-    id: 1,
-    title: "Why We Not Alone — Support Is Available",
-    subtitle: "We understand how hard it can be to ask for help when you're being harmed in Gender-Based Violence.",
-    description: "Whether it's reaching out for support you feel is long overdue or you've taken the courageous step to leave a harmful relationship, seeking help and speaking up can feel daunting.\n\nWe hope to connect you with trusted resources, safety, and caring and survivor-led support.\n\nBy grounding our work in these intersections, survivors see themselves in our work, their experiences are met with understanding, and their solutions are trusted.\n\nWomen's workshops is a unique place: there is nowhere else that survivors of violence can self-refer and leave with a personalized service package.",
-    bgColor: "bg-[#AC1514]",
-    textColor: "text-white",
-    imageUrl: "./Impact.png",
-    imagePosition: "right"
-  },
-  {
-    id: 2,
-    title: "Building Safer Systems Through Expert Consultation",
-    description: "We strengthen child protection systems, governments, and non-profits in creating evidence-based, culturally-responsive, and survivor-centered approaches.\n\nOur comprehensive team designs strategic programs and technical assistance tailored to support these sectors in effectively addressing violence and trauma.\n\nBy providing our clients with cutting-edge research, trauma-responsive frameworks, and culturally relevant strategies, we support systems as they transform to center the experiences and needs of people.\n\nThrough this work, we are laying foundations for comprehensive and sustainable social change.",
-    bgColor: "bg-gray-900",
-    textColor: "text-white",
-    imageUrl: "./Impact1.png",
-    imagePosition: "left"
-  }
-];
+import { Shield, MapPin, Settings, Megaphone } from "lucide-react";
 
 const impactSteps = [
   {
     icon: Shield,
     step: "Step 01",
     title: "Prevention & Awareness",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod."
+    description: "We work to improve detection of abuse and identify harm early, so that survivors can be assisted before risk levels escalate."
   },
   {
-    icon: Users,
+    icon: MapPin,
     step: "Step 02",
-    title: "Training & Capacity Building",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod."
-  },
-  {
-    icon: Heart,
-    step: "Step 03",
     title: "Direct Support Services",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod."
+    description: "We strengthen response systems to protect survivors and ensure they receive timely, coordinated and trauma-informed support."
   },
   {
-    icon: Target,
+    icon: Settings,
+    step: "Step 03",
+    title: "Build Institutional Capacity",
+    description: "We work to strengthen institutional capabilities with a view toward social impact and operational change."
+  },
+  {
+    icon: Megaphone,
     step: "Step 04",
     title: "Advocacy & Policy",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod."
+    description: "We advocate for policy and legislative reform to create safer systems, stronger protections and long-term sustainable change."
   }
 ];
 
 export const Impact = () => {
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Stories */}
         {/* How We Create Impact Section */}
         <div className="text-center mb-12">
-  <h2 className="text-3xl md:text-4xl font-bold mb-4">
-    <span className="text-black">How We</span>{" "}
-    <span className="text-[#AC1514]">Create Impact</span>
-  </h2>
-  <p className="text-muted-foreground max-w-3xl mx-auto text-black">
-    From prevention to policy, our programs are designed to protect, empower, and transform communities.
-  </p>
-</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="text-black">How We </span>
+            <span className="text-[#AC1514]">Create Impact</span>
+          </h2>
+          <p className="text-black max-w-3xl mx-auto leading-relaxed">
+            From prevention to policy, our Impact Framework is designed to protect, empower and transform communities. We create impact by transforming how institutions identify risk, respond to survivors and prevent harm.
+          </p>
+        </div>
 
+        {/* Timeline connector */}
+        <div className="relative mb-8 mt-12">
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gray-300 hidden md:block" style={{ top: '20px' }}>
+            {/* Red dots at each step */}
+            <div className="absolute left-[0%] -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#AC1514] rounded-sm"></div>
+            <div className="absolute left-[25%] -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#AC1514] rounded-sm"></div>
+            <div className="absolute left-[50%] -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#AC1514] rounded-sm"></div>
+            <div className="absolute left-[75%] -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#AC1514] rounded-sm"></div>
+          </div>
+
+          {/* Step labels */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-4 mt-4">
+            {impactSteps.map((step, index) => (
+              <div key={index} className="text-left">
+                <p className="text-sm font-bold text-black mb-2">{step.step}</p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         {/* Impact Steps */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {impactSteps.map((step, index) => (
-            <div 
+            <div
               key={index}
-              className="border border-black rounded-1xl  p-8 hover:shadow-lg transition-shadow"
+              className="border border-gray-300 rounded-lg p-6 hover:shadow-lg transition-shadow bg-white"
             >
               <div className="mb-4">
                 <step.icon className="w-12 h-12 text-[#AC1514]" strokeWidth={1.5} />
               </div>
               <h3 className="text-lg font-bold mb-3 text-[#AC1514]">{step.title}</h3>
-              <p className="text-sm text-black text-muted-foreground leading-relaxed">
+              <p className="text-sm text-black leading-relaxed text-justify">
                 {step.description}
               </p>
             </div>
