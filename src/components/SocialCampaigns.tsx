@@ -3,6 +3,7 @@
 import React from "react";
 import { Gavel, HeartHandshake, Users } from "lucide-react";
 import { MoveRight, Calendar, MessageSquare } from "lucide-react";
+import Link from "next/link";
 
 export default function SocialCampaigns() {
     return (
@@ -24,9 +25,11 @@ export default function SocialCampaigns() {
                     Find the latest legal judgments in Family Law, Property and Inheritance affecting survivors across Pakistan
                 </p>
 
-                <button className="bg-white text-[#8B0000] px-6 py-2.5 rounded text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
-                    Get Legal Updates
-                </button>
+                <Link href="/legal-update" target="_blank" rel="noopener noreferrer">
+                    <button className="bg-white text-[#8B0000] px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
+                        Get Legal Updates
+                    </button>
+                </Link>
             </div>
 
             {/* 2. Survivor Stories (Black) */}
@@ -45,9 +48,11 @@ export default function SocialCampaigns() {
                     Read the inspiring stories of the survivors we have helped.
                 </p>
 
-                <button className="bg-white text-black px-6 py-2.5 rounded text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
-                    Read their stories
-                </button>
+                <Link href="/survivor-stories" target="_blank" rel="noopener noreferrer">
+                    <button className="bg-white text-black px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
+                        Read their stories
+                    </button>
+                </Link>
             </div>
 
             {/* 3. Get Involved (Red) */}
@@ -65,9 +70,11 @@ export default function SocialCampaigns() {
                     Raise vital funds to keep women, children and survivors of family violence safe.
                 </p>
 
-                <button className="bg-white text-[#C8102E] px-6 py-2.5 rounded text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
-                    Get Legal Updates
-                </button>
+                <Link href="/getinvolved" target="_blank" rel="noopener noreferrer">
+                    <button className="bg-white text-[#C8102E] px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
+                        Learn More
+                    </button>
+                </Link>
             </div>
 
             {/* --------------------- Partners & Clients --------------------- */}
@@ -76,7 +83,7 @@ export default function SocialCampaigns() {
                 {/* Partners */}
                 <div className="mb-20 container mx-auto px-4">
                     <div className="text-center mb-8">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
+                        <h2 className="text-3xl md:text-4xl text-black font-bold mb-4 font-serif">
                             <span className="text-[#C8102E]">Our</span> Partners
                         </h2>
                         <p className="text-gray-600 max-w-3xl mx-auto">
@@ -98,7 +105,7 @@ export default function SocialCampaigns() {
                 {/* Clients */}
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-8">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif">
+                        <h2 className="text-3xl  text-black md:text-4xl font-bold mb-4 font-serif">
                             <span className="text-[#C8102E]">Our</span> Clients
                         </h2>
                         <p className="text-gray-600 max-w-3xl mx-auto">
@@ -119,7 +126,7 @@ export default function SocialCampaigns() {
 
             {/* --------------------- News Updates --------------------- */}
 
-            <div className="py-16 bg-white container mx-auto px-6">
+            <div className="py-16 bg-white container mx-auto px-16">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold font-serif">
                         <span className="text-[#C8102E]">News</span> Updates

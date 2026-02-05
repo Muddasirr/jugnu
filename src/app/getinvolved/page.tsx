@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function GetInvolvedPage() {
     const [activeTab, setActiveTab] = useState("VOLUNTEER WITH US");
@@ -28,8 +29,7 @@ export default function GetInvolvedPage() {
                   px-6 md:px-8 py-2 rounded-[12px] text-sm md:text-base  transition-all duration-200
                   ${activeTab === tab
                                         ? "bg-[#AC1514] font-bold text-white shadow-sm"
-                                        : "bg-transparent font-normal text-black hover:bg-gray-50"}
-                `}
+                                        : "bg-transparent font-normal text-black hover:bg-gray-50"}`}
                             >
                                 {tab}
                             </button>
@@ -38,65 +38,168 @@ export default function GetInvolvedPage() {
                 </div>
 
                 {/* Content Section */}
-                <div className="max-w-5xl mx-auto  space-y-12 min-h-[500px]">
+                <div className="max-w-5xl mx-auto space-y-12 min-h-[500px]">
 
+                    {/* VOLUNTEER WITH US Tab */}
                     {activeTab === "VOLUNTEER WITH US" && (
                         <div className="space-y-10 animate-in fade-in duration-500">
                             <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
                                 Your Time Can Change A Life
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed ">
+                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
                                 <p>
-                                    At The Jugnu Project, We Strongly Believe In The Power Of People Coming Together For A Cause. Volunteers Are The Heart Of Our Work. With Limited Resources, We Deeply Value The Passion And Commitment Of Our Volunteers. By Giving Your Time, Skills And Compassion, You Help Us Reach More Survivors, Build Safer Communities And Get One Step Closer To Breaking The Cycle Of Violence.
+                                    At The Jugnu Project, we strongly believe in the power of people coming together for a cause. Volunteers are the heart of our work. With limited resources, we deeply value the passion and commitment of our volunteers. By giving your time, skills and compassion, you help us reach more survivors, build safer communities and get one step closer to breaking the cycle of violence.
                                 </p>
 
                                 <p>
-                                    Whether It Is Through Assisting In Research Work, Helping To Create <span className="text-[#AC1514] font-bold">Resources, Participating / Organizing Community Outreach Programs, Assisting In Workshops, Supporting Events,</span> Or Helping Us Amplify Our Mission, Our Volunteers Are The Backbone Of Everything That We Do
+                                    Whether it is through assisting in research work, helping to create <span className="text-[#AC1514] font-bold">resources, participating / organizing community outreach programs, assisting in workshops, supporting events,</span> or helping us amplify our mission, our volunteers are the backbone of everything that we do.
                                 </p>
 
                                 <p>
-                                    We Welcome Volunteers From All Walks Of Life And All Professions. Whether You Have A Few Hours A Week, Or Want To Commit Long Term; There’s A Role For You. Click The Button Below To Check The Roles Available, What Appeals To You And Then Fill Out The Short Form At The End. Someone From Our Team Will Get In Touch With
+                                    We welcome volunteers from all walks of life and all professions. Whether you have a few hours a week, or want to commit long term; there's a role for you. Click the button below to check the roles available, what appeals to you and then fill out the short form at the end.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold  text-xl md:text-2xl border-b-2 underline decoration-[#AC1514] inline-block pb-1 leading-normal max-w-4xl">
-                                    Fill Out The Short Form At The End. Someone From Our Team Will Get In Touch With You Within 48 Hours.
+                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl border-b-2 border-[#AC1514] inline-block pb-1 leading-normal max-w-4xl">
+                                    Someone from our team will get in touch with you within 48 hours.
                                 </p>
                             </div>
 
                             <div className="pt-4">
-                                <button className="bg-[#AC1514] text-white px-8 py-3 rounded font-medium shadow hover:bg-red-800 transition-colors">
-                                    Volunteer Opportunities Form
-                                </button>
+                                <Link href="/volunteer">
+                                    <button className="bg-[#AC1514] text-white px-8 py-3 rounded font-medium shadow hover:bg-red-800 transition-colors cursor-pointer">
+                                        Volunteer Opportunities
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     )}
 
+                    {/* RAISE FUNDS FOR US Tab */}
                     {activeTab === "RAISE FUNDS FOR US" && (
-                        <div className="space-y-12 animate-in fade-in duration-500">
-                            <h1 className="text-3xl md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                        <div className="space-y-10 animate-in fade-in duration-500">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
                                 Turn Your Passion Into Impact
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed ">
+                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
                                 <p>
-                                    We Partner With Individuals, Institutions And Corporations To Raise Funds For The Survivors We Assist. We’ll Provide You With The Materials And The Guidance You Need To Help Make Your Effort Meaningful And Effective. Together We Can Raise Awareness And The Funds Needed To Make Change Possible!
+                                    We partner with individuals, institutions and corporations to raise funds for the survivors we assist. We'll provide you with the materials and the guidance you need to help make your effort meaningful and effective. Together we can raise awareness and the funds needed to make change possible!
                                 </p>
 
                                 <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
-                                    If You’re Interested In Raising Funds For Survivor Services, Email Us At Thejugnuproject@Gmail.Com
+                                    If you're interested in raising funds for survivor services, email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>
                                 </p>
                             </div>
                         </div>
                     )}
 
-                    {/* Placeholders for other tabs */}
-                    {["SPONSOR", "PARTNER WITH US", "DONATE"].includes(activeTab) && (
-                        <div className="space-y-8 animate-in fade-in duration-500 py-12">
-                            <h1 className="text-3xl md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8 capitalize">
-                                {activeTab.toLowerCase()}
+                    {/* SPONSOR Tab */}
+                    {activeTab === "SPONSOR" && (
+                        <div className="space-y-10 animate-in fade-in duration-500">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                                Empower Recovery. Restore Hope.
                             </h1>
-                            <p className="text-xl">Content for this section is coming soon.</p>
+
+                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                                <p>
+                                    We strongly believe in the power of collaboration to create lasting change. When you partner with us as a sponsor, you are directly contributing to our initiatives to empower communities and challenge societal norms.
+                                </p>
+
+                                <p>
+                                    When a survivor leaves an abusive situation, finding safety is just the first step. Healing from the trauma, rebuilding their identity and their life, and finally gaining independence - all takes time and resources.
+                                </p>
+
+                                <p>
+                                    Whether it is supporting our <span className="text-[#AC1514] font-bold">training(s), community outreach efforts, community dialogue workshops, campaigns</span> - or simply the sponsorship of a survivor - your support helps us amplify our impact.
+                                </p>
+
+                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                    If you're interested in partnering with us as a sponsor, please email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>. We would love to discuss how we can work together for the communities that we work with.
+                                </p>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* PARTNER WITH US Tab */}
+                    {activeTab === "PARTNER WITH US" && (
+                        <div className="space-y-10 animate-in fade-in duration-500">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                                Together We Can Build A Safer Society
+                            </h1>
+
+                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                                <p>
+                                    We believe that lasting change can only happen when communities, organizations and institutions work together to combat family and gender-based violence.
+                                </p>
+
+                                <p>
+                                    Let's collaborate to build programs, policies and workplaces that are survivor-centered and equitable.
+                                </p>
+
+                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                    If you're interested in partnering with us, please email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>. We would love to discuss how we can work together for the communities that we work with.
+                                </p>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* DONATE Tab */}
+                    {activeTab === "DONATE" && (
+                        <div className="space-y-10 animate-in fade-in duration-500">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                                Every Single Contribution Helps To Create Safety And Dignity For Survivors
+                            </h1>
+
+                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                                <p>
+                                    We are dedicated to creating safe spaces and support systems within communities where survivors of family violence can live in safety, and with respect and dignity.
+                                </p>
+
+                                <p>
+                                    By donating, you are helping our mission to <span className="text-[#AC1514] font-bold">(1)</span> raise awareness about domestic violence; <span className="text-[#AC1514] font-bold">(2)</span> provide life saving support to domestic violence survivors, <span className="text-[#AC1514] font-bold">(3)</span> create safe spaces and communities for survivors of domestic violence and gender-based violence, and <span className="text-[#AC1514] font-bold">(4)</span> to create resources for survivors, advocates and policy makers. Your donations help us to strengthen the socio-ecological and institutional systems that prevent abuse.
+                                </p>
+
+                                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                    <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] mb-4">Here's how your contributions can make a difference:</h3>
+                                    <ul className="space-y-3 text-lg">
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-[#AC1514] font-bold">•</span>
+                                            <span>Deep trauma therapy services per month cost <strong>$30 USD</strong></span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-[#AC1514] font-bold">•</span>
+                                            <span>Legal Aid services per survivor can cost anywhere between <strong>$150 to $300 USD</strong></span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-[#AC1514] font-bold">•</span>
+                                            <span>Monthly groceries for a survivor can come to around <strong>$100 USD</strong></span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <span className="text-[#AC1514] font-bold">•</span>
+                                            <span>Monthly rent for a survivor can come to around <strong>$150 USD</strong></span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p>
+                                    Every contribution, no matter the size, makes a significant difference. If you'd like to crowdfund or donate and support our cause, please use the payment options provided below:
+                                </p>
+
+                                <div className="bg-[#AC1514] text-white p-6 rounded-lg shadow-lg">
+                                    <h3 className="text-xl md:text-2xl font-bold mb-4 underline underline-offset-4">Bank Account Details</h3>
+                                    <div className="space-y-2 text-lg">
+                                        <p><strong>Account Name:</strong> The Jugnu Project Consultancy (SMC-Private) Limited</p>
+                                        <p><strong>Bank Account Number:</strong> 114000382290001</p>
+                                        <p><strong>IBAN:</strong> PK33BKIP0114000382290001</p>
+                                        <p><strong>Bank Name:</strong> BankIslami Pakistan Limited</p>
+                                    </div>
+                                </div>
+
+                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                    You can also send us a screenshot of the donation on our email <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>, along with a message of what you are donating to.
+                                </p>
+                            </div>
                         </div>
                     )}
 

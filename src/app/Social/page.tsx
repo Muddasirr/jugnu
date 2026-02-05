@@ -26,6 +26,7 @@ import WelcomeSection from "@/components/WelcomeSection";
 import HelpActionSection from "@/components/HelpActionSection";
 import ResourceGridSection from "@/components/ResourceGridSection";
 import SocialCampaigns from "@/components/SocialCampaigns";
+import SectorsWeServe from "@/components/SectorsWeServe";
 
 export default function LandingPage() {
   return (
@@ -41,6 +42,7 @@ export default function LandingPage() {
       <TrainingSection />
       <Impact />
       <JugnuCarouselSection />
+      <SectorsWeServe />
       <SocialCampaigns />
 
 

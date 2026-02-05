@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-
+import Link from 'next/link';
 const PodcastPage: React.FC = () => {
   const popularEpisodes = [
     {
@@ -70,8 +70,11 @@ const PodcastPage: React.FC = () => {
      
         className="  w-full bg-cover bg-center bg-no-repeat"
       >
+        <Link href={"/resources"}>
     <img
     src={"podcast2.png"}/>
+    </Link>
+    
       <img src={"podcast3.png"}/>
       </section>
 
@@ -124,7 +127,7 @@ const PodcastPage: React.FC = () => {
 
       {/* Listen Subscribe Section */}
       <section className="bg-[#f5f5f5] pt-[30px] pb-[50px] px-[30px] md:px-20 text-center">
-        <a href="#" className="  text-[#AC1514] text-[32px] font-normal py-3 px-6 underline ">
+        <a href="https://www.youtube.com/@TheJugnuProject" className="  text-[#AC1514] text-[32px] font-normal py-3 px-6 underline ">
           LISTEN & SUBSCRIBE TO THE KHAUF SE AAGAY: BEYOND FEAR PODCAST
         </a>
       </section>
@@ -140,8 +143,10 @@ const PodcastPage: React.FC = () => {
           <div className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
            <img src="/apple.svg"/>
           </div>
-          <div className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
+          <div  className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
+            <Link href="https://www.youtube.com/@TheJugnuProject">
            <img src="/Youtube.png"/>
+           </Link>
           </div>
         </div>
       </section>
