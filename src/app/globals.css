@@ -9,13 +9,15 @@
 /* Theme variables */
 :root {
   --background: #ffffff;
-  --foreground: #ffffff; /* You had one too few f’s */
+  --foreground: #ffffff;
+  /* You had one too few f's */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Merriweather', serif; /* use Merriweather as the base font */
+  --font-sans: 'Merriweather', serif;
+  /* use Merriweather as the base font */
   --font-mono: var(--font-geist-mono);
 }
 
@@ -23,5 +25,32 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Merriweather', serif; /* ✅ keep Merriweather here */
+  font-family: 'Merriweather', serif;
+  /* ✅ keep Merriweather here */
+}
+
+/* Custom Leaflet Tooltip Styles */
+.leaflet-tooltip {
+  background-color: white !important;
+  border: 2px solid #AC1514 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  padding: 0 !important;
+  font-family: 'Merriweather', serif !important;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: #AC1514 !important;
+}
+
+.leaflet-tooltip-bottom:before {
+  border-bottom-color: #AC1514 !important;
+}
+
+.leaflet-tooltip-left:before {
+  border-left-color: #AC1514 !important;
+}
+
+.leaflet-tooltip-right:before {
+  border-right-color: #AC1514 !important;
 }

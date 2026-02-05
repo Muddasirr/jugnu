@@ -2,7 +2,7 @@ import { Gift, Mail, Candy, Instagram, Facebook, Youtube, Phone, MapPin } from "
 
 const Footer = () => {
   return (
-    <footer className="bg-red-700 text-white relative overflow-hidden">
+    <footer className="bg-[#AC1514] text-white relative overflow-hidden">
       {/* Decorative icons */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <Mail className="absolute top-4 left-12 w-12 h-12 opacity-20 rotate-12" />
@@ -101,11 +101,11 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="relative z-10 border-t border-white/20 py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6">LOGO HERE</h2>
+        <div className="max-w-7xl mx-auto px-4  text-center">
+          <img src="footerlogo.svg"
+           className="mx-auto mb-4"/> 
           <p className="max-w-3xl mx-auto text-sm leading-relaxed mb-8">
-            Lorem ipsum dolor sit amet consectetur. Sed condimentum sed bibendum cursus vitae viverra malesuada. Varius massa
-            orci quis rhoncus nec. Suspendisse eu viverra commodo dolor rutrum donec. Nunc suspendisse aliquet ultrices at erat.
+        Pakistan's Digital Domestic Violence Resource Center and Social Impact Advocacy Firm
           </p>
 
           {/* Social Media Icons */}
