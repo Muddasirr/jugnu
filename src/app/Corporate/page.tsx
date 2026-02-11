@@ -25,8 +25,7 @@ import AboutUs from "@/components/aboutus";
 export default function LandingPage() {
   return (
     <div>
-      <Header />
-      <MenuBar />
+     
       <Banner />
       <JugnuPage />
       <PakistanMap />
@@ -49,7 +48,7 @@ export default function LandingPage() {
 
 
 
-      <Footer />
+  
     </div>
   );
 }
