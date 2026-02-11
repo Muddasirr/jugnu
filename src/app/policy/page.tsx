@@ -7,10 +7,8 @@ import PolicyPage from "@/components/PolicyPage";
 export default function Policy() {
     return (
         <div>
-            <Header />
-            <MenuBar />
+            
             <PolicyPage />
-            <Footer />
         </div>
     );
 }
