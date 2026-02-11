@@ -31,9 +31,9 @@ const Header: React.FC = () => {
             VICTIM’S DIRECTORY
           </button>
 
-          <button className="bg-red-600 hover:bg-red-700 px-3 py-1.5 text-xs font-semibold rounded">
+          <a href="https://en.wikipedia.org/wiki/Special:Random" className="bg-red-600 hover:bg-red-700 px-3 py-1.5 text-xs font-semibold rounded inline-block">
             LEAVE THIS SITE
-          </button>
+          </a>
         </div>
       </div>
     </header>

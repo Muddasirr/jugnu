@@ -104,7 +104,7 @@ export default function PakistanMap() {
         },
       }).addTo(map);
 
-      map.fitBounds(pkLayer.getBounds());
+      map.fitBounds(pkLayer.getBounds(), { padding: [-50, -50], maxZoom: 7 });
 
       // Disable all interactions to prevent map movement
       map.dragging.disable();
@@ -141,10 +141,10 @@ export default function PakistanMap() {
               </svg>
             </div>
 
-            <div className="h-[400px] md:h-[500px] rounded-sm overflow-hidden">
+            <div className="h-[400px] md:h-[700px] rounded-sm overflow-hidden">
               <MapContainer
                 center={[30.3753, 69.3451]}
-                zoom={5}
+                zoom={10}
                 style={{ height: "100%", width: "100%" }}
                 ref={setMap}
                 zoomControl={false}

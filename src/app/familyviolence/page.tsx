@@ -6,48 +6,7 @@ export default function FamilyViolencePage() {
     return (
         <div className="min-h-screen bg-white font-serif text-[#333]">
             {/* Header - Mimicking the screenshot */}
-            <header className="bg-[#AC1514] text-white">
-                <div className="max-w-[1200px] mx-auto px-4 py-2 flex justify-between items-center text-[12px] font-sans tracking-wider">
-                    <div className="flex items-center space-x-4">
-                        <Search size={16} />
-                        <div className="flex items-center space-x-1">
-                            <Globe size={16} />
-                            <span>EN / اردو</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center space-x-6">
-                        <div className="relative">
-                            <input
-                                type="text"
-                                placeholder="SEARCH"
-                                className="bg-transparent border-b border-white/50 text-white placeholder-white/70 text-[10px] py-1 outline-none w-32"
-                            />
-                            <Search size={12} className="absolute right-0 top-1/2 -translate-y-1/2 opacity-70" />
-                        </div>
-                        <button className="bg-black text-white px-4 py-1.5 font-bold tracking-widest text-[11px]">
-                            HELP
-                        </button>
-                    </div>
-                </div>
 
-                <div className="py-6 flex flex-col items-center border-t border-white/10">
-                    <h1 className="text-4xl font-bold tracking-[0.2em] mb-1">JUGNU</h1>
-                    <span className="text-sm font-normal tracking-widest opacity-90">خوف سے آگے</span>
-                </div>
-
-                <nav className="bg-white text-[#AC1514] border-b border-gray-200">
-                    <div className="max-w-[1200px] mx-auto px-4">
-                        <ul className="flex justify-center space-x-12 py-4 text-[13px] font-bold tracking-widest font-sans uppercase">
-                            <li className="hover:opacity-70 cursor-pointer">About Us</li>
-                            <li className="hover:opacity-70 cursor-pointer">Our Services</li>
-                            <li className="hover:opacity-70 cursor-pointer">Training</li>
-                            <li className="hover:opacity-70 cursor-pointer">Library</li>
-                            <li className="hover:opacity-70 cursor-pointer">Blog</li>
-                            <li className="hover:opacity-70 cursor-pointer">Contact Us</li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
 
             {/* Main Content */}
             <main className="max-w-[1100px] mx-auto px-8 py-10">
@@ -235,44 +194,7 @@ export default function FamilyViolencePage() {
                 </article>
             </main>
 
-            {/* Footer - Mimicking the screenshot */}
-            <footer className="bg-[#AC1514] text-white pt-16 pb-8">
-                <div className="max-w-[1200px] mx-auto px-8 grid md:grid-cols-4 gap-12">
-                    <div className="col-span-2">
-                        <h2 className="text-5xl font-bold tracking-tighter mb-4 italic">JUGNU</h2>
-                        <p className="text-[14px] leading-6 opacity-80 max-w-md">
-                            Jugnu Is Pakistan’s First Digital Resource Center Dedicated To Empowering Survivors Of Domestic And Family Violence. We Provide Information, Resources, And Support To Help Break The Cycle Of Abuse.
-                        </p>
-                        <div className="mt-8 flex space-x-6">
-                            <Instagram size={20} className="cursor-pointer opacity-70 hover:opacity-100" />
-                            <Facebook size={20} className="cursor-pointer opacity-70 hover:opacity-100" />
-                            <Youtube size={20} className="cursor-pointer opacity-70 hover:opacity-100" />
-                            <Linkedin size={20} className="cursor-pointer opacity-70 hover:opacity-100" />
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className="font-bold text-[16px] mb-6 uppercase tracking-widest">Quick Links</h4>
-                        <ul className="space-y-4 text-[14px] opacity-80">
-                            <li className="hover:opacity-100 cursor-pointer">About Us</li>
-                            <li className="hover:opacity-100 cursor-pointer">Resources</li>
-                            <li className="hover:opacity-100 cursor-pointer">Training</li>
-                            <li className="hover:opacity-100 cursor-pointer">Podcast</li>
-                            <li className="hover:opacity-100 cursor-pointer">Blog</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-bold text-[16px] mb-6 uppercase tracking-widest">Get Support</h4>
-                        <ul className="space-y-4 text-[14px] opacity-80">
-                            <li className="hover:opacity-100 cursor-pointer underline">National Helpline: 1099</li>
-                            <li className="hover:opacity-100 cursor-pointer underline">Police Emergency: 15</li>
-                            <li className="hover:opacity-100 cursor-pointer underline">Contact Us</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="max-w-[1200px] mx-auto px-8 mt-16 pt-8 border-t border-white/10 text-center text-[11px] opacity-50 tracking-widest">
-                    © 2024 JUGNU PROJECT. ALL RIGHTS RESERVED.
-                </div>
-            </footer>
+
         </div>
     );
 }

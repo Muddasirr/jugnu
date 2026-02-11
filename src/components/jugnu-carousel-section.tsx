@@ -1,12 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 
 export default function JugnuCarouselSection() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [isAutoPlay, setIsAutoPlay] = useState(true)
-
-  const slides = [
+  const baseSlides = [
     {
       id: 1,
       image: "/carousel1.png",
@@ -29,30 +26,64 @@ export default function JugnuCarouselSection() {
     },
   ]
 
+  // Triple the slides for seamless infinite looping
+  const slides = [...baseSlides, ...baseSlides, ...baseSlides]
+  const totalBase = baseSlides.length
+  // Start at the beginning of the middle copy
+  const [currentSlide, setCurrentSlide] = useState(totalBase)
+  const [isTransitioning, setIsTransitioning] = useState(true)
+  const [isAutoPlay, setIsAutoPlay] = useState(true)
+  const sliderRef = useRef<HTMLDivElement>(null)
+
+  // Reset position without animation when reaching clone boundaries
+  const handleTransitionEnd = useCallback(() => {
+    if (currentSlide >= totalBase * 2) {
+      setIsTransitioning(false)
+      setCurrentSlide(totalBase)
+    } else if (currentSlide < totalBase) {
+      setIsTransitioning(false)
+      setCurrentSlide(currentSlide + totalBase)
+    }
+  }, [currentSlide, totalBase])
+
+  // Re-enable transition after a reset
+  useEffect(() => {
+    if (!isTransitioning) {
+      // Use requestAnimationFrame to ensure the non-transition move has painted
+      const id = requestAnimationFrame(() => {
+        setIsTransitioning(true)
+      })
+      return () => cancelAnimationFrame(id)
+    }
+  }, [isTransitioning])
+
   useEffect(() => {
     if (!isAutoPlay) return
 
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length)
+      setCurrentSlide((prev) => prev + 1)
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [isAutoPlay, slides.length])
+  }, [isAutoPlay])
 
-  const goToSlide = (index:any) => {
-    setCurrentSlide(index)
+  const goToSlide = (index: number) => {
+    setCurrentSlide(totalBase + index)
     setIsAutoPlay(false)
   }
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length)
+    setCurrentSlide((prev) => prev + 1)
     setIsAutoPlay(false)
   }
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
+    setCurrentSlide((prev) => prev - 1)
     setIsAutoPlay(false)
   }
+
+  // Which base slide is active (for indicators)
+  const activeBaseIndex = ((currentSlide % totalBase) + totalBase) % totalBase
 
   return (
     <section className="relative w-full bg-white py-16 px-6 md:py-24 md:px-12">
@@ -70,13 +101,15 @@ export default function JugnuCarouselSection() {
             <div className="relative w-full">
               {/* Slides - 4 items visible at once */}
               <div
-                className="flex transition-transform duration-500 ease-out"
+                ref={sliderRef}
+                className={`flex ${isTransitioning ? "transition-transform duration-500 ease-out" : ""}`}
                 style={{
                   transform: `translateX(-${currentSlide * 25}%)`,
                 }}
+                onTransitionEnd={handleTransitionEnd}
               >
-                {slides.map((slide) => (
-                  <div key={slide.id} className="w-1/4 flex-shrink-0 px-2">
+                {slides.map((slide, index) => (
+                  <div key={`${slide.id}-${index}`} className="w-1/4 flex-shrink-0 px-2">
                     <div className="relative w-full aspect-square rounded-lg overflow-hidden">
                       <img
                         src={slide.image || "/placeholder.svg"}
@@ -113,13 +146,12 @@ export default function JugnuCarouselSection() {
 
           {/* Carousel Indicators */}
           <div className="flex justify-center gap-3 mt-8">
-            {slides.map((_, index) => (
+            {baseSlides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`transition-all duration-300 rounded-full ${
-                  index === currentSlide ? "bg-red-600 w-3 h-3" : "bg-gray-300 w-2 h-2 hover:bg-gray-400"
-                }`}
+                className={`transition-all duration-300 rounded-full ${index === activeBaseIndex ? "bg-red-600 w-3 h-3" : "bg-gray-300 w-2 h-2 hover:bg-gray-400"
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}
