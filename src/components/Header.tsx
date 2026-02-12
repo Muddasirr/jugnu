@@ -15,13 +15,12 @@ const Header: React.FC = () => {
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
           <div className="flex items-center space-x-1 hover:text-gray-200 cursor-pointer">
             <Link href="/about">ABOUT</Link>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-chevron-down"><circle cx="12" cy="12" r="10" /><path d="m8 10 4 4 4-4" /></svg>
           </div>
-          <Link href="/get-involved" className="hover:text-gray-200 transition">GET INVOLVED</Link>
+          <Link href="/getinvolved" className="hover:text-gray-200 transition">GET INVOLVED</Link>
           <Link href="/podcast" className="hover:text-gray-200 transition">PODCAST</Link>
-          <Link href="/get-help" className="hover:text-gray-200 transition">GET HELP</Link>
+          <Link href="/gethelp" className="hover:text-gray-200 transition">GET HELP</Link>
           <Link href="/contact" className="hover:text-gray-200 transition">CONTACT</Link>
-          <Link href="/book-club" className="hover:text-gray-200 transition">BOOK CLUB</Link>
+          <Link href="/reads" className="hover:text-gray-200 transition">BOOK CLUB</Link>
         </nav>
 
         {/* Social Icons + Buttons */}
