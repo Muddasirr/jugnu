@@ -4,34 +4,42 @@ import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-[#AC1514] text-white border-b border-gray-800">
-      <div className="container mx-auto flex items-center justify-between px-6 py-3">
+    <header className="bg-[#AC1514] text-white">
+      <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="font-bold text-lg tracking-wide"><img src={"/logojugnu.svg"} style={{ width: "60%" }} /></div>
+        <Link href="/" className="flex-shrink-0">
+          <img src="/logojugnu.svg" alt="Jugnu Logo" className="h-12 w-auto" />
+        </Link>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center space-x-4 text-sm font-medium">
-          <Link href="/about" className="hover:text-gray-300 transition">ABOUT</Link>
-          <Link href="/getinvolved" className="hover:text-gray-300 transition">GET INVOLVED</Link>
-          <Link href="/podcast" className="hover:text-gray-300 transition">PODCAST</Link>
-          <Link href="/reads" className="hover:text-gray-300 transition">BOOK CLUB</Link>
-          <Link href="/contact" className="hover:text-gray-300 transition">CONTACT</Link>
+        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+          <div className="flex items-center space-x-1 hover:text-gray-200 cursor-pointer">
+            <Link href="/about">ABOUT</Link>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-circle-chevron-down"><circle cx="12" cy="12" r="10" /><path d="m8 10 4 4 4-4" /></svg>
+          </div>
+          <Link href="/get-involved" className="hover:text-gray-200 transition">GET INVOLVED</Link>
+          <Link href="/podcast" className="hover:text-gray-200 transition">PODCAST</Link>
+          <Link href="/get-help" className="hover:text-gray-200 transition">GET HELP</Link>
+          <Link href="/contact" className="hover:text-gray-200 transition">CONTACT</Link>
+          <Link href="/book-club" className="hover:text-gray-200 transition">BOOK CLUB</Link>
         </nav>
 
         {/* Social Icons + Buttons */}
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-3">
-            <Instagram size={16} className="hover:text-gray-400 cursor-pointer" />
-            <Facebook size={16} className="hover:text-gray-400 cursor-pointer" fill="currentColor" />
-            <Youtube size={16} className="hover:text-gray-400 cursor-pointer" />
-            <Linkedin size={16} className="hover:text-gray-400 cursor-pointer" fill="currentColor" />
+        <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4">
+            <Instagram size={18} className="hover:text-gray-200 cursor-pointer" />
+            <Facebook size={18} className="hover:text-gray-200 cursor-pointer" fill="currentColor" />
+            <Youtube size={18} className="hover:text-gray-200 cursor-pointer" />
+            <Linkedin size={18} className="hover:text-gray-200 cursor-pointer" fill="currentColor" />
           </div>
 
-          <button className="text-black bg-white hover:bg-gray-100 px-3 py-1.5 text-xs font-semibold rounded">
-            VICTIM’S DIRECTORY
-          </button>
+          <Link href="/survivor-stories">
+            <button className="bg-white text-black px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-gray-100 transition shadow-sm">
+              SURVIVOR'S DIRECTORY
+            </button>
+          </Link>
 
-          <a href="https://en.wikipedia.org/wiki/Special:Random" className="bg-red-600 hover:bg-red-700 px-3 py-1.5 text-xs font-semibold rounded inline-block">
+          <a href="https://www.google.com" className="bg-black text-white px-4 py-2 text-xs font-bold uppercase tracking-wider hover:bg-gray-900 transition shadow-sm">
             LEAVE THIS SITE
           </a>
         </div>
