@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function WelcomeSection() {
     return (
-        <section className="bg-white py-12 md:py-16">
+        <section className="bg-white pt-12 ">
             <div className="max-w-7xl mx-auto px-6 md:px-16">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                     {/* Left Content */}
                     <div className="space-y-6">
                         {/* Header */}
@@ -72,8 +72,8 @@ export default function WelcomeSection() {
                     </div>
 
                     {/* Right Image */}
-                    <div className="relative">
-                        <div className="relative h-[400px] md:h-[500px] bg-gray-200 rounded-sm overflow-hidden">
+                    <div className="relative h-full ">
+                        <div className="relative h-full min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
                             <Image
                                 src="/domestic.jpg"
                                 alt="Woman portrait"
@@ -96,6 +96,7 @@ export default function WelcomeSection() {
                             <svg viewBox="0 0 100 100" className="text-pink-300 fill-current">
                                 <circle cx="30" cy="70" r="8" />
                                 <circle cx="50" cy="60" r="6" />
+                                <circle cx="70" cy="80" r="5" />
                                 <circle cx="70" cy="80" r="5" />
                             </svg>
                         </div>

@@ -10,6 +10,7 @@ import TrainingSection from "@/components/TrainingSection";
 import PhotoCollage from "@/components/PhotoCollage";
 import { Impact } from "@/components/Impact";
 import { Banner } from "@/components/Banner";
+import SlidingHeadline from "@/components/SlidingHeadline";
 import MenuBar from "@/components/MenuBar";
 import ViolenceBanner from "@/components/ViolenceBanner";
 import { AboutPage } from "@/components/about-page";
@@ -32,6 +33,7 @@ export default function LandingPage() {
   return (
     <div>
       <Banner />
+      <SlidingHeadline />
       <WelcomeSection />
       <PakistanMap />
 
@@ -43,7 +45,7 @@ export default function LandingPage() {
       <Impact />
       <JugnuCarouselSection />
       <SectorsWeServe />
-      <SocialCampaigns />
+      {/* <SocialCampaigns /> */}
 
 
 
