@@ -10,7 +10,7 @@ const CommittedSection = () => {
       />
 
       {/* Content Container */}
-      <div className="relative container mx-auto px-4 py-16 md:py-24 lg:py-32">
+      <div className="relative container mx-auto px-4 py-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - spacer for background image */}
           <div className="hidden lg:block" />

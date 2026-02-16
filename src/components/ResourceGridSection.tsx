@@ -85,7 +85,7 @@ export default function ResourceGridSection() {
     ];
 
     return (
-        <section className="bg-white py-12 md:py-16">
+        <section className="bg-white px-8 py-12 md:py-16">
             <div className="">
                 {/* Main Container with Blue Border */}
                 <div className="border-4  p-6 md:p-8 relative">
@@ -110,8 +110,8 @@ export default function ResourceGridSection() {
 
 
                     {/* Blue Background Description */}
-                    <div className="  p-4 md:p-6 mb-8 ">
-                        <p className="text-sm md:text-base text-gray-900 leading-relaxed">
+                    <div className="  mb-8 ">
+                        <p className="text-[18px] text-black leading-relaxed">
                             Find confidential help, guidance, and resources for those facing Domestic or Gender-Based Violence. Access life-saving information, support services, and safe options — for yourself or someone you care about. We're here to connect you with trusted resources, safety planning, and survivor-centered support.
                         </p>
                     </div>
