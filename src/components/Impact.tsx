@@ -44,7 +44,7 @@ export const Impact = () => {
 
         {/* Timeline connector */}
         <div className="relative mb-8 mt-12">
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gray-300 hidden md:block" style={{ top: '20px' }}>
+          <div className="absolute top-0 left-0 right-0 h-[2px] bg-gray-300 hidden md:block" style={{ top: '30px' }}>
             {/* Red dots at each step */}
             <div className="absolute left-[0%] -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#AC1514] rounded-sm"></div>
             <div className="absolute left-[25%] -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-[#AC1514] rounded-sm"></div>
