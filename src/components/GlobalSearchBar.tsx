@@ -66,7 +66,7 @@ const GlobalSearchBar = () => {
 
     return (
         <div className={`${isSocialPage ? "bg-black" : "bg-white"} py-4 relative z-50`}>
-            <div className="px-8 max-w-7xl mx-auto">
+            <div className="px-4 md:px-8 max-w-7xl mx-auto">
                 <form onSubmit={handleSearch} className="relative w-full">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                         <Search className={`h-5 w-5 ${isSocialPage ? "text-gray-300" : "text-gray-500"}`} />
