@@ -54,7 +54,7 @@ export default function AboutUsPage() {
         <div className="bg-white">
             {/* About Us Section */}
             <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20">
-<div className="grid md:grid-cols-[60%_40%] gap-8 md:gap-16 items-start">
+                <div className="grid md:grid-cols-[60%_40%] gap-8 md:gap-16 items-start">
                     {/* Left Content */}
                     <div className="space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
@@ -80,7 +80,7 @@ export default function AboutUsPage() {
 
                     {/* Right Image */}
                     <div className="relative h-full ">
-                        <div className="relative h-full min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
+                        <div className="relative h-full min-h-[250px] md:min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
                             <Image
                                 src="/intro.jpg"
                                 alt="About Us"
@@ -158,13 +158,13 @@ export default function AboutUsPage() {
 
                     {/* Right Image */}
                     <div className="relative h-full ">
-                        <div className="relative h-full min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
-                        <Image
-                            src="/about4.png"
-                            alt="Founder"
-                            fill
-                            className="object-cover"
-                        />
+                        <div className="relative h-full min-h-[250px] md:min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
+                            <Image
+                                src="/about4.png"
+                                alt="Founder"
+                                fill
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                 </div>

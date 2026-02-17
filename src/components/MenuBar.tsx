@@ -16,13 +16,13 @@ const MenuBar = () => {
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">
-      <div className=" mx-auto px-4">
-        <ul className="flex flex-wrap justify-between text-sm font-medium text-gray-800 py-4 space-x-4">
+      <div className="mx-auto px-4">
+        <ul className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible md:justify-between text-sm font-medium text-black py-4 space-x-4 scrollbar-hide">
           {menuItems.map((item, index) => (
-            <li key={index} className="px-2 text-center whitespace-normal">
+            <li key={index} className="px-2 text-center whitespace-normal min-w-[120px] md:min-w-0 flex-shrink-0 md:flex-shrink">
               <Link
                 href={item.href}
-                className="hover:text-[#AC1514] transition-colors"
+                className="hover:text-[#AC1514] transition-colors block"
                 dangerouslySetInnerHTML={{ __html: item.label }}
               ></Link>
             </li>

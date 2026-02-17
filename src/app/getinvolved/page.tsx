@@ -60,7 +60,7 @@ export default function GetInvolvedPage() {
                                     We welcome volunteers from all walks of life and all professions. Whether you have a few hours a week, or want to commit long term; there's a role for you. Click the button below to check the roles available, what appeals to you and then fill out the short form at the end.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl border-b-2 border-[#AC1514] decoration-2 underline-offset-2 max-w-4xl">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl  border-[#AC1514] decoration-2 underline-offset-2 max-w-4xl">
                                     Someone from our team will get in touch with you within 48 hours.
                                 </p>
                             </div>
@@ -87,7 +87,7 @@ export default function GetInvolvedPage() {
                                     We partner with individuals, institutions and corporations to raise funds for the survivors we assist. We'll provide you with the materials and the guidance you need to help make your effort meaningful and effective. Together we can raise awareness and the funds needed to make change possible!
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl  border-[#AC1514] pb-1">
                                     If you're interested in raising funds for survivor services, email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>
                                 </p>
                             </div>
@@ -114,7 +114,7 @@ export default function GetInvolvedPage() {
                                     Whether it is supporting our <span className="text-[#AC1514] font-bold">training(s), community outreach efforts, community dialogue workshops, campaigns</span> - or simply the sponsorship of a survivor - your support helps us amplify our impact.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl  border-[#AC1514] pb-1">
                                     If you're interested in partnering with us as a sponsor, please email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>. We would love to discuss how we can work together for the communities that we work with.
                                 </p>
                             </div>
@@ -137,7 +137,7 @@ export default function GetInvolvedPage() {
                                     Let's collaborate to build programs, policies and workplaces that are survivor-centered and equitable.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl  border-[#AC1514] pb-1">
                                     If you're interested in partnering with us, please email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>. We would love to discuss how we can work together for the communities that we work with.
                                 </p>
                             </div>
@@ -196,7 +196,7 @@ export default function GetInvolvedPage() {
                                     </div>
                                 </div>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl leading-normal max-w-4xl">
                                     You can also send us a screenshot of the donation on our email <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>, along with a message of what you are donating to.
                                 </p>
                             </div>
