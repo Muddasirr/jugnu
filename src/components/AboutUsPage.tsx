@@ -54,33 +54,33 @@ export default function AboutUsPage() {
         <div className="bg-white">
             {/* About Us Section */}
             <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
+<div className="grid md:grid-cols-[60%_40%] gap-8 md:gap-16 items-start">
                     {/* Left Content */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
                             ABOUT <span className="text-[#AC1514]">US</span>
                         </h2>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             The Jugnu Project is Pakistan's first and largest resource center for domestic and family violence.
                         </p>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             At The Jugnu Project, we work towards a world where everyone is safe, respected and thriving; living a life free from family and gender-based violence. We specialize in family and gender-based violence and aim to create a support system and network that allows survivors to live lives of safety, dignity and respect within the society.
                         </p>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             We are an independent, non-governmental and non-partisan organization.
                         </p>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             Our work prioritizes the safety of all people experiencing, recovering from or at risk of family or gender-based violence. While we know that most family violence cases are perpetrated by men against women and children, we recognize that this is not always the case. Family violence impacts people across a diverse range of factors, from religion, socio-cultural contexts, gender, age, profession and within various family, intimate and other relationships.
                         </p>
                     </div>
 
                     {/* Right Image */}
-                    <div className="relative">
-                        <div className="relative h-[400px] md:h-[500px] bg-gray-200 rounded-sm overflow-hidden">
+                    <div className="relative h-full ">
+                        <div className="relative h-full min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
                             <Image
                                 src="/intro.jpg"
                                 alt="About Us"
@@ -108,7 +108,7 @@ export default function AboutUsPage() {
                             JUGNU'S STORY <span className="text-black">(OUR STORY)</span>
                         </h2>
 
-                        <p className="text-sm md:text-base text-black max-w-5xl mx-auto leading-relaxed">
+                        <p className=" text-left text-sm md:text-base text-black max-w-5xl mx-auto leading-relaxed">
                             Jugnu was a loving daughter, sister and mother. She lived for 30 years as a prisoner of an abusive husband and in-laws; until her death on the 17th of November, 2021, finally set her free. The Jugnu Project is a dedication to her name and her memory. This is her story.
                         </p>
 
@@ -139,43 +139,45 @@ export default function AboutUsPage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
                     {/* Left Content */}
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
+                        <h2 className="text-2xl md:text-4xl font-bold text-black mb-6">
                             ABOUT <span className="text-[#AC1514]">THE FOUNDER</span>
                         </h2>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             The Jugnu Project was started in 2021 by Zohra Ahmed, in honor of her maternal aunt (khala) after she passed away. It started with a vision to make up for the lack of resources available for survivors of family violence and abuse in Pakistan.
                         </p>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             Born and raised in Pakistan, Zohra witnessed countless women, including in her immediate family and social circle, who faced domestic violence at the hands of their family, husband / intimate partner, and/or their in-laws. She recognized within herself a passion for helping survivors of gender-based violence and abuse grew after she first started working as a journalist for the English NewsDesk at Dawn.com. She has covered various stories regarding honor-killing, abuse and domestic violence. She strongly believes that the resounding silence surrounding such crimes, regardless of socio-economic differences, has been the main reason why such offenses have continued undeterred.
                         </p>
 
-                        <p className="text-sm md:text-base text-black leading-relaxed">
+                        <p className="text-lg md:text-lg text-black leading-relaxed">
                             Zohra is a Lawyer, Social Consultant and Capacity Building Trainer, with a focus on Gender-Based Violence (GBV).
                         </p>
                     </div>
 
                     {/* Right Image */}
-                    <div className="relative h-[400px] md:h-[500px] bg-gray-200 rounded-sm overflow-hidden">
+                    <div className="relative h-full ">
+                        <div className="relative h-full min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
                         <Image
                             src="/about4.png"
                             alt="Founder"
                             fill
                             className="object-cover"
                         />
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* Our Purpose/Vision/Mission Section */}
-            <section className="bg-white py-12 md:py-16">
+            <section className="bg-white ">
                 <div className="max-w-7xl mx-auto px-6 md:px-16">
                     {/* Tab Headers */}
                     <div className="flex justify-center gap-8 md:gap-16 mb-8 border-b-2 border-gray-200">
                         <button
                             onClick={() => setActiveTab("purpose")}
-                            className={`font-bold text-lg md:text-xl pb-3 border-b-4 transition-colors ${activeTab === "purpose"
+                            className={`font-bold text-lg md:text-2xl pb-3 px-8 border-b-4 transition-colors ${activeTab === "purpose"
                                 ? "text-[#AC1514] border-[#AC1514]"
                                 : "text-gray-400 border-transparent hover:text-gray-600"
                                 }`}
@@ -184,7 +186,7 @@ export default function AboutUsPage() {
                         </button>
                         <button
                             onClick={() => setActiveTab("vision")}
-                            className={`font-bold text-lg md:text-xl pb-3 border-b-4 transition-colors ${activeTab === "vision"
+                            className={`font-bold text-lg md:text-2xl pb-3 border-b-4 transition-colors ${activeTab === "vision"
                                 ? "text-[#AC1514] border-[#AC1514]"
                                 : "text-gray-400 border-transparent hover:text-gray-600"
                                 }`}
@@ -193,7 +195,7 @@ export default function AboutUsPage() {
                         </button>
                         <button
                             onClick={() => setActiveTab("mission")}
-                            className={`font-bold text-lg md:text-xl pb-3 border-b-4 transition-colors ${activeTab === "mission"
+                            className={`font-bold text-lg md:text-2xl pb-3 border-b-4 transition-colors ${activeTab === "mission"
                                 ? "text-[#AC1514] border-[#AC1514]"
                                 : "text-gray-400 border-transparent hover:text-gray-600"
                                 }`}
@@ -203,7 +205,7 @@ export default function AboutUsPage() {
                     </div>
 
                     {/* Content */}
-                    <div className="max-w-5xl mx-auto space-y-6 text-sm md:text-base text-black leading-relaxed">
+                    <div className="max-w-5xl mx-auto  text-lg md:text-2xl text-black leading-relaxed">
                         {activeTab === "purpose" && (
                             <div className="space-y-6 animate-in fade-in duration-500">
                                 <p>
@@ -289,10 +291,10 @@ export default function AboutUsPage() {
             <section className="bg-white py-12 md:py-16">
                 <div className="max-w-7xl mx-auto px-6 md:px-16">
                     <div className="text-center mb-8">
-                        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-4">
                             <span className="text-[#AC1514]">Our Core</span> <span className="text-black">Principles</span>
                         </h2>
-                        <p className="text-sm md:text-base text-black max-w-3xl mx-auto">
+                        <p className="text-sm md:text-2xl text-black max-w-3xl mx-auto">
                             Our work is guided by seven (07) core principles that reflect our commitment to safety, dignity and justice for all survivors.
                         </p>
                     </div>

@@ -20,13 +20,13 @@ export default function GetInvolvedPage() {
 
                 {/* Navigation Tabs */}
                 <div className="flex flex-wrap justify-center mb-16">
-                    <div className="border border-black rounded-[12px] p-1 inline-flex flex-wrap justify-center gap-2 md:gap-0">
+                    <div className="border border-black rounded-[12px] p-1 inline-flex flex-wrap justify-center gap-2 md:gap-2">
                         {tabs.map((tab) => (
                             <button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`
-                  px-6 md:px-8 py-2 rounded-[12px] text-sm md:text-base  transition-all duration-200
+                  px-6 md:px-3 py-1.5 rounded-[12px] text-sm md:text-base  transition-all duration-200
                   ${activeTab === tab
                                         ? "bg-[#AC1514] font-bold text-white shadow-sm"
                                         : "bg-transparent font-normal text-black hover:bg-gray-50"}`}
@@ -43,11 +43,11 @@ export default function GetInvolvedPage() {
                     {/* VOLUNTEER WITH US Tab */}
                     {activeTab === "VOLUNTEER WITH US" && (
                         <div className="space-y-10 animate-in fade-in duration-500">
-                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-2 underline-offset-2">
                                 Your Time Can Change A Life
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                            <div className="space-y-8 text-lg md:text-3xl leading-relaxed">
                                 <p>
                                     At The Jugnu Project, we strongly believe in the power of people coming together for a cause. Volunteers are the heart of our work. With limited resources, we deeply value the passion and commitment of our volunteers. By giving your time, skills and compassion, you help us reach more survivors, build safer communities and get one step closer to breaking the cycle of violence.
                                 </p>
@@ -60,7 +60,7 @@ export default function GetInvolvedPage() {
                                     We welcome volunteers from all walks of life and all professions. Whether you have a few hours a week, or want to commit long term; there's a role for you. Click the button below to check the roles available, what appeals to you and then fill out the short form at the end.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl border-b-2 border-[#AC1514] inline-block pb-1 leading-normal max-w-4xl">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl border-b-2 border-[#AC1514] decoration-2 underline-offset-2 max-w-4xl">
                                     Someone from our team will get in touch with you within 48 hours.
                                 </p>
                             </div>
@@ -78,16 +78,16 @@ export default function GetInvolvedPage() {
                     {/* RAISE FUNDS FOR US Tab */}
                     {activeTab === "RAISE FUNDS FOR US" && (
                         <div className="space-y-10 animate-in fade-in duration-500">
-                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-2 underline-offset-2">
                                 Turn Your Passion Into Impact
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                            <div className="space-y-8 text-lg md:text-3xl leading-relaxed">
                                 <p>
                                     We partner with individuals, institutions and corporations to raise funds for the survivors we assist. We'll provide you with the materials and the guidance you need to help make your effort meaningful and effective. Together we can raise awareness and the funds needed to make change possible!
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
                                     If you're interested in raising funds for survivor services, email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>
                                 </p>
                             </div>
@@ -97,11 +97,11 @@ export default function GetInvolvedPage() {
                     {/* SPONSOR Tab */}
                     {activeTab === "SPONSOR" && (
                         <div className="space-y-10 animate-in fade-in duration-500">
-                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-2 underline-offset-2">
                                 Empower Recovery. Restore Hope.
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                            <div className="space-y-8 text-lg md:text-3xl leading-relaxed">
                                 <p>
                                     We strongly believe in the power of collaboration to create lasting change. When you partner with us as a sponsor, you are directly contributing to our initiatives to empower communities and challenge societal norms.
                                 </p>
@@ -114,7 +114,7 @@ export default function GetInvolvedPage() {
                                     Whether it is supporting our <span className="text-[#AC1514] font-bold">training(s), community outreach efforts, community dialogue workshops, campaigns</span> - or simply the sponsorship of a survivor - your support helps us amplify our impact.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
                                     If you're interested in partnering with us as a sponsor, please email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>. We would love to discuss how we can work together for the communities that we work with.
                                 </p>
                             </div>
@@ -124,11 +124,11 @@ export default function GetInvolvedPage() {
                     {/* PARTNER WITH US Tab */}
                     {activeTab === "PARTNER WITH US" && (
                         <div className="space-y-10 animate-in fade-in duration-500">
-                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-2 underline-offset-2">
                                 Together We Can Build A Safer Society
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                            <div className="space-y-8 text-lg md:text-3xl leading-relaxed">
                                 <p>
                                     We believe that lasting change can only happen when communities, organizations and institutions work together to combat family and gender-based violence.
                                 </p>
@@ -137,7 +137,7 @@ export default function GetInvolvedPage() {
                                     Let's collaborate to build programs, policies and workplaces that are survivor-centered and equitable.
                                 </p>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
                                     If you're interested in partnering with us, please email us at <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>. We would love to discuss how we can work together for the communities that we work with.
                                 </p>
                             </div>
@@ -147,11 +147,11 @@ export default function GetInvolvedPage() {
                     {/* DONATE Tab */}
                     {activeTab === "DONATE" && (
                         <div className="space-y-10 animate-in fade-in duration-500">
-                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-1 underline-offset-8">
+                            <h1 className="text-3xl text-center md:text-4xl font-bold text-[#AC1514] italic underline decoration-2 underline-offset-2">
                                 Every Single Contribution Helps To Create Safety And Dignity For Survivors
                             </h1>
 
-                            <div className="space-y-8 text-lg md:text-xl leading-relaxed">
+                            <div className="space-y-8 text-lg md:text-3xl leading-relaxed">
                                 <p>
                                     We are dedicated to creating safe spaces and support systems within communities where survivors of family violence can live in safety, and with respect and dignity.
                                 </p>
@@ -161,7 +161,7 @@ export default function GetInvolvedPage() {
                                 </p>
 
                                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                                    <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] mb-4">Here's how your contributions can make a difference:</h3>
+                                    <h3 className="text-xl md:text-3xl font-bold text-[#AC1514] mb-4">Here's how your contributions can make a difference:</h3>
                                     <ul className="space-y-3 text-lg">
                                         <li className="flex items-start gap-2">
                                             <span className="text-[#AC1514] font-bold">•</span>
@@ -187,7 +187,7 @@ export default function GetInvolvedPage() {
                                 </p>
 
                                 <div className="bg-[#AC1514] text-white p-6 rounded-lg shadow-lg">
-                                    <h3 className="text-xl md:text-2xl font-bold mb-4 underline underline-offset-4">Bank Account Details</h3>
+                                    <h3 className="text-xl md:text-3xl font-bold mb-4 underline underline-offset-4">Bank Account Details</h3>
                                     <div className="space-y-2 text-lg">
                                         <p><strong>Account Name:</strong> The Jugnu Project Consultancy (SMC-Private) Limited</p>
                                         <p><strong>Bank Account Number:</strong> 114000382290001</p>
@@ -196,7 +196,7 @@ export default function GetInvolvedPage() {
                                     </div>
                                 </div>
 
-                                <p className="text-[#AC1514] font-bold text-xl md:text-2xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
+                                <p className="text-[#AC1514] font-bold text-xl md:text-3xl inline-block leading-normal max-w-4xl border-b-2 border-[#AC1514] pb-1">
                                     You can also send us a screenshot of the donation on our email <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a>, along with a message of what you are donating to.
                                 </p>
                             </div>

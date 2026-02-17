@@ -16,7 +16,7 @@ const MenuBar = () => {
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         <ul className="flex flex-wrap justify-between text-sm font-medium text-gray-800 py-4 space-x-4">
           {menuItems.map((item, index) => (
             <li key={index} className="px-2 text-center whitespace-normal">

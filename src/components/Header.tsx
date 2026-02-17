@@ -9,7 +9,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-[#AC1514] text-white sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto flex items-center justify-between px-4 xl:px-6 py-4">
+      <div className="container flex items-center justify-between px-1  py-4">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0 z-50">
           <img src="/logojugnu.svg" alt="Jugnu Logo" className="h-12 w-auto" />
