@@ -66,49 +66,59 @@ const PodcastPage: React.FC = () => {
           </p>
         </div>
       </section>
-       <section
-     
-        className="  w-full bg-cover bg-center bg-no-repeat"
-      >
-        <Link href={"/resources"}>
-    <img
-    src={"podcast2.png"}/>
-    </Link>
-    
-      <img src={"podcast3.png"}/>
-      </section>
+
 
       {/* About Section */}
-      {/* <section className="bg-[#f5f5f5] py-[60px] px-[30px] md:px-20">
-        <div className="max-w-[600px] ml-auto">
-          <p className="text-sm text-[#AC1514] mb-5 leading-[1.6]">
-            About <span className="underline cursor-pointer">The Jugnu Project: Pakistan's Digital</span>
+      {/* About Section */}
+      <section
+        style={{
+          backgroundImage: "url('podcastt1.png')",
+          backgroundSize: '100%',
+        }}
+        className="text-white flex flex-col md:flex-row justify-between items-start py-[60px] px-[30px] md:px-20 min-h-screen relative  bg-center bg-no-repeat"
+      >
+        <div className="max-w-[700px] w-full md:w-[60%] ml-auto pt-24">
+          <Link href={"/about"}>
+          <p className="text-2xl md:text-4xl text-[#AC1514] mb-6 leading-[1.4] font-medium">
+            <span className="underline decoration-1 underline-offset-4 cursor-pointer">About The Jugnu Project: Pakistan’s Digital</span>
             <br />
-            <span className="underline cursor-pointer">Domestic Violence Resource Center</span>
+            <span className="underline decoration-1 underline-offset-4 cursor-pointer">Domestic Violence Resource Center</span>
           </p>
-          <p className="text-sm leading-[1.8] text-[#333] m-0">
+          </Link>
+          <p className="text-2xl md:text-4xl leading-[1.5] text-black font-serif">
             Khauf Se Aagay Is A Storytelling And Awareness Podcast
             By The Jugnu Project, That Amplifies The Voice Of
             Survivors, Advocates And Experts Working To End
             Family And Gender-Based Violence.
           </p>
         </div>
-      </section> */}
+      </section>
 
       {/* Description Section */}
-      {/* <section className="bg-[#f5f5f5] pt-10 pb-[60px] px-[30px] md:px-20">
-        <p className="text-xs leading-[1.8] text-[#333] m-0 max-w-[700px]">
-          Each Episode Dives Deep Into The Realities of Domestic Violence In The Desi
-          Community (Especially In Pakistan) – From Survivor Journeys And Legal Challenges
-          To Mental Health, Community Healing And Social Change.
-        </p>
-        <p className="text-xs leading-[1.8] text-[#333] mt-5 max-w-[700px]">
-          Through Open And Respectful Conversations, Khauf Se Aagay Breaks The Silence
-          Around Abuse, Confronts The Stigma Attached To Family Violence, And Builds An
-          Understanding – Helping Listeners To See What Lies Beyond The Fear: Courage,
-          Healing And Hope.
-        </p>
-      </section> */}
+      <section
+        style={{
+          backgroundImage: "url('podcastt.png')",
+          backgroundSize: '100% 100%',
+        }}
+        className="text-white flex flex-col md:flex-row justify-between items-start py-[60px] px-16 md:px-16 min-h-screen relative overflow-hidden bg-center bg-no-repeat"
+      >
+        <div className="mt-48 text-white max-w-5xl">
+          <p className="text-xl md:text-3xl leading-relaxed md:leading-loose">
+            Each Episode Dives Deep Into The Realities Of Domestic Violence In The Desi
+            Community (Especially In Pakistan) – From Survivor Journeys And Legal Challenges
+            To Mental Health, Community Healing And Social Change.
+          </p>
+
+          <div className="w-full h-px bg-white/40 my-8 "></div>
+
+          <p className="text-xl md:text-3xl leading-relaxed md:leading-loose">
+            Through Open And Respectful Conversations, Khauf Se Aagay Breaks The Silence
+            Around Abuse, Confronts The Stigma Attached To Family Violence, And Builds An
+            Understanding – Helping Listeners To See What Lies Beyond The Fear: Courage,
+            Healing And Hope.
+          </p>
+        </div>
+      </section>
 
       {/* Popular Episodes Section */}
       <section className="bg-[#f5f5f5] pt-10 pb-[60px] px-[30px] md:px-20">
@@ -118,7 +128,7 @@ const PodcastPage: React.FC = () => {
             <div key={episode.id} className="bg-white rounded-lg overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
               <div className=" overflow-hidden">
                 <img src={"Link.png"} alt={episode.title} className="w-full h-full object-cover" />
-                
+
               </div>
             </div>
           ))}
@@ -127,26 +137,26 @@ const PodcastPage: React.FC = () => {
 
       {/* Listen Subscribe Section */}
       <section className="bg-[#f5f5f5] pt-[30px] pb-[50px] px-[30px] md:px-20 text-center">
-        <a href="https://www.youtube.com/@TheJugnuProject" className="  text-[#AC1514] text-[32px] font-normal py-3 px-6 underline ">
+        <a href="https://www.youtube.com/@TheJugnuProject" className="  text-[#AC1514] text-[28px] font-normal py-3 px-6 underline ">
           LISTEN & SUBSCRIBE TO THE KHAUF SE AAGAY: BEYOND FEAR PODCAST
         </a>
       </section>
 
       {/* Supported By Section */}
-      <section className="bg-white py-[30px] px-[30px] md:px-20 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-10 border-t border-[#eee]">
-        <span className="text-[48px] font-semibold text-[black]">Supported by:</span>
-        <div className="flex flex-wrap items-center gap-8">
+      <section className="bg-white py-[30px] px-[30px] md:px-20 flex flex-col sm:flex-row items-start sm:items-center gap-12 sm:gap-10 border-t border-[#eee]">
+        <div className="text-[48px] font-semibold text-[black]">Supported by:</div>
+        <div className="flex flex-wrap items-center gap-32">
           <div className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
-           
-           <img src="/Spotify.png"/>
+
+            <img src="/Spotify.png" className="h-[60px] w-auto object-contain" />
           </div>
           <div className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
-           <img src="/apple.svg"/>
+            <img src="/apple.svg" className="h-[60px] w-auto object-contain" />
           </div>
-          <div  className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
+          <div className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
             <Link href="https://www.youtube.com/@TheJugnuProject">
-           <img src="/Youtube.png"/>
-           </Link>
+              <img src="/Youtube.png" className="h-[60px] w-auto object-contain" />
+            </Link>
           </div>
         </div>
       </section>

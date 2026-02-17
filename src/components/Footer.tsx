@@ -36,7 +36,7 @@ const Footer = () => {
             placeholder="Enter your email address"
             className="bg-[hsl(var(--footer-input))]  border-none rounded-full px-6 h-12 flex-1 focus:outline-none focus:ring-2 focus:ring-white/50"
           />
-          <button className="bg-[hsl(var(--footer-input))] text-[hsl(var(--footer-red))] hover:bg-white/90 rounded-full px-8 h-12 font-semibold transition-colors cursor-pointer">
+          <button className="bg-[white] text-[black] hover:bg-white/90 rounded-full px-8 h-12 font-semibold transition-colors cursor-pointer">
             Subscribe
           </button>
         </div>

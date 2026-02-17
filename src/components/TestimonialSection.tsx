@@ -57,11 +57,11 @@ const TestimonialSection = () => {
         {/* Header */}
         <div className="flex items-start justify-between mb-12">
           <div>
-            <p className="text-sm font-semibold tracking-[0.2em] text-[#AC1514] mb-3 uppercase">
+            <p className="text-lg font-semibold tracking-[0.2em] text-[black] mb-3 uppercase">
               Testimonial
             </p>
-            <h2 className="text-[40px] font-bold text-[#3B3B3B] leading-tight">
-              Community Feedback on Our Mission
+            <h2 className="text-[40px] font-bold text-[black] leading-tight">
+              Community Feedback <span className="text-[#AC1514]">on Our Mission</span>
             </h2>
           </div>
 
