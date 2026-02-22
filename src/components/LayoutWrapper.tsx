@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import MenuBar from "@/components/MenuBar";
@@ -13,12 +14,15 @@ export default function LayoutWrapper({
 }) {
     const pathname = usePathname();
     const isHomePage = pathname === "/";
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+    const toggleSearch = () => setIsSearchOpen((prev) => !prev);
 
     return (
         <>
-            {!isHomePage && <Header />}
+            {!isHomePage && <Header onSearchToggle={toggleSearch} isSearchOpen={isSearchOpen} />}
             {!isHomePage && <MenuBar />}
-            {!isHomePage && <GlobalSearchBar />}
+            {!isHomePage && isSearchOpen && <GlobalSearchBar />}
             {children}
             {!isHomePage && <Footer />}
         </>

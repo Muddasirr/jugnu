@@ -25,7 +25,7 @@ const CommittedSection = () => {
               aria-hidden="true"
             />
 
-            <h2 className="text-[42px] font-extrabold text-white mb-8 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-white mb-8 leading-tight">
               Committed to Global Standards of Equality and Justice
             </h2>
 

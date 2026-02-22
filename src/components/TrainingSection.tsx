@@ -11,15 +11,15 @@ const TrainingSection = () => {
         <div className="max-w-[640px]">
           {/* Heading and Button Side-by-Side */}
           <div className="flex items-center  gap-6 mb-6 flex-wrap md:flex-nowrap">
-              <Link href="/training" target="_blank" rel="noopener noreferrer">
-            <h2 className="text-[40px] font-extrabold leading-tight whitespace-nowrap">
-              TRAINING & DEVELOPMENT
-            </h2>
+            <Link href="/training" target="_blank" rel="noopener noreferrer">
+              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight whitespace-nowrap">
+                TRAINING & DEVELOPMENT
+              </h2>
             </Link>
 
-          
-             
-            
+
+
+
           </div>
 
 
@@ -61,17 +61,17 @@ const TrainingSection = () => {
         <div className="max-w-[640px]">
           {/* Heading and Button Side-by-Side */}
           <div className="flex items-center  gap-6 mb-6 flex-wrap md:flex-nowrap">
-                        <Link href="/consultancy" target="_blank" rel="noopener noreferrer">
+            <Link href="/consultancy" target="_blank" rel="noopener noreferrer">
 
-            <h2 className="text-[40px] font-extrabold leading-tight whitespace-nowrap">
-              SOCIAL IMPACT CONSULTANCY
-            </h2>
-             </Link>
+              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight whitespace-nowrap">
+                SOCIAL IMPACT CONSULTANCY
+              </h2>
+            </Link>
 
-              {/* <button className="bg-transparent border border-white text-white px-6 py-2 rounded-md text-sm font-medium whitespace-nowrap hover:bg-white hover:text-[#AC1514] transition">
+            {/* <button className="bg-transparent border border-white text-white px-6 py-2 rounded-md text-sm font-medium whitespace-nowrap hover:bg-white hover:text-[#AC1514] transition">
                 Visit Our Consultancy Page
               </button> */}
-           
+
           </div>
 
 

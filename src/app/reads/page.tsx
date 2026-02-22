@@ -275,7 +275,7 @@ const books = [
 
 export default function ReadsPage() {
     return (
-        <main className="w-full bg-white font-serif text-black py-12 md:py-20">
+        <main className="w-full bg-white font-sans text-black py-12 md:py-20">
             <div className=" px-6 md:px-24 space-y-12">
                 {/* Intro Section */}
                 <section className="space-y-6">
@@ -283,7 +283,7 @@ export default function ReadsPage() {
                         Welcome To <span className="text-[#AC1514] text-3xl md:text-3xl">“Jugnu Reads”</span> – Our Digital Book Club!
                     </h1>
 
-                    <div className="space-y-4 text-sm md:text-2xl leading-relaxed text-black font-normal ">
+                    <div className="space-y-4 text-base md:text-lg leading-relaxed text-black font-normal ">
                         <p>
                             This Is An Online Reading Community For People Who Care About Gender Equity, Social Change And Empowerment Of Survivors. Through Books, We Learn, Connect And Explore New Ideas About Gender, Justice, Mental Health, Trauma, Healing From Abuse And Resilience.
                         </p>
@@ -301,7 +301,7 @@ export default function ReadsPage() {
                     <h2 className="text-3xl md:text-3xl font-bold">
                         What <span className="text-[#AC1514]">We Offer</span>
                     </h2>
-                    <ul className="space-y-3 text-2xl md:text-2xl font-normal text-black list-none p-1">
+                    <ul className="space-y-3 text-base md:text-lg font-normal text-black list-none p-1">
                         <li>-Monthly Book Selections Focused On Gender Equity, Justice, Mental Wellbeing, Family Violence, Trauma And Healing.</li>
                         <li>-Online Discussion Sessions With Readers From Across Pakistan And Abroad.</li>
                         <li>-A Supportive And Inclusive Community For Open Dialogue.</li>
@@ -314,7 +314,7 @@ export default function ReadsPage() {
                     <h2 className="text-3xl md:text-3xl font-bold">
                         How <span className="text-[#AC1514]">To Join?</span>
                     </h2>
-                    <p className="text-2xl md:text-2xl font-normal text-black">
+                    <p className="text-base md:text-lg font-normal text-black">
                         Simply Sign Up Online To Become Part Of The Jugnu Reads Community. You Will Receive Regular Updates About Our Upcoming Books, Reading Guides And Discussion Dates. You Can Also Vote For The Book Of Your Choice!
                     </p>
                 </section>
