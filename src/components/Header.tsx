@@ -2,9 +2,14 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { Instagram, Facebook, Youtube, Linkedin, Menu, X } from "lucide-react";
+import { Instagram, Facebook, Youtube, Linkedin, Menu, X, Search } from "lucide-react";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onSearchToggle: () => void;
+  isSearchOpen: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -28,13 +33,20 @@ const Header: React.FC = () => {
           <Link href="/reads" className="hover:text-gray-200 transition whitespace-nowrap">BOOK CLUB</Link>
         </nav>
 
-        {/* Desktop Social Icons + Buttons */}
+        {/* Desktop Social Icons + Search + Buttons */}
         <div className="hidden md:flex items-center flex-shrink-0 md:space-x-1.5 lg:space-x-2 xl:space-x-4 2xl:space-x-6">
           <div className="flex items-center space-x-1 md:space-x-1.5 lg:space-x-2 xl:space-x-3">
             <Instagram size={14} className="hover:text-gray-200 cursor-pointer lg:w-4 lg:h-4 xl:w-[18px] xl:h-[18px]" />
             <Facebook size={14} className="hover:text-gray-200 cursor-pointer lg:w-4 lg:h-4 xl:w-[18px] xl:h-[18px]" fill="currentColor" />
             <Youtube size={14} className="hover:text-gray-200 cursor-pointer lg:w-4 lg:h-4 xl:w-[18px] xl:h-[18px]" />
             <Linkedin size={14} className="hover:text-gray-200 cursor-pointer lg:w-4 lg:h-4 xl:w-[18px] xl:h-[18px]" fill="currentColor" />
+            <button
+              onClick={onSearchToggle}
+              className="hover:text-gray-200 cursor-pointer transition-colors"
+              aria-label="Toggle search"
+            >
+              <Search size={14} className={`lg:w-4 lg:h-4 xl:w-[18px] xl:h-[18px] transition-colors ${isSearchOpen ? "text-gray-300" : ""}`} />
+            </button>
           </div>
 
           <Link href="/survivor-stories">
@@ -78,6 +90,9 @@ const Header: React.FC = () => {
             <Facebook size={24} className="hover:text-gray-200 cursor-pointer" fill="currentColor" />
             <Youtube size={24} className="hover:text-gray-200 cursor-pointer" />
             <Linkedin size={24} className="hover:text-gray-200 cursor-pointer" fill="currentColor" />
+            <button onClick={() => { onSearchToggle(); setIsMenuOpen(false); }} aria-label="Toggle search">
+              <Search size={24} className="hover:text-gray-200 cursor-pointer" />
+            </button>
           </div>
 
           <Link href="/survivor-stories" onClick={() => setIsMenuOpen(false)}>

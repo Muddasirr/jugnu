@@ -205,7 +205,7 @@ export default function AboutUsPage() {
                     </div>
 
                     {/* Content */}
-                    <div className="max-w-5xl mx-auto  text-lg md:text-2xl text-black leading-relaxed">
+                    <div className="max-w-5xl mx-auto  text-base md:text-lg text-black leading-relaxed">
                         {activeTab === "purpose" && (
                             <div className="space-y-6 animate-in fade-in duration-500">
                                 <p>
@@ -294,7 +294,7 @@ export default function AboutUsPage() {
                         <h2 className="text-2xl md:text-4xl font-bold mb-4">
                             <span className="text-[#AC1514]">Our Core</span> <span className="text-black">Principles</span>
                         </h2>
-                        <p className="text-sm md:text-2xl text-black max-w-3xl mx-auto">
+                        <p className="text-sm md:text-base text-black max-w-3xl mx-auto">
                             Our work is guided by seven (07) core principles that reflect our commitment to safety, dignity and justice for all survivors.
                         </p>
                     </div>

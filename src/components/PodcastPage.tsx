@@ -51,12 +51,12 @@ const PodcastPage: React.FC = () => {
         className="text-white flex flex-col md:flex-row justify-between items-start py-[60px] px-[30px] md:px-20 min-h-screen relative overflow-hidden bg-cover bg-center bg-no-repeat"
       >
         <div >
-          <h1 className="text-[48px] font-bold leading-[1.3] mb-6 uppercase tracking-[0.5px]">
+          <h1 className="text-2xl md:text-3xl font-bold leading-[1.3] mb-6 uppercase tracking-[0.5px]">
             KHAUF SE AAGAY - WHERE SILENCE ENDS
             <br />
             AND STRENGTH BEGINS.
           </h1>
-          <p className="text-[32px] pt-[5%] leading-[1.8] m-0 opacity-95 pr-[30%]">
+          <p className="text-[18px] md:text-[28px] pt-[5%] leading-relaxed m-0 opacity-95 pr-[40%]">
             Khauf Se Aagay, A Podcast By The Jugnu Project, Explores Real
             Stories And Honest Conversations About Domestic And Gender-
             Based Violence In The Desi Community (especially In Pakistan).
@@ -79,13 +79,13 @@ const PodcastPage: React.FC = () => {
       >
         <div className="max-w-[700px] w-full md:w-[60%] ml-auto pt-24">
           <Link href={"/about"}>
-          <p className="text-2xl md:text-4xl text-[#AC1514] mb-6 leading-[1.4] font-medium">
-            <span className="underline decoration-1 underline-offset-4 cursor-pointer">About The Jugnu Project: Pakistan’s Digital</span>
-            <br />
-            <span className="underline decoration-1 underline-offset-4 cursor-pointer">Domestic Violence Resource Center</span>
-          </p>
+            <p className="text-[18px] md:text-[28px]  text-[#AC1514] mb-6 leading-[1.4] font-medium">
+              <span className="underline decoration-1 underline-offset-4 cursor-pointer">About The Jugnu Project: Pakistan’s Digital</span>
+              <br />
+              <span className="underline decoration-1 underline-offset-4 cursor-pointer">Domestic Violence Resource Center</span>
+            </p>
           </Link>
-          <p className="text-2xl md:text-4xl leading-[1.5] text-black font-serif">
+          <p className="text-[18px] md:text-[28px] leading-relaxed text-black font-sans">
             Khauf Se Aagay Is A Storytelling And Awareness Podcast
             By The Jugnu Project, That Amplifies The Voice Of
             Survivors, Advocates And Experts Working To End
@@ -102,8 +102,8 @@ const PodcastPage: React.FC = () => {
         }}
         className="text-white flex flex-col md:flex-row justify-between items-start py-[60px] px-16 md:px-16 min-h-screen relative overflow-hidden bg-center bg-no-repeat"
       >
-        <div className="mt-48 text-white max-w-5xl">
-          <p className="text-xl md:text-3xl leading-relaxed md:leading-loose">
+        <div className="mt-48 mr-[30%] text-white max-w-5xl">
+          <p className="text-[18px] md:text-[24px] leading-relaxed md:leading-loose">
             Each Episode Dives Deep Into The Realities Of Domestic Violence In The Desi
             Community (Especially In Pakistan) – From Survivor Journeys And Legal Challenges
             To Mental Health, Community Healing And Social Change.
@@ -111,7 +111,7 @@ const PodcastPage: React.FC = () => {
 
           <div className="w-full h-px bg-white/40 my-8 "></div>
 
-          <p className="text-xl md:text-3xl leading-relaxed md:leading-loose">
+          <p className="text-[18px] md:text-[24px] leading-relaxed md:leading-loose">
             Through Open And Respectful Conversations, Khauf Se Aagay Breaks The Silence
             Around Abuse, Confronts The Stigma Attached To Family Violence, And Builds An
             Understanding – Helping Listeners To See What Lies Beyond The Fear: Courage,
@@ -122,7 +122,7 @@ const PodcastPage: React.FC = () => {
 
       {/* Popular Episodes Section */}
       <section className="bg-[#f5f5f5] pt-10 pb-[60px] px-[30px] md:px-20">
-        <h2 className="text-[40px] text-[black] font-normal mb-[30px] text-center">Popular Episodes</h2>
+        <h2 className="text-2xl md:text-3xl text-[black] font-bold mb-[30px] text-center">Popular Episodes</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[900px] mx-auto">
           {popularEpisodes.map((episode) => (
             <div key={episode.id} className="bg-white rounded-lg overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
@@ -137,14 +137,14 @@ const PodcastPage: React.FC = () => {
 
       {/* Listen Subscribe Section */}
       <section className="bg-[#f5f5f5] pt-[30px] pb-[50px] px-[30px] md:px-20 text-center">
-        <a href="https://www.youtube.com/@TheJugnuProject" className="  text-[#AC1514] text-[28px] font-normal py-3 px-6 underline ">
+        <a href="https://www.youtube.com/@TheJugnuProject" className="  text-[#AC1514] text-lg md:text-xl font-medium py-3 px-6 underline ">
           LISTEN & SUBSCRIBE TO THE KHAUF SE AAGAY: BEYOND FEAR PODCAST
         </a>
       </section>
 
       {/* Supported By Section */}
       <section className="bg-white py-[30px] px-[30px] md:px-20 flex flex-col sm:flex-row items-start sm:items-center gap-12 sm:gap-10 border-t border-[#eee]">
-        <div className="text-[48px] font-semibold text-[black]">Supported by:</div>
+        <div className="text-2xl md:text-3xl font-bold text-[black]">Supported by:</div>
         <div className="flex flex-wrap items-center gap-32">
           <div className="flex items-center gap-2 text-[#333] text-[13px] font-medium">
 

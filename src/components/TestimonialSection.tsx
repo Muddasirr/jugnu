@@ -60,7 +60,7 @@ const TestimonialSection = () => {
             <p className="text-lg font-semibold tracking-[0.2em] text-[black] mb-3 uppercase">
               Testimonial
             </p>
-            <h2 className="text-[40px] font-bold text-[black] leading-tight">
+            <h2 className="text-2xl md:text-4xl font-bold text-[black] leading-tight">
               Community Feedback <span className="text-[#AC1514]">on Our Mission</span>
             </h2>
           </div>

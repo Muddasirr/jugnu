@@ -3,20 +3,20 @@ import { Facebook, Linkedin, Instagram, Globe } from 'lucide-react';
 
 export default function ContactPage() {
     return (
-        <main className="w-full font-serif">
+        <main className="w-full font-sans">
             <div className="grid grid-cols-1 md:grid-cols-2 my-8">
                 {/* Left Column: Survivors */}
                 <section className="bg-black text-white px-8 py-8 md:p-20 flex flex-col  min-h-[600px]">
                     <div className="max-w-xl mx-auto md:mx-0 w-full space-y-12">
-                        <h1 className="text-3xl md:text-5xl font-bold underline decoration-1 underline-offset-[12px] leading-tight">
+                        <h1 className="text-3xl md:text-4xl font-bold underline decoration-1 underline-offset-[12px] leading-tight">
                             For Survivors
                         </h1>
 
-                        <p className="text-xl md:text-2xl leading-relaxed font-light">
+                        <p className="text-base md:text-lg leading-relaxed font-light">
                             If You, Or Someone You Know, Is At Immediate Risk Or In Danger, Please Call The <a href="tel:15" className="underline hover:no-underline cursor-pointer font-semibold">POLICE (Contact Number: 15)</a>.
                         </p>
 
-                        <div className="space-y-8 text-xl md:text-2xl font-light">
+                        <div className="space-y-8 text-base md:text-lg font-light">
                             <p>
                                 Or Check Our <Link href="/gethelp" className="underline font-bold hover:no-underline">GET HELP</Link> Page
                             </p>
@@ -33,13 +33,13 @@ export default function ContactPage() {
                 </section>
 
                 {/* Right Column: Corporates */}
-                <section className="bg-[#AC1514] text-white px-8 py-8 md:p-20 flex flex-col  min-h-[600px]">
-                    <div className="max-w-xl mx-auto md:mx-0 w-full space-y-12">
+                <section className="bg-[#AC1514] text-white px-4 py-8 md:p-20 flex flex-col  min-h-[600px]">
+                    <div className=" md:mx-0 w-full space-y-12">
                         <h1 className="text-3xl md:text-4xl font-bold underline decoration-1 underline-offset-[12px] leading-tight mb-8">
                             For Corporates / ngos / Financial Institutions / Government Departments
                         </h1>
 
-                        <div className="space-y-8 text-xl md:text-2xl font-light">
+                        <div className="space-y-8 text-base md:text-lg font-light">
                             <p className="leading-relaxed">
                                 Would You Like To Collaborate With Us, Or Book A Consultation?
                             </p>
@@ -48,13 +48,13 @@ export default function ContactPage() {
                                 Get In Touch!
                             </p>
 
-                            <div className="space-y-3 text-lg md:text-xl">
+                            <div className="space-y-3 text-sm md:text-base">
                                 <p>Email: <a href="mailto:Thejugnuproject@Gmail.Com" className="underline hover:no-underline">Thejugnuproject@Gmail.Com</a></p>
                                 <p>Monday - Saturday: 9:00 AM - 9:00 PM</p>
                             </div>
 
                             <div className="flex items-center gap-4 py-4">
-                                <span className="font-bold text-xl">Social Media:</span>
+                                <span className="font-bold text-base">Social Media:</span>
                                 <div className="flex gap-3">
                                     <a href="https://www.instagram.com/thejugnuproject" target="_blank" rel="noopener noreferrer" className="bg-white rounded-full p-2 text-[#AC1514] hover:bg-gray-100 transition-colors">
                                         <Instagram className="w-5 h-5" />
