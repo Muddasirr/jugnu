@@ -7,12 +7,12 @@ const TrainingSection = () => {
     <section className="w-full flex mt-8 flex-col md:flex-row  ">
       {/* Left Side - Training & Development */}
 
-      <div className="md:w-1/2 w-full  py-24 bg-black text-white flex flex-col justify-center md:pl-10 ">
+      <div className="md:w-1/2 w-full py-24 bg-black text-white flex flex-col justify-center px-6 md:px-0 md:pl-10">
         <div className="max-w-[640px]">
           {/* Heading and Button Side-by-Side */}
           <div className="flex items-center  gap-6 mb-6 flex-wrap md:flex-nowrap">
             <Link href="/training" target="_blank" rel="noopener noreferrer">
-              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight whitespace-nowrap">
+              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight">
                 TRAINING & DEVELOPMENT
               </h2>
             </Link>
@@ -57,13 +57,13 @@ const TrainingSection = () => {
 
 
       {/* Right Side - Social Impact Consultancy */}
-      <div className="md:w-1/2 w-full py-24 bg-[#AC1514] text-white flex flex-col justify-center md:pl-10 ">
+      <div className="md:w-1/2 w-full py-24 bg-[#AC1514] text-white flex flex-col justify-center px-6 md:px-0 md:pl-10">
         <div className="max-w-[640px]">
           {/* Heading and Button Side-by-Side */}
           <div className="flex items-center  gap-6 mb-6 flex-wrap md:flex-nowrap">
             <Link href="/consultancy" target="_blank" rel="noopener noreferrer">
 
-              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight whitespace-nowrap">
+              <h2 className="text-2xl md:text-4xl font-extrabold leading-tight">
                 SOCIAL IMPACT CONSULTANCY
               </h2>
             </Link>

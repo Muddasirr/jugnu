@@ -26,6 +26,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Custom Leaflet Tooltip Styles */

@@ -353,8 +353,11 @@ export default function TrainingPage() {
 
                             {/* Accordion Content */}
                             <div
-                                className={`overflow-hidden transition-all duration-300 ${openAccordion === program.id ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
-                                    }`}
+                                style={{
+                                    maxHeight: openAccordion === program.id ? '2000px' : '0px',
+                                    opacity: openAccordion === program.id ? 1 : 0,
+                                }}
+                                className="overflow-hidden transition-all duration-300"
                             >
                                 <div className="px-6 py-6 bg-gray-50 border-t border-gray-200">
                                     <div className="text-sm md:text-base text-black leading-relaxed pl-12">
