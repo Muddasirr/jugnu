@@ -146,7 +146,7 @@ export default function ConsultancyPage() {
     const [selectedService, setSelectedService] = useState<Service | null>(null);
 
     return (
-        <main className="w-full bg-white font-serif text-black py-12 md:py-16 relative">
+        <main className="w-full bg-white text-black py-12 md:py-16 relative">
             <div className="max-w-6xl mx-auto px-6 md:px-8 space-y-12">
 
                 {/* Intro Section */}
@@ -165,23 +165,20 @@ export default function ConsultancyPage() {
                     {services.map((service, index) => (
                         <div key={index} className="border-b border-gray-200 pb-12 last:border-0 relative">
                             <div className="flex flex-col gap-6">
-                                <div className="flex justify-between items-start">
-                                    <h3 className="text-2xl md:text-[28px] font-bold text-[#AC1514] underline decoration-1 underline-offset-8 decoration-[#AC1514]">
+                                <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+                                    <h3 className="text-2xl md:text-3xl font-bold text-[#AC1514] underline decoration-1 underline-offset-8 decoration-[#AC1514]">
                                         {service.title}
                                     </h3>
-
-                                </div>
-                                <p className="text-[18px] leading-[1.7] text-black text-justify pr-32">
-                                    {service.description}
-                                </p>
-                                <div className="absolute top-0 right-0">
                                     <button
                                         onClick={() => setSelectedService(service)}
-                                        className="bg-[#AC1514] text-white px-6 py-2 rounded-sm text-[12px] font-bold tracking-wide hover:bg-black transition-colors"
+                                        className="bg-[#AC1514] text-white px-6 py-2 rounded-sm text-[12px] font-bold tracking-wide hover:bg-black transition-colors flex-shrink-0"
                                     >
                                         READ MORE
                                     </button>
                                 </div>
+                                <p className="text-lg md:text-lg leading-relaxed text-black text-justify pr-0 md:pr-32">
+                                    {service.description}
+                                </p>
                             </div>
                         </div>
                     ))}
@@ -190,11 +187,11 @@ export default function ConsultancyPage() {
                 {/* Partner With Us Section */}
                 <section className="space-y-6 pt-8 border-t border-black">
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold"> Partner <span className="text-[#AC1514]">With Us</span></h2>
-                        <p className="text-[18px] leading-[1.7] text-justify">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-5"> Partner <span className="text-[#AC1514]">With Us</span></h2>
+                        <p className="text-lg md:text-lg leading-relaxed text-justify">
                             If your organization is committed to strengthening gender equality and creating a safer workplace environment, improving employee protections and / or enhancing survivor support, The Jugnu Project Consultancy can help.
                         </p>
-                        <p className="text-[18px] font-bold">
+                        <p className="text-lg md:text-lg font-bold">
                             Contact Us: <a href="mailto:thejugnuproject@gmail.com" className="hover:underline text-[#AC1514]">thejugnuproject@gmail.com</a>
                         </p>
                     </div>
