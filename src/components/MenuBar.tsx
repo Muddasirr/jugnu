@@ -4,13 +4,13 @@ import Link from "next/link";
 const MenuBar = () => {
   const menuItems = [
     { label: "UNDERSTANDING<br />FAMILY VIOLENCE", href: "/familyviolence" },
-    { label: "WORKING IN<br />FAMILY VIOLENCE", href: "/familyviolence" },
+    { label: "WORKING IN<br />FAMILY VIOLENCE", href: "/getinvolved" },
     { label: "TRAINING &<br />DEVELOPMENT", href: "/training" },
     { label: "CONSULTANCY<br />SERVICES", href: "/consultancy" },
     { label: "POLICY &<br />ADVOCACY", href: "/policy" },
     { label: "RESOURCE<br />LIBRARY", href: "/resources" },
     { label: "LEGAL<br />UPDATES", href: "/legal-update" },
-    { label: "OUR<br />IMPACT", href: "/know-the-numbers" },
+    { label: "OUR<br />IMPACT", href: "/our-impact" },
   ];
 
 
