@@ -7,13 +7,13 @@ const reports = [
     {
         title: "Annual Femicide Cases – 2023",
         description: "Media-Based Documentation Of Reported Femicide Cases Across Pakistan, Compiled For Research, Awareness, And Advocacy Purposes.",
-        image: "/domestic.jpg", // Using a relevant placeholder image
+        image: "/femicide.png", // Using a relevant placeholder image
         pdfLink: "#"
     },
     {
         title: "Annual Femicide Cases – 2023",
         description: "Media-Based Documentation Of Reported Femicide Cases Across Pakistan, Compiled For Research, Awareness, And Advocacy Purposes.",
-        image: "/domestic.jpg", // Using a relevant placeholder image
+        image: "/femicide.png", // Using a relevant placeholder image
         pdfLink: "#"
     }
 ];
@@ -39,7 +39,7 @@ export default function FemicideReportPage() {
                     {reports.map((report, index) => (
                         <div key={index} className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                             {/* Image Container */}
-                            <div className="w-full md:w-[280px] h-[200px] relative rounded-lg overflow-hidden flex-shrink-0">
+                            <div className="w-full md:w-[200px] h-[200px] relative rounded-lg overflow-hidden flex-shrink-0">
                                 <Image
                                     src={report.image}
                                     alt={report.title}

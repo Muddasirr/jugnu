@@ -119,7 +119,7 @@ export default function PakistanMapVisual() {
 
     // Custom red marker icon
     const redMarkerIcon = L.divIcon({
-        html: `<img src="/pin.png" style="width: 22px; height: 22px;" />`,
+        html: `<img src="/pin.png" style="width: 80px; height: 80px;" />`,
         className: "",
         iconSize: [22, 22],
         iconAnchor: [11, 22],
