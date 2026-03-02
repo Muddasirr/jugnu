@@ -61,8 +61,8 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-6">Explore</h3>
           <ul className="space-y-3">
-            <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Understanding Family Violence</a></li>
-            <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Working in Family Violence</a></li>
+            <li><a href="/familyviolence" className="hover:underline text-sm uppercase tracking-wide">Understanding Family Violence</a></li>
+            <li><a href="/getinvolved" className="hover:underline text-sm uppercase tracking-wide">Working in Family Violence</a></li>
             <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Our Impact</a></li>
             <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Training & Development</a></li>
             <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Consultancy Services</a></li>
@@ -103,9 +103,9 @@ const Footer = () => {
       <div className="relative z-10 border-t border-white/20 py-12">
         <div className="max-w-7xl mx-auto px-4  text-center">
           <img src="footerlogo.svg"
-           className="mx-auto mb-4"/> 
+            className="mx-auto mb-4" />
           <p className="max-w-3xl mx-auto text-sm leading-relaxed mb-8">
-        Pakistan's Digital Domestic Violence Resource Center and Social Impact Advocacy Firm
+            Pakistan's Digital Domestic Violence Resource Center and Social Impact Advocacy Firm
           </p>
 
           {/* Social Media Icons */}
