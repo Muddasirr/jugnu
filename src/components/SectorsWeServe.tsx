@@ -84,7 +84,7 @@ export default function SectorsWeServe() {
                 </div>
 
                 {/* Description Text */}
-                <div className="space-y-4 text-black leading-relaxed">
+                <div className="space-y-4 text-black leading-relaxed text-justify">
                     <p className="text-base">
                         To ensure domestic violence practices and policies support the goal of keeping both the survivor and child safe, we partner globally with sectors touching on family violence and child wellbeing.
                     </p>

@@ -37,7 +37,7 @@ export const Impact = () => {
             <span className="text-black">How We </span>
             <span className="text-[#AC1514]">Create Impact</span>
           </h2>
-          <p className="text-black max-w-3xl mx-auto leading-relaxed">
+          <p className="text-black max-w-3xl mx-auto leading-relaxed text-justify">
             From prevention to policy, our Impact Framework is designed to protect, empower and transform communities. We create impact by transforming how institutions identify risk, respond to survivors and prevent harm.
           </p>
         </div>

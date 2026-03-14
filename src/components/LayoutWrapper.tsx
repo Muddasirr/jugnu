@@ -22,7 +22,7 @@ export default function LayoutWrapper({
         <>
             {!isHomePage && <Header onSearchToggle={toggleSearch} isSearchOpen={isSearchOpen} />}
             {!isHomePage && <MenuBar />}
-            {!isHomePage && isSearchOpen && <GlobalSearchBar />}
+            {!isHomePage && <GlobalSearchBar />}
             {children}
             {!isHomePage && <Footer />}
         </>

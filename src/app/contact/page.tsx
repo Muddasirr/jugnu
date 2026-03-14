@@ -12,21 +12,21 @@ export default function ContactPage() {
                             For Survivors
                         </h1>
 
-                        <p className="text-base md:text-lg leading-relaxed font-light">
-                            If You, Or Someone You Know, Is At Immediate Risk Or In Danger, Please Call The <a href="tel:15" className="underline hover:no-underline cursor-pointer font-semibold">POLICE (Contact Number: 15)</a>.
+                        <p className="text-base md:text-lg leading-relaxed font-light text-justify">
+                            If you, or someone you know, is at immediate risk or in danger, please call the <a href="tel:15" className="underline hover:no-underline cursor-pointer font-semibold">POLICE (contact number: 15)</a>.
                         </p>
 
-                        <div className="space-y-8 text-base md:text-lg font-light">
+                        <div className="space-y-8 text-base md:text-lg font-light text-justify">
                             <p>
-                                Or Check Our <Link href="/gethelp" className="underline font-bold hover:no-underline">GET HELP</Link> Page
+                                Or check our <Link href="/gethelp" className="underline font-bold hover:no-underline">GET HELP</Link> page
                             </p>
 
                             <p>
-                                Or Check Our <Link href="/survivor-stories" className="underline font-bold hover:no-underline">SURVIVOR'S DIRECTORY</Link> For Emergency Services Near You
+                                Or check our <Link href="/survivor-stories" className="underline font-bold hover:no-underline">SURVIVOR'S DIRECTORY</Link> for emergency services near you
                             </p>
 
                             <p>
-                                Or Check Our Other <Link href="/resources" className="underline font-bold hover:no-underline">RESOURCES</Link>
+                                Or check our other <Link href="/resources" className="underline font-bold hover:no-underline">RESOURCES</Link>
                             </p>
                         </div>
                     </div>
@@ -36,20 +36,20 @@ export default function ContactPage() {
                 <section className="bg-[#AC1514] text-white px-4 py-8 md:p-20 flex flex-col  min-h-[600px]">
                     <div className=" md:mx-0 w-full space-y-12">
                         <h1 className="text-3xl md:text-4xl font-bold underline decoration-1 underline-offset-[12px] leading-tight mb-8">
-                            For Corporates / ngos / Financial Institutions / Government Departments
+                            For Corporates / NGOs / Financial Institutions / Government Departments
                         </h1>
 
-                        <div className="space-y-8 text-base md:text-lg font-light">
+                        <div className="space-y-8 text-base md:text-lg font-light text-justify">
                             <p className="leading-relaxed">
-                                Would You Like To Collaborate With Us, Or Book A Consultation?
+                                Would you like to collaborate with us, or book a consultation?
                             </p>
 
                             <p className="font-bold">
-                                Get In Touch!
+                                Get in touch!
                             </p>
 
                             <div className="space-y-3 text-sm md:text-base">
-                                <p>Email: <a href="mailto:Thejugnuproject@Gmail.Com" className="underline hover:no-underline">Thejugnuproject@Gmail.Com</a></p>
+                                <p>Email: <a href="mailto:thejugnuproject@gmail.com" className="underline hover:no-underline">thejugnuproject@gmail.com</a></p>
                                 <p>Monday - Saturday: 9:00 AM - 9:00 PM</p>
                             </div>
 
@@ -79,9 +79,9 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <div className="space-y-4 pt-2">
-                                <p>Check Our <Link href="/consultancy" className="underline hover:no-underline">CONSULTANCY</Link> Services</p>
-                                <p>Check Our <Link href="/training" className="underline hover:no-underline">TRAINING AND DEVELOPMENT</Link> Services</p>
+                            <div className="space-y-4 pt-2 text-justify">
+                                <p>Check our <Link href="/consultancy" className="underline hover:no-underline">CONSULTANCY</Link> services</p>
+                                <p>Check our <Link href="/training" className="underline hover:no-underline">TRAINING AND DEVELOPMENT</Link> services</p>
                             </div>
                         </div>
                     </div>

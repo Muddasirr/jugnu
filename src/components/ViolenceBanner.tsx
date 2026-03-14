@@ -17,7 +17,7 @@ export default function ViolenceBanner() {
           security for your brand and assets.
         </p>
         <button className="font-k2d font-extrabold uppercase text-sm border-2 border-white px-6 py-2 rounded-md hover:bg-white hover:text-[#C8102E] transition">
-          Call to Action
+          CALL TO ACTION
         </button>
       </div>
 

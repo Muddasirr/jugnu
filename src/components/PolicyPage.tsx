@@ -6,81 +6,81 @@ const PolicyPage: React.FC = () => {
   const advocacyAreas = [
     {
       id: 1,
-      title: 'National Centralized Database For Perpetrators Of GBV And Family Violence',
-      content: 'We Champion The Creation Of A Centralized National Database, Where The Details Of Convicted Domestic Violence Abusers Are Displayed. The Information Should Be Connected Directly To The Individual\'s CNIC Number, Via NADRA. The Database Should Be Accessible By The Common Public, And It Should Become Common Practice To Cross-Reference Those Details With Potential Rishtas On The Marriage Market; And Also Be Used By Employers When Vetting Potential Employees For The Workplace.',
+      title: 'National centralized database for perpetrators of GBV and family violence',
+      content: 'We champion the creation of a centralized national database, where the details of convicted domestic violence abusers are displayed. The information should be connected directly to the individual\'s CNIC number, via NADRA. The database should be accessible by the common public, and it should become common practice to cross-reference those details with potential rishtas on the marriage market; and also be used by employers when vetting potential employees for the workplace.',
     },
     {
       id: 2,
-      title: 'Declaration Of A Gender-Based Violence Emergency',
-      content: 'We Strongly Believe That Pakistan Has Reached A Stage Where Women, Children, Transpersons And Old People Are All At Risk Of Gender-Based Violence. Killing Of The Girl Child Upon Birth Is Commonplace In Many Areas Of The Country And The Vague Notion Of "Honour" Is Used To Murder Any Woman On The Slightest Of Suspicions. The State Must Declare An Emergency In This Regard And Take Action Accordingly!',
+      title: 'Declaration of a gender-based violence emergency',
+      content: 'We strongly believe that Pakistan has reached a stage where women, children, transpersons and old people are all at risk of gender-based violence. Killing of the girl child upon birth is commonplace in many areas of the country and the vague notion of "honour" is used to murder any woman on the slightest of suspicions. The state must declare an emergency in this regard and take action accordingly!',
     },
     {
       id: 3,
-      title: 'Domestic Violence And Related Protection Laws',
-      content: 'We Push For Stronger Implementation Of Current Domestic Violence Laws, That Harmonize Across Provinces And The Creation Of Survivor-Centric Support Mechanisms. We Also Campaign For The Introduction Of More Inclusive Domestic Violence Laws, That Encompass All Aspects Of Intimate-Partner Violence And Family Violence. This Comprises Of Reproductive Coercion, Child Marriage, Femicide And Infanticide, And Animal Abuse.',
+      title: 'Domestic violence and related protection laws',
+      content: 'We push for stronger implementation of current domestic violence laws, that harmonize across provinces and the creation of survivor-centric support mechanisms. We also campaign for the introduction of more inclusive domestic violence laws, that encompass all aspects of intimate-partner violence and family violence. This comprises of reproductive coercion, child marriage, femicide and infanticide, and animal abuse.',
     },
     {
       id: 4,
-      title: 'Preventing GBV In The Workplace',
-      content: 'We Advocate For Safer Workplaces And The Adoption Of Zero-Tolerance Policies Regarding Harassment, Gender-Based Discrimination, Financial Abuse, Systemic Misogyny; Along With The Establishment Of Effective Survivor-Centric Complaint Mechanisms Under Laws Regarding Workplace Harassment And Assault.',
+      title: 'Preventing GBV in the workplace',
+      content: 'We advocate for safer workplaces and the adoption of zero-tolerance policies regarding harassment, gender-based discrimination, financial abuse, systemic misogyny; along with the establishment of effective survivor-centric complaint mechanisms under laws regarding workplace harassment and assault.',
     },
     {
       id: 5,
-      title: 'Economic Empowerment And The Prevention Of Financial Abuse',
-      content: `We Promote Policies That Expand Women's Autonomy And Integrate Financial Abuse Into Workplace Policies, Alongside The Official Definitions Of Violence.`,
+      title: 'Economic empowerment and the prevention of financial abuse',
+      content: `We promote policies that expand women's autonomy and integrate financial abuse into workplace policies, alongside the official definitions of violence.`,
     },
     {
       id: 6,
-      title: 'Child Protection And Early Marriage Prevention',
-      content: 'We Work Towards Legal Reforms And Community-Based Protections That Safeguard Children From Early And Forced Marriages',
+      title: 'Child protection and early marriage prevention',
+      content: 'We work towards legal reforms and community-based protections that safeguard children from early and forced marriages',
     },
     {
       id: 7,
-      title: 'Closing The Care Gap',
-      content: 'We Advocate For Policies That Recognize, Redistribute And Reduce The Unpaid And Undervalued Care Work (Or "Labour Of Love") Shouldered Heavily By Women And Girls. We Campaign For The Increased Involvement Of Men In Taking Care Of The Family. We Also Demand That The State Should Invest In Elder Care Services, Workplace Flexibility And Social Protection Schemes For Care Givers.',
-      extra: `Closing The Care Gap Is Essential To Women's Economic Empowerment, Survivor- Safety And The Creation Of Equitable Communities Where Care Is Shared, Supported And Valued.`,
+      title: 'Closing the care gap',
+      content: 'We advocate for policies that recognize, redistribute and reduce the unpaid and undervalued care work (Or "labour of love") shouldered heavily by women and girls. We campaign for the increased involvement of men in taking care of the family. We also demand that the state should invest in elder care services, workplace flexibility and social protection schemes for care givers.',
+      extra: `Closing the care gap is essential to women's economic empowerment, survivor-safety and the creation of equitable communities where care is shared, supported and valued.`,
     },
   ];
 
   return (
     <div className="bg-white text-black">
       {/* Hero / Intro Section */}
-      <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20">
+      <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20 text-justify">
         <p className="text-lg md:text-lg text-[#AC1514] mb-6 leading-relaxed">
-          <em>Driving Systemic Change For A Safer, Survivor-Centric And More Just Pakistan.</em>
+          <em>Driving systemic change for a safer, survivor-centric and more just Pakistan.</em>
         </p>
         <p className="text-lg md:text-lg text-black leading-relaxed">
-          At The Jugnu Project, We Believe Meaningful Change Can Only Come Through The Implementation Of
-          Strong Laws, The Establishment Of Survivor-Centric And Responsible Institutions, And The Creation
-          Of Public And Judicial Systems That Protect Survivors Instead Of Failing Them. Our Work In Policy
-          And Advocacy Focuses On The Transformation Of Systemic, Social And Legal Structures That Enable
-          Violence, Ensuring That Every Survivor In Pakistan Can Access Justice, Safety And Dignity.
+          At The Jugnu Project, we believe meaningful change can only come through the implementation of
+          strong laws, the establishment of survivor-centric and responsible institutions, and the creation
+          of public and judicial systems that protect survivors instead of failing them. Our work in policy
+          and advocacy focuses on the transformation of systemic, social and legal structures that enable
+          violence, ensuring that every survivor in Pakistan can access justice, safety and dignity.
         </p>
       </section>
 
       {/* Our Approach Section */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#AC1514] mb-6 text-center underline decoration-auto">Our Approach</h2>
+        <h2 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] mb-6 text-center underline decoration-auto">Our Approach</h2>
         <div className="flex flex-col gap-3">
-          <p className="text-xl md:text-2xl font-bold text-black m-0 underline leading-relaxed">Survivor-Centered Policy Reform</p>
-          <p className="text-xl md:text-2xl font-bold text-black m-0 underline leading-relaxed">Research-Informed Advocacy</p>
-          <p className="text-xl md:text-2xl font-bold text-black m-0 underline leading-relaxed">Collaborating For National Impact</p>
-          <p className="text-xl md:text-2xl font-bold text-black m-0 underline leading-relaxed">Strengthening Legal And Protection Systems</p>
+          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Survivor-centered policy reform</p>
+          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Research-informed advocacy</p>
+          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Collaborating for national impact</p>
+          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Strengthening legal and protection systems</p>
         </div>
       </section>
 
       {/* Key Advocacy Areas */}
-      <section className="max-w-7xl mx-auto px-6 md:px-16 py-8 border-t border-[#e0e0e0]">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#AC1514] mb-6 text-center underline">Our Key Advocacy Areas</h2>
+      <section className="max-w-7xl mx-auto px-6 md:px-16 py-8 border-t border-[#e0e0e0] text-justify">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] mb-6 text-center underline">Our Key Advocacy Areas</h2>
         <p className="text-lg md:text-lg text-black text-center mb-8 leading-relaxed">
-          Our Multi-Faceted Advocacy Encompasses The Following Key Areas:
+          Our multi-faceted advocacy encompasses the following key areas:
         </p>
 
         <div className="flex flex-col gap-8">
           {advocacyAreas.map((area) => (
             <div key={area.id} className="flex flex-col gap-0">
-              <h3 className="text-xl md:text-2xl font-bold text-black mb-3 leading-relaxed underline">
-                {area.id}.{area.title}
+              <h3 className="text-xl md:text-2xl font-extrabold text-black mb-3 leading-relaxed underline">
+                {area.id}. {area.title}
               </h3>
               <p className="text-lg md:text-lg text-black leading-relaxed m-0">{area.content}</p>
               {area.extra && (
@@ -94,33 +94,33 @@ const PolicyPage: React.FC = () => {
       </section>
 
       {/* Our Advocacy Philosophy */}
-      <section className="max-w-7xl mx-auto px-6 md:px-16 py-12">
-        <h2 className="text-2xl md:text-4xl font-bold text-black underline mb-5 leading-relaxed">Our Advocacy Philosophy</h2>
+      <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 text-justify">
+        <h2 className="text-2xl md:text-4xl font-extrabold text-black underline mb-5 leading-relaxed">Our Advocacy Philosophy</h2>
         <p className="text-lg md:text-lg text-black mb-4 leading-relaxed">
-          <em>Bold. Evidence-Based. Survivor-Led. System Focused.</em>
+          <em>Bold. Evidence-based. Survivor-led. System focused.</em>
         </p>
         <p className="text-lg md:text-lg text-black leading-relaxed m-0">
-          Our Advocacy Challenges Harmful Norms Within Society Head On. We Work To Provide Survivors With A
-          Stage, And Do Our Best To Amplify The Voices Of Those Who Are Most Affected By The Violence.
+          Our advocacy challenges harmful norms within society head on. We work to provide survivors with a
+          stage, and do our best to amplify the voices of those who are most affected by the violence.
         </p>
       </section>
 
       {/* Partner With Us */}
-      <section className="max-w-7xl mx-auto px-6 md:px-16 py-12">
-        <h2 className="text-2xl md:text-4xl font-bold text-black underline mb-5 leading-relaxed">Partner With Us</h2>
+      <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 text-justify">
+        <h2 className="text-2xl md:text-4xl font-extrabold text-black underline mb-5 leading-relaxed">Partner With Us</h2>
         <p className="text-lg md:text-lg text-black leading-relaxed mb-2">
-          We Welcome Partnerships With The Government, Corporations, Members Of Civil Society, Researchers
-          And Community Workers, Committed To Advancing Justice, Safety And Equality.
+          We welcome partnerships with the government, corporations, members of civil society, researchers
+          and community workers, committed to advancing justice, safety and equality.
         </p>
-        <Link href="/getinvolved" className="block text-lg md:text-lg font-bold text-[#AC1514] no-underline mb-6 leading-relaxed">Partner With Us</Link>
+        <Link href="/getinvolved" className="block text-lg md:text-lg font-bold text-[#AC1514] no-underline mb-6 leading-relaxed">Partner with us</Link>
         <p className="text-lg md:text-lg text-black leading-relaxed mb-5">
-          If You&apos;d Like To Collaborate With Us On One Of Our Campaigns, Get In Touch:{' '}
-          <a href="mailto:Thejugnuproject@Gmail.Com" className="text-[#AC1514] no-underline">
-            Thejugnuproject@Gmail.Com
+          If you&apos;d like to collaborate with us on one of our campaigns, get in touch:{' '}
+          <a href="mailto:thejugnuproject@gmail.com" className="text-[#AC1514] no-underline">
+            thejugnuproject@gmail.com
           </a>
         </p>
         <p className="text-lg md:text-lg text-[#AC1514] m-0 underline leading-relaxed">
-          Together, We Can Build A Pakistan Where Every Survivor Is Heard, Protected And Empowered.
+          Together, we can build a Pakistan where every survivor is heard, protected and empowered.
         </p>
       </section>
     </div>

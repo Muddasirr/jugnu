@@ -14,19 +14,19 @@ const PakistanMapVisual = dynamic(() => import("@/components/PakistanMapVisual")
 
 const statsCards = [
     {
-        title: "Numbers Of Domestic Violence And Honor Killing Cases Reported",
+        title: "Numbers of domestic violence and honor killing cases reported",
     },
     {
-        title: "Number Of Convictions",
+        title: "Number of convictions",
     },
     {
-        title: "Economic Cost Of Domestic Violence In Pakistan",
+        title: "Economic cost of domestic violence in Pakistan",
     }
 ];
 
 export default function KnowTheNumbersPage() {
     return (
-        <main className="w-full font-serif bg-white text-black py-12 md:py-16">
+        <main className="w-full bg-white text-black py-12 md:py-16">
             <div className="max-w-6xl mx-auto px-6 md:px-8 space-y-12">
 
                 {/* Map Section */}
@@ -35,17 +35,17 @@ export default function KnowTheNumbersPage() {
                 </div>
 
                 {/* Text Content */}
-                <div className="space-y-4 max-w-4xl">
-                    <h2 className="text-xl md:text-2xl font-bold text-black">
-                        Pakistan Has A Family Violence Endemic.
+                <div className="space-y-4 max-w-4xl text-justify">
+                    <h2 className="text-xl md:text-2xl font-extrabold text-black">
+                        Pakistan has a family violence endemic.
                     </h2>
 
                     <p className="text-lg md:text-xl text-black">
-                        <span className="text-[#AC1514] font-bold">More Than 90% Of Women</span> In Desi Society Have Faced Some Type Of Violence At Least Once In Their Lives.
+                        <span className="text-[#AC1514] font-extrabold">More than 90% of women</span> in desi society have faced some type of violence at least once in their lives.
                     </p>
 
                     <p className="text-base md:text-lg text-[#AC1514] font-medium">
-                        Below Are Statistical Reports Mapping The Domestic Violence Faced By Women And Girls Across Pakistan.
+                        Below are statistical reports mapping the domestic violence faced by women and girls across Pakistan.
                     </p>
                 </div>
 
@@ -71,7 +71,7 @@ export default function KnowTheNumbersPage() {
 
                                 {/* Content */}
                                 <div className="relative z-10">
-                                    <h3 className="text-xl font-bold text-white underline decoration-1 underline-offset-4 leading-relaxed">
+                                    <h3 className="text-xl font-extrabold text-white underline decoration-1 underline-offset-4 leading-relaxed">
                                         {card.title}
                                     </h3>
                                 </div>
@@ -79,7 +79,7 @@ export default function KnowTheNumbersPage() {
                                 {/* Read More Button */}
                                 <div className="relative z-10 flex justify-end mt-4">
                                     <button className="bg-black text-white text-[10px] uppercase font-bold px-2 py-1">
-                                        Read More
+                                        READ MORE
                                     </button>
                                 </div>
                             </div>

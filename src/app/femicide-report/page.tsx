@@ -6,13 +6,13 @@ import Link from "next/link";
 const reports = [
     {
         title: "Annual Femicide Cases – 2023",
-        description: "Media-Based Documentation Of Reported Femicide Cases Across Pakistan, Compiled For Research, Awareness, And Advocacy Purposes.",
+        description: "Media-based documentation of reported femicide cases across Pakistan, compiled for research, awareness, and advocacy purposes.",
         image: "/femicide.png", // Using a relevant placeholder image
         pdfLink: "#"
     },
     {
         title: "Annual Femicide Cases – 2023",
-        description: "Media-Based Documentation Of Reported Femicide Cases Across Pakistan, Compiled For Research, Awareness, And Advocacy Purposes.",
+        description: "Media-based documentation of reported femicide cases across Pakistan, compiled for research, awareness, and advocacy purposes.",
         image: "/femicide.png", // Using a relevant placeholder image
         pdfLink: "#"
     }
@@ -20,17 +20,17 @@ const reports = [
 
 export default function FemicideReportPage() {
     return (
-        <main className="w-full bg-white font-serif text-black py-12 md:py-16">
+        <main className="w-full bg-white text-black py-12 md:py-16">
             <div className=" mx-auto px-6 md:px-8 space-y-12">
 
                 {/* Intro Text */}
                 <div className="space-y-8">
                     <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                        The Jugnu Project Conducts Capacity-Building Training(S), Community Dialogue, Workshops And Activities To Spread Awareness About Domestic Violence And Abuse Within Society. Our Aim Is To Combat The Social Stigma Attached To Family Violence, And Build A Network Of Allies Within Society For Survivors.
+                        The Jugnu Project conducts capacity-building training(s), community dialogue, workshops and activities to spread awareness about domestic violence and abuse within society. Our aim is to combat the social stigma attached to family violence, and build a network of allies within society for survivors.
                     </p>
 
                     <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                        Below Is A Timeline Of Our Activities For Social And Communal Impact.
+                        Below is a timeline of our activities for social and communal impact.
                     </p>
                 </div>
 
@@ -50,18 +50,18 @@ export default function FemicideReportPage() {
 
                             {/* Content Container */}
                             <div className="flex-1 space-y-4 pt-2">
-                                <h2 className="text-2xl md:text-3xl font-bold text-black border-none">
+                                <h2 className="text-2xl md:text-3xl font-extrabold text-black border-none">
                                     {report.title}
                                 </h2>
 
-                                <p className="text-base md:text-lg text-black leading-relaxed">
+                                <p className="text-base md:text-lg text-black leading-relaxed text-justify">
                                     {report.description}
                                 </p>
 
                                 <div className="pt-2">
                                     <Link href={report.pdfLink}>
-                                        <button className="bg-[#AC1514] text-white px-6 py-2 rounded-md text-xs font-bold hover:bg-[#8B0000] transition-colors shadow-sm">
-                                            View PDF
+                                        <button className="bg-[#AC1514] text-white px-6 py-2 rounded-md text-xs font-bold hover:bg-[#8B0000] transition-colors shadow-sm uppercase">
+                                            VIEW PDF
                                         </button>
                                     </Link>
                                 </div>

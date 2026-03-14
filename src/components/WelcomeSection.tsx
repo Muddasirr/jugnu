@@ -7,7 +7,7 @@ export default function WelcomeSection() {
             <div className="max-w-7xl mx-auto px-6 md:px-16">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12">
                     {/* Left Content */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 text-justify">
                         {/* Header */}
                         <div className="space-y-1">
                             <p className="text-sm md:text-base text-gray-900">Welcome to</p>

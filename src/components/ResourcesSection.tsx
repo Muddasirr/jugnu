@@ -38,16 +38,16 @@ export default function ResourcesSection() {
       </div>
 
       <div className="flex flex-wrap justify-center gap-4 mt-10">
-        <button className="bg-[rgba(172, 21, 20, 0.1)] text-[#AC1514] text-sm font-semibold px-6 py-2.5 rounded-md border border-[#AC1514]  transition">
-          Terminology
+        <button className="bg-[rgba(172,21,20,0.1)] text-[#AC1514] text-sm font-bold uppercase px-6 py-2.5 rounded-md border border-[#AC1514] transition">
+          TERMINOLOGY
         </button>
 
-        <button className="bg-[rgba(172, 21, 20, 0.1)] text-[#000000] text-sm font-semibold px-6 py-2.5 rounded-md border border-[#AC1514]   transition">
-          Understanding Family / Domestic Violence
+        <button className="bg-[rgba(172,21,20,0.1)] text-[#000000] text-sm font-bold uppercase px-6 py-2.5 rounded-md border border-[#AC1514] transition">
+          UNDERSTANDING FAMILY / DOMESTIC VIOLENCE
         </button>
 
-        <button className="bg-[rgba(172, 21, 20, 0.1)] text-[#AC1514] text-sm font-semibold px-6 py-2.5 rounded-md border border-[#AC1514]   transition">
-          Financial Freedom
+        <button className="bg-[rgba(172,21,20,0.1)] text-[#AC1514] text-sm font-bold uppercase px-6 py-2.5 rounded-md border border-[#AC1514] transition">
+          FINANCIAL FREEDOM
         </button>
       </div>
     </section>

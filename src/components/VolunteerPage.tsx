@@ -94,7 +94,7 @@ const volunteerPositions: VolunteerPosition[] = [
         ],
         howToApply: [
             "Send your CV, and a short statement of interest to thejugnuproject@gmail.com",
-            "Mention \"Helpline Crisis & Response Volunteer\" in the Subject Line.",
+            "Mention \"Helpline Crisis & Response Volunteer\" in the subject line.",
             "Selected volunteers will be invited for an interview and training sessions."
         ],
         promise: "As a Helpline Volunteer, your voice can save lives. You will be their calm in the storm - listening, guiding and helping survivors find safety, hope and strength."
@@ -406,9 +406,9 @@ export default function VolunteerPage() {
     return (
         <div className="bg-white min-h-screen relative">
             {/* Header Section */}
-            <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-16">
+            <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-16 text-justify">
                 <div className="space-y-6">
-                    <h1 className="md:text-[24px] font-normal text-black leading-relaxed">
+                    <h1 className="md:text-[24px] font-extrabold text-black leading-relaxed">
                         Our volunteers are at <span className="text-[#AC1514] font-medium italic">the heart of our mission</span> - helping us create a community where each individual can live a life of <span className="text-[#AC1514] font-medium">safety, dignity, empowerment and respect</span>
                     </h1>
 
@@ -422,13 +422,13 @@ export default function VolunteerPage() {
             </section>
 
             {/* Volunteer Positions */}
-            <section className="max-w-7xl mx-auto px-6 md:px-16 pb-16">
+            <section className="max-w-7xl mx-auto px-6 md:px-16 pb-16 text-justify">
                 <div className="space-y-12">
                     {volunteerPositions.map((position, index) => (
                         <div key={index} className="bg-white border-b border-gray-100 pb-12 last:border-0">
                             {/* Title and Button Row */}
                             <div className="flex justify-between items-start mb-6">
-                                <h2 className="text-[32px] md:text-[40px] underline font-bold text-[#AC1514] flex-1 pr-8 leading-tight">
+                                <h2 className="text-[32px] md:text-[40px] underline font-extrabold text-[#AC1514] flex-1 pr-8 leading-tight">
                                     {position.title}
                                 </h2>
                                 <button
@@ -442,7 +442,7 @@ export default function VolunteerPage() {
                             {/* Overview */}
                             <div className="mb-6">
                                 <p className="text-[20px] md:text-[24px] text-black leading-relaxed">
-                                    <span className="font-bold text-[#AC1514] underline">Role Overview:</span> {position.overview}
+                                    <span className="font-bold text-[#AC1514] underline">Role overview:</span> {position.overview}
                                 </p>
                             </div>
 
@@ -481,10 +481,10 @@ export default function VolunteerPage() {
                             </div>
                         </button>
 
-                        <div className="mt-8 space-y-10 text-white pb-8">
+                        <div className="mt-8 space-y-10 text-white pb-8 text-justify">
                             {/* Responsibilities */}
                             <div>
-                                <h3 className="text-2xl font-bold underline mb-4">Responsibilities:</h3>
+                                <h3 className="text-2xl font-extrabold underline mb-4">Responsibilities:</h3>
                                 <ul className="space-y-4 list-none">
                                     {selectedPosition.responsibilities.map((item, i) => (
                                         <li key={i} className="text-lg md:text-xl flex gap-3">
@@ -504,7 +504,7 @@ export default function VolunteerPage() {
 
                             {/* Skills and Qualifications */}
                             <div>
-                                <h3 className="text-2xl font-bold underline mb-4">Skills And Qualifications:</h3>
+                                <h3 className="text-2xl font-extrabold underline mb-4">Skills and qualifications:</h3>
                                 <ul className="space-y-4 list-none">
                                     {selectedPosition.skillsAndQualifications.map((item, i) => (
                                         <li key={i} className="text-lg md:text-xl flex gap-3">
@@ -517,7 +517,7 @@ export default function VolunteerPage() {
 
                             {/* Commitment */}
                             <div>
-                                <h3 className="text-2xl font-bold underline mb-4">Commitment:</h3>
+                                <h3 className="text-2xl font-extrabold underline mb-4">Commitment:</h3>
                                 <ul className="space-y-4 list-none">
                                     {selectedPosition.commitment.map((item, i) => (
                                         <li key={i} className="text-lg md:text-xl flex gap-3">
@@ -530,7 +530,7 @@ export default function VolunteerPage() {
 
                             {/* Why Volunteer With Us? */}
                             <div>
-                                <h3 className="text-2xl font-bold underline mb-4">Why Volunteer With Us?</h3>
+                                <h3 className="text-2xl font-extrabold underline mb-4">Why volunteer with us?</h3>
                                 <ul className="space-y-4 list-none">
                                     {selectedPosition.whyVolunteer.map((item, i) => (
                                         <li key={i} className="text-lg md:text-xl flex gap-3">
@@ -543,7 +543,7 @@ export default function VolunteerPage() {
 
                             {/* How To Apply */}
                             <div>
-                                <h3 className="text-2xl font-bold underline mb-4">How To Apply</h3>
+                                <h3 className="text-2xl font-extrabold underline mb-4">How to apply</h3>
                                 <ul className="space-y-4 list-none">
                                     {selectedPosition.howToApply.map((item, i) => (
                                         <li key={i} className="text-lg md:text-xl flex gap-3">
@@ -556,7 +556,7 @@ export default function VolunteerPage() {
 
                             {/* Our Promise */}
                             <div className="pt-6 border-t border-white/20">
-                                <h3 className="text-2xl font-bold mb-4">Our Promise</h3>
+                                <h3 className="text-2xl font-extrabold mb-4">Our Promise</h3>
                                 <p className="text-lg md:text-xl italic font-medium leading-relaxed">
                                     {selectedPosition.promise}
                                 </p>

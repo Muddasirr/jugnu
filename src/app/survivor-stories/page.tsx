@@ -68,115 +68,115 @@ export default function SurvivorStoriesPage() {
     };
 
     return (
-        <main className="w-full bg-white font-serif text-black py-12 md:py-16">
+        <main className="w-full bg-white text-black py-12 md:py-16">
             <div className="max-w-6xl mx-auto px-6 md:px-8 space-y-16">
 
                 {/* Intro Section */}
                 <section className="space-y-8">
-                    <h3 className="text-base md:text-lg   leading-relaxed">
-                        This Page Is Dedicated To Exploring The Journeys Of People Who Have Survived Family Violence, Intimate Partner Violence, Gender-Based Violence And Narcissistic Abuse.
+                    <h3 className="text-base md:text-lg   leading-relaxed text-justify">
+                        This page is dedicated to exploring the journeys of people who have survived family violence, intimate partner violence, gender-based violence and narcissistic abuse.
                     </h3>
 
-                    <p className="text-base md:text-lg font-normal text-black leading-relaxed">
-                        Every Story Told Paves The Way For Another Survivor To Break His / Her Silence.
+                    <p className="text-base md:text-lg font-normal text-black leading-relaxed text-justify">
+                        Every story told paves the way for another survivor to break his / her silence.
                     </p>
 
                     <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                        At The Jugnu Project, We Honor The Voices Of Those Who Have Faced And Survived Abuse. We Believe That Sharing Our Stories Holds The Power To Heal, Inspire, Give Courage - And, Most Of All, To Change The Way Our Society Views And Understands Domestic And Gender-Based Violence.
+                        At The Jugnu Project, we honor the voices of those who have faced and survived abuse. We believe that sharing our stories holds the power to heal, inspire, give courage - and, most of all, to change the way our society views and understands domestic and gender-based violence.
                     </p>
 
                     <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                        Our <span className="text-[#AC1514] font-bold">Survivor Stories</span> Series Is A Space Of Safety, Dignity And Courage - Where Survivors Who Wish To Share Their Journeys Can Do So Safely, And On Their Own Terms.
+                        Our <span className="text-[#AC1514] font-bold">Survivor Stories</span> series is a space of safety, dignity and courage - where survivors who wish to share their journeys can do so safely, and on their own terms.
                     </p>
 
                     <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                        Each Story Reflects Hope, Courage And A Belief That Healing Is Possible. Each Story Shared Is A Testament Of The Strength It Takes To <span className="text-[#AC1514] font-bold">Move From Fear To Freedom.</span>
+                        Each story reflects hope, courage and a belief that healing is possible. Each story shared is a testament of the strength it takes to <span className="text-[#AC1514] font-bold">move from fear to freedom.</span>
                     </p>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] underline decoration-1 underline-offset-4">
-                            Why Do Survivor Stories Matter?
+                        <h3 className="text-xl md:text-2xl font-extrabold text-[#AC1514] underline decoration-1 underline-offset-4">
+                            Why do survivor stories matter?
                         </h3>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            For Too Long, Silence Has Protected Abusers And Isolated Survivors. It Is The One Characteristic Similar To All Misogynistic, Patriarchal And Abuse-Condoning Societies.
+                            For too long, silence has protected abusers and isolated survivors. It is the one characteristic similar to all misogynistic, patriarchal and abuse-condoning societies.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            When Survivors Share Their Experiences - Whether Of Pain, Survival Or Recovery - They Help Others Recognize That They Are Not Alone. Sharing Stories About Their Experiences Allows Survivors To Take Their Power Back And Control The Narrative. It Also:
+                            When survivors share their experiences - whether of pain, survival or recovery - they help others recognize that they are not alone. Sharing stories about their experiences allows survivors to take their power back and control the narrative. It also:
                         </p>
                         <ul className="list-disc pl-5 space-y-2 text-base md:text-lg leading-relaxed text-black text-justify">
-                            <li>Breaks The Stigma And Harmful Myths Surrounding Abuse And Family Violence.</li>
-                            <li>Encourages Others To Speak Out About Their Experiences.</li>
-                            <li>Encourages Other Survivors To Seek Help And Support.</li>
-                            <li>Educates Communities About The Realities Of Family And Gender-Based Violence.</li>
-                            <li>Helps Celebrate Resilience, Survival And Transformation.</li>
+                            <li>Breaks the stigma and harmful myths surrounding abuse and family violence.</li>
+                            <li>Encourages others to speak out about their experiences.</li>
+                            <li>Encourages other survivors to seek help and support.</li>
+                            <li>Educates communities about the realities of family and gender-based violence.</li>
+                            <li>Helps celebrate resilience, survival and transformation.</li>
                         </ul>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify font-bold">
-                            More Importantly, Sharing Survivor Stories Flips That Narrative From Victim Blaming And Shaming - To Abuser Accountability.
+                            More importantly, sharing survivor stories flips that narrative from victim blaming and shaming - to abuser accountability.
                         </p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] underline decoration-1 underline-offset-4">
-                            Our Approach: Dignity, Consent And Care
+                        <h3 className="text-xl md:text-2xl font-extrabold text-[#AC1514] underline decoration-1 underline-offset-4">
+                            Our approach: Dignity, consent and care
                         </h3>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            Every Story We Share Is Handled With Deep Respect, Care And Consent.
+                            Every story we share is handled with deep respect, care and consent.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            Survivors Have Complete Control Over What They Want To Share - If At All. Their Identities Are Always Hidden / Changed To Protect Them And Their Loved Ones.
+                            Survivors have complete control over what they want to share - if at all. Their identities are always hidden / changed to protect them and their loved ones.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            We Never Sensationalize Trauma, Or Expose Personal Details. Instead, We Focus On Each Individual Survivor's Humanity, Inspiring Courage And The Journey Of Recovery.
+                            We never sensationalize trauma, or expose personal details. Instead, we focus on each individual survivor's humanity, inspiring courage and the journey of recovery.
                         </p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] underline decoration-1 underline-offset-4">
-                            Our Promise
+                        <h3 className="text-xl md:text-2xl font-extrabold text-[#AC1514] underline decoration-1 underline-offset-4">
+                            Our promise
                         </h3>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            We Honor Every Survivor's Journey - Whether Told, Untold Or Still Unfolding.
+                            We honor every survivor's journey - whether told, untold or still unfolding.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            This Page Is A Tribute To All Who Have Survived, All Who Are Still Healing And All Those Who Continue Standing Against (And Despite) The Violence In Their Homes And Communities.
+                            This page is a tribute to all who have survived, all who are still healing and all those who continue standing against (and despite) the violence in their homes and communities.
                         </p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] underline decoration-1 underline-offset-4">
-                            Trigger And Safety Disclaimer
+                        <h3 className="text-xl md:text-2xl font-extrabold text-[#AC1514] underline decoration-1 underline-offset-4">
+                            Trigger and safety disclaimer
                         </h3>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            Reading These Stories Can Bring Up Strong Emotions.
+                            Reading these stories can bring up strong emotions.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            If You Feel Distressed, Please Take A Break And Reach Out For Help, If Needed.
+                            If you feel distressed, please take a break and reach out for help, if needed.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            If You Are Currently Experiencing Domestic Or Gender-Based Violence, Please Know That You Are Not Alone.
+                            If you are currently experiencing domestic or gender-based violence, please know that you are not alone.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            Find Support Services Here <Link href="/survivor-stories" className="text-[#AC1514] font-bold underline">SURVIVOR'S DIRECTORY</Link>
+                            Find support services here <Link href="/survivor-stories" className="text-[#AC1514] font-bold underline">SURVIVOR'S DIRECTORY</Link>
                             <br />
-                            Or Check Out Our Resources <Link href="/resources" className="text-[#AC1514] font-bold underline">RESOURCES</Link>
+                            Or check out our resources <Link href="/resources" className="text-[#AC1514] font-bold underline">RESOURCES</Link>
                         </p>
                     </div>
 
                     <div className="space-y-4">
-                        <h3 className="text-xl md:text-2xl font-bold text-[#AC1514] underline decoration-1 underline-offset-4">
-                            Want To Share Your Story?
+                        <h3 className="text-xl md:text-2xl font-extrabold text-[#AC1514] underline decoration-1 underline-offset-4">
+                            Want to share your story?
                         </h3>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            If You Are A Survivor Who Feels Ready To Share His / Her Experience - Whether In Writing, In Audio Or Anonymously - Reach Out To Us And Our Team Will Guide You Through A Safe And Supportive Process
+                            If you are a survivor who feels ready to share his / her experience - whether in writing, in audio or anonymously - reach out to us and our team will guide you through a safe and supportive process
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            Our Email Is: <a href="mailto:Thejugnuproject@Gmail.Com" className="text-[#AC1514] font-bold underline">Thejugnuproject@Gmail.Com</a>
+                            Our email is: <a href="mailto:thejugnuproject@gmail.com" className="text-[#AC1514] font-bold underline">thejugnuproject@gmail.com</a>
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            You Are In Control Of What You Share And How.
+                            You are in control of what you share and how.
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-black text-justify">
-                            All Information You Share Will Be Kept Confidential, And No Story Is Shared Without Absolute, Explicit Consent From The Survivor(S) In Question.
+                            All information you share will be kept confidential, and no story is shared without absolute, explicit consent from the survivor(s) in question.
                         </p>
                     </div>
                 </section>
@@ -193,7 +193,7 @@ export default function SurvivorStoriesPage() {
 
                                 {/* Default View (Always visible unless active) */}
                                 <div className={`  scrollbar-thin scrollbar-thumb-[#AC1514] scrollbar-track-white absolute inset-0 flex flex-col items-center justify-between p-4 transition-opacity duration-300 ${activeStoryIndex === index ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-                                    <h3 className="text-2xl font-serif text-black">{survivor.name}</h3>
+                                    <h3 className="text-2xl text-black">{survivor.name}</h3>
                                     <div className="relative w-full flex-1 flex items-center justify-center">
                                         <Image
                                             src="/Group.png"
@@ -220,7 +220,7 @@ export default function SurvivorStoriesPage() {
                                         <X size={24} />
                                     </button> */}
                                     <div className="overflow-y-auto max-h-full pr-2 custom-scrollbar">
-                                        <p className="text-sm md:text-base leading-relaxed text-justify font-serif whitespace-pre-wrap">
+                                        <p className="text-sm md:text-base leading-relaxed text-justify whitespace-pre-wrap">
                                             {survivor.story}
                                         </p>
                                     </div>

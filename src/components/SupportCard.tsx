@@ -28,11 +28,11 @@ export default function SupportCard() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-          <button className="bg-[#AC1514] text-white text-sm font-semibold px-6 py-2.5 rounded-md border border-white hover:bg-gray-100 hover:text-[#AC1514] transition">
-          VICTIM’S DIRECTORY
+            <button className="bg-[#AC1514] text-white text-sm font-bold px-6 py-2.5 rounded-md border border-white hover:bg-gray-100 hover:text-[#AC1514] transition">
+              VICTIM’S DIRECTORY
             </button>
-            <button className="bg-[#AC1514] text-white text-sm font-semibold px-6 py-2.5 rounded-md border border-white hover:bg-gray-100 hover:text-[#AC1514] transition">
-            RESOURCES HERE
+            <button className="bg-[#AC1514] text-white text-sm font-bold px-6 py-2.5 rounded-md border border-white hover:bg-gray-100 hover:text-[#AC1514] transition">
+              RESOURCES HERE
             </button>
           </div>
         </div>

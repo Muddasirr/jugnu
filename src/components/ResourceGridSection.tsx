@@ -99,7 +99,7 @@ export default function ResourceGridSection() {
                     </div>
 
                     {/* Header */}
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4 underline decoration-black">
+                    <h2 className="text-2xl md:text-3xl font-extrabold mb-4 underline decoration-black">
                         <span className="text-[#AC1514]">
                             You're Not Alone
                         </span>{" "}
@@ -126,7 +126,7 @@ export default function ResourceGridSection() {
                                     : "bg-white text-black border border-gray-200"
                                     }`}
                             >
-                                <h3 className="text-lg md:text-xl font-bold mb-3">
+                                <h3 className="text-lg md:text-xl font-extrabold mb-3">
                                     {resource.title}
                                 </h3>
                                 <p className="text-xs md:text-sm leading-relaxed mb-4 flex-grow">

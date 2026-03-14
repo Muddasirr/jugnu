@@ -4,138 +4,138 @@ import { Share, MessageCircle, Repeat2, Heart, Bookmark, Facebook, Twitter, Inst
 export default function JugnusStory() {
     return (
         <>
-            <main className="min-h-screen bg-white text-black px-6 md:px-16 py-12 font-sans overflow-hidden">
-                <div className="max-w-4xl mx-auto space-y-8 text-black text-[15px] md:text-[17px] leading-relaxed capitalize text-justify">
-                    <h1 className="text-center font-bold text-2xl md:text-[28px] mb-12 capitalize leading-snug">
-                        Who Is The Jugnu Project Named After? What Is Our Story?
+            <main className="min-h-screen bg-white text-black px-6 md:px-16 py-12 overflow-hidden">
+                <div className="max-w-4xl mx-auto space-y-8 text-black text-[15px] md:text-[17px] leading-relaxed text-justify">
+                    <h1 className="text-center font-extrabold text-2xl md:text-[28px] mb-12 leading-snug">
+                        Who is The Jugnu Project named after? What is our story?
                     </h1>
 
-                    <p className="text-[#AC1514] font-medium text-[19px] capitalize text-left">
+                    <p className="text-[#AC1514] font-medium text-[19px] text-left">
                         Written: Zohra Ahmed
                     </p>
 
                     <p>
-                        It Has Been Four Years Since Jugnu Passed Away, On 17th Of November, 2021.
+                        It has been four years since Jugnu passed away, on 17th of November, 2021.
                     </p>
 
                     <p>
-                        The News Of Her Passing Came As A Shock To Everyone On Both Sides Of The Family. It Was Also A Relief, Knowing That Her Suffering Was Now Over For Good.
+                        The news of her passing came as a shock to everyone on both sides of the family. It was also a relief, knowing that her suffering was now over for good.
                     </p>
 
                     <p>
-                        Thirty Years Of Violence. Thirty Years Of Hospital Visits. Thirty Years Of Visits To Shrines And Aalims (Faux Religious Scholars). Thirty Years Of Neighbors Steadfastly Ignoring The Screams And Shouts Coming From Jugnu’s Home Every Other Day / Night, But Continuing To Spy From Over The Tops Of Their Respective Balconies; If Only To Catch A Glimpse Of The Unlucky Woman. Thirty Years Of Witnessing Her Pain; And Whispering Behind Closed Doors And Gossiping In Hushed Voices.
+                        Thirty years of violence. Thirty years of hospital visits. Thirty years of visits to shrines and aalims (faux religious scholars). Thirty years of neighbors steadfastly ignoring the screams and shouts coming from Jugnu’s home every other day / night, but continuing to spy from over the tops of their respective balconies; if only to catch a glimpse of the unlucky woman. Thirty years of witnessing her pain; and whispering behind closed doors and gossiping in hushed voices.
                     </p>
 
                     <p>
-                        Thirty Years Of Criminal Abuse, Apathy And Negligence.
+                        Thirty years of criminal abuse, apathy and negligence.
                     </p>
 
                     <p>
-                        Thirty Years Of Communal Silence.
+                        Thirty years of communal silence.
                     </p>
 
-                    <h2 className="text-[#AC1514] text-center font-medium text-xl md:text-2xl mt-12 mb-8 capitalize">
-                        Her Death Had Finally Put An End To It All.
+                    <h2 className="text-[#AC1514] text-center font-extrabold text-xl md:text-2xl mt-12 mb-8">
+                        Her death had finally put an end to it all.
                     </h2>
 
                     <p>
-                        With It, Came The Hope For Her Redemption. Jugnu Could Now Live A Better, Happier Life In Jannat (Heaven). She Was Destined For God’s Favors On The Final Day, Having Lived Her Life In Pain And Misery. Instead Of Judging Her For Being A Weakling And Unable To Stand Up To Her Abusive Husband, They Were Now Praising Her Sabr (Patience) In The Face Of Years Of Violence.
+                        With it, came the hope for her redemption. Jugnu could now live a better, happier life in Jannat (heaven). She was destined for God’s favors on the final day, having lived her life in pain and misery. Instead of judging her for being a weakling and unable to stand up to her abusive husband, they were now praising her sabr (patience) in the face of years of violence.
                     </p>
 
                     <p>
-                        In The Words Of Her Daughter-In-Law, She Was "A Martyr". For All The Suffering She Had Witnessed And Experienced While On This Earthly World, She Had Been Absolved Of All Sins. What Better Death Could There Be?
+                        In the words of her daughter-in-law, she was "a martyr". For all the suffering she had witnessed and experienced while on this earthly world, she had been absolved of all sins. What better death could there be?
                     </p>
 
-                    <h2 className="text-[#AC1514] text-center font-medium text-xl md:text-2xl mt-16 mb-8 capitalize">
-                        It Takes A Village To Destroy A Life.
+                    <h2 className="text-[#AC1514] text-center font-extrabold text-xl md:text-2xl mt-16 mb-8">
+                        It takes a village to destroy a life.
                     </h2>
 
                     <p>
-                        Born To Two Loving Parents In An Upperclass Family In Karachi, Jugnu Was The Second Of Three Daughters. The Four Siblings (My Uncle Was The Youngest) Were Mostly Raised By Their Elder Sister, As Their Parents Were Usually Busy Trying To Make Ends Meet Each Month.
+                        Born to two loving parents in an upperclass family in Karachi, Jugnu was the second of three daughters. The four siblings (my uncle was the youngest) were mostly raised by their elder sister, as their parents were usually busy trying to make ends meet each month.
                     </p>
 
                     <p>
-                        My Mother, The Eldest Of All The Siblings, Was Tasked With The Responsibility Of Ensuring They Earned Enough To Keep The Family Is A Very Comfortable Position. Jugnu Was The Baby Of The Family — And Treated As Such. She Was Delicate And Ladylike (Unlike Her Other Two Sisters) And Loved Taking Care Of The Family Home.<br />
-                        She Was Also Outgoing And Career Oriented.
+                        My mother, the eldest of all the siblings, was tasked with the responsibility of ensuring they earned enough to keep the family is a very comfortable position. Jugnu was the baby of the family — and treated as such. She was delicate and ladylike (unlike her other two sisters) and loved taking care of the family home.<br />
+                        She was also outgoing and career oriented.
                     </p>
 
                     <p>
-                        Jugnu’s Life Did Not Take A Turn For The Worst Overnight. It Happened In Stages. It Took Place In Phases.
+                        Jugnu’s life did not take a turn for the worst overnight. It happened in stages. It took place in phases.
                     </p>
 
                     <p>
-                        At Each Stage, There Was A Family Member, A Neighbor Or A Relative; Who Either Pushed Her Back Into The Abusive Relationship She Was Trying To Leave, Or Who Ended Up Supporting The Abuser And His Family By Remaining A Silent Witness To Her Pain.
+                        At each stage, there was a family member, a neighbor or a relative; who either pushed her back into the abusive relationship she was trying to leave, or who ended up supporting the abuser and his family by remaining a silent witness to her pain.
                     </p>
 
                     <p>
-                        My Maternal Grandmother Died From Illness When My Mother Was In The 10th Grade. At The Tender Age Of 16 Years Old, She Was Suddenly The Head Of The Family, Responsible For The Wellbeing Of Her Siblings And Their Father. Without The Support Of A Maternal Figure In Their Lives, The Siblings Were Left In The Loving Care Of Their Paternal Aunts And Uncles. But They Soon Realized That, In The End, They Would Have To Look Out For Themselves.
+                        My maternal grandmother died from illness when my mother was in the 10th grade. At the tender age of 16 years old, she was suddenly the head of the family, responsible for the wellbeing of her siblings and their father. Without the support of a maternal figure in their lives, the siblings were left in the loving care of their paternal aunts and uncles. But they soon realized that, in the end, they would have to look out for themselves.
                     </p>
 
                     <p>
-                        The Abuse Started With Emotional Blackmail From Family Members At The Time Of Jugnu’s Marriage. Nadeem Was Her Maternal Cousin, Who Recently Come Back From London With An Internationally Acclaimed Accounting Degree To His Name.<br /><br />
-                        Beautiful As She Was, With Long Flowing Black Hair And Porcelain Skin, His Was Not The Only Marriage Proposal She Received. Her Maternal Aunts, However, Were Adamant To Get Her Married Into The Family. They Bemoaned The Fate Of All Three Daughters Of Their Sister Being Married Off Into Families Outside Their Own. Their Deceased Sister’s Memories Would Go With Them. How Would They Keep In Touch With Each Other Now?
+                        The abuse started with emotional blackmail from family members at the time of Jugnu’s marriage. Nadeem was her maternal cousin, who recently come back from London with an internationally acclaimed accounting degree to his name.<br /><br />
+                        Beautiful as she was, with long flowing black hair and porcelain skin, his was not the only marriage proposal she received. Her maternal aunts, however, were adamant to get her married into the family. They bemoaned the fate of all three daughters of their sister being married off into families outside their own. Their deceased sister’s memories would go with them. How would they keep in touch with each other now?
                     </p>
 
                     <p>
-                        Even Though Jugnu Had Several Other Offers Of Marriage (Some From Her Paternal Family, As Well), She Chose Nadeem For The Simple Reason That His Mother Was Her Mother’s Sister. She Decided To Marry Nadeem Out Of Love For Her Mother.
+                        Even though Jugnu had several other offers of marriage (some from her paternal family, as well), she chose Nadeem for the simple reason that his mother was her mother’s sister. She decided to marry Nadeem out of love for her mother.
                     </p>
 
                     <p>
-                        It Was The Biggest Mistake Of Her Life.
+                        It was the biggest mistake of her life.
                     </p>
 
                     <p>
-                        The Abuse Started Soon After The Wedding. It Started With Small Statements That Were Deliberately Aimed At Destroying Her Self-Esteem.
+                        The abuse started soon after the wedding. It started with small statements that were deliberately aimed at destroying her self-esteem.
                     </p>
 
                     <p>
-                        "Why Do You Have So Much Perfume On?" Her Mother-In-Law Would Say. "The Women In Our Household Don't Act Like Prostitutes! Stop Putting On So Much Perfume And Attracting The Men."
+                        "Why do you have so much perfume on?" Her mother-in-law would say. "The women in our household don't act like prostitutes! Stop putting on so much perfume and attracting the men."
                     </p>
 
                     <p>
-                        Or She Would Berate Jugnu For Being Beautiful And Tempting Others With Her Looks. "Tie Up Your Long Hair! Are You Trying To Tempt Someone?"
+                        Or she would berate Jugnu for being beautiful and tempting others with her looks. "Tie up your long hair! Are you trying to tempt someone?"
                     </p>
 
                     <p>
-                        Her Sisters-In-Law Would Humiliate Jugnu In Private And Public; Berating Her For Little Things And Putting Her Down At Every Opportunity. "Why Won't You Just Die?" Asked The Younger Sister-In-Law Once.
+                        Her sisters-in-law would humiliate Jugnu in private and public; berating her for little things and putting her down at every opportunity. "Why won't you just die?" asked the younger sister-in-law once.
                     </p>
 
                     <p>
-                        Jugnu, Unused To Such Conversation And Blatant Disrespect, Had No Idea How To Respond. She Had Only Known Kindness In The Home She Had Come From. She Had Never Been Treated With Such Hostility Before. Then, After Some Time, She Began To Answer Back.
+                        Jugnu, unused to such conversation and blatant disrespect, had no idea how to respond. She had only known kindness in the home she had come from. She had never been treated with such hostility before. Then, after some time, she began to answer back.
                     </p>
 
-                    <h2 className="text-[#AC1514] text-center font-medium text-xl md:text-2xl mt-16 mb-8 capitalize">
-                        That Was When The Abuse Worsened.
+                    <h2 className="text-[#AC1514] text-center font-extrabold text-xl md:text-2xl mt-16 mb-8">
+                        That was when the abuse worsened.
                     </h2>
 
                     <p>
-                        The Physical Beatings Grew More Frequent As Her Mother- And Sisters-In-Law Deemed Fit. Her Husband Would Happily Mete Out The Punishment.<br />
-                        When Her First Born Was Little More Than A Year Old, Jugnu Decided To Run Away. She Escaped With Her Child To Her Sisters' Home. It Would Not Be The Last Time She Would Decide To Do So.
+                        The physical beatings grew more frequent as her mother- and sisters-in-law deemed fit. Her husband would happily mete out the punishment.<br />
+                        When her first born was little more than a year old, Jugnu decided to run away. She escaped with her child to her sisters' home. It would not be the last time she would decide to do so.
                     </p>
 
-                    <h2 className="text-[#AC1514] text-center font-medium text-xl md:text-2xl mt-16 mb-8 capitalize">
-                        Trauma Cycles Take Generations To Break.
+                    <h2 className="text-[#AC1514] text-center font-extrabold text-xl md:text-2xl mt-16 mb-8">
+                        Trauma cycles take generations to break.
                     </h2>
 
                     <p>
-                        At Jugnu’s Funeral, Many Of The Friends, Neighbors And Family Members Who Had Gathered To Mourn Her Passing Were Understandably Moved. Tears Streamed Down The Faces Of The Women As They Held Hands And Tried To Comfort One Another. Most Of The Men Sat Outside In The Verandah In Silence.
+                        At Jugnu’s funeral, many of the friends, neighbors and family members who had gathered to mourn her passing were understandably moved. Tears streamed down the faces of the women as they held hands and tried to comfort one another. Most of the men sat outside in the verandah in silence.
                     </p>
 
                     <p>
-                        I Remember Feeling Strangely Removed At The Funeral, As I Stood To One Side In The Room Where Jugnu's Body Lay, Wrapped In A White Shroud. I Scanned The Room, Taking In The Weeping And The Wailing. Who Were All These People Who Had Suddenly Shown Up Out Of Nowhere To Mourn Her Death, As If She Had Meant Anything To Them While Alive? Where Was This Hue And Cry When She Was Alive? What Was The Point Of All This Drama Now? She Was Dead.
+                        I remember feeling strangely removed at the funeral, as I stood to one side in the room where Jugnu's body lay, wrapped in a white shroud. I scanned the room, taking in the weeping and the wailing. Who were all these people who had suddenly shown up out of nowhere to mourn her death, as if she had meant anything to them while alive? Where was this hue and cry when she was alive? What was the point of all this drama now? She was dead.
                     </p>
 
-                    <h2 className="text-[#AC1514] text-center font-medium text-xl md:text-2xl mt-16 mb-8 capitalize">
-                        Let Her Memory Live On To Create A Better World.
+                    <h2 className="text-[#AC1514] text-center font-extrabold text-xl md:text-2xl mt-16 mb-8">
+                        Let her memory live on to create a better world.
                     </h2>
 
                     <p>
-                        In 2016, Tired Of Being Helpless In The Face Of Such Oppression, I Had Decided To Write About Some Of Her Ordeals In An Article For Dawn.Com. I Chose To Write It Under A Pseudonym. Ironically, The Name I Chose Was Jugnu’s Real Name — Mehar.<br />
-                        I'm Grateful That The Piece Resonated The Way It Did With Such A Wide Audience, Which Was Testament To How Relatable Abusive Relationships And Domestic Violence Are In Desi Society. I Decided That The Least That I Could Do Would Be To Put Jugnu's Name On An Article Detailing Some Of The Miseries She Had Been Forced To Bear.
+                        In 2016, tired of being helpless in the face of such oppression, I had decided to write about some of her ordeals in an article for Dawn.com. I chose to write it under a pseudonym. Ironically, the name I chose was Jugnu’s real name — Mehar.<br />
+                        I'm grateful that the piece resonated the way it did with such a wide audience, which was testament to how relatable abusive relationships and domestic violence are in desi society. I decided that the least that I could do would be to put Jugnu's name on an article detailing some of the miseries she had been forced to bear.
                     </p>
 
                     <p>
-                        On 17th November 2021, Upon Learning About Her Death, A Silent Rage Took Over Me. I Seethed With Anger At The Society That Turned Blind And Deaf When Faced With Intimate Partner Violence. I Was Angry At The Judicial And Legal System That Had So Spectacularly Failed Its Women And Children.
+                        On 17th November 2021, upon learning about her death, a silent rage took over me. I seethed with anger at the society that turned blind and deaf when faced with intimate partner violence. I was angry at the judicial and legal system that had so spectacularly failed its women and children.
                     </p>
 
                     {/* Tweet Embedding Mockup */}
@@ -147,24 +147,24 @@ export default function JugnusStory() {
                         />
                     </div>
 
-                    <p className="text-[#AC1514] capitalize text-left text-sm md:text-base">
-                        <a href="#" className="hover:underline">You Can Read The Full Twitter Thread (And Its Responses) Here.</a>
+                    <p className="text-[#AC1514] text-left text-sm md:text-base">
+                        <a href="#" className="hover:underline">You can read the full Twitter thread (and its responses) here.</a>
                     </p>
 
                     <p>
-                        I Decided To Microblog My Pain And The Rage Seething Through Me. Never In My Wildest Dreams Did I Expect The Response That I Got. Thousands Of People Answered Back, Showing Support And Sharing Their Own Stories Of Witnessing Domestic Violence Within Their Families And Immediate Social Circle(S). It Was A Surreal Experience.
+                        I decided to microblog my pain and the rage seething through me. Never in my wildest dreams did I expect the response that I got. Thousands of people answered back, showing support and sharing their own stories of witnessing domestic violence within their families and immediate social circle(s). It was a surreal experience.
                     </p>
 
-                    <p className="text-[#AC1514] capitalize text-left">
-                        That Was When The Idea For The Jugnu Project (TJP) Was Born.
-                    </p>
-
-                    <p>
-                        The Jugnu Project Is A Digital Resource Centre Dedicated To Helping Survivors Of Domestic Violence And Abuse Across Pakistan. We Help Connect Survivors With Legal Aid Services, Get Access To Deep Trauma Therapy And Find Shelter And Resources For Financial Independence.
+                    <p className="text-[#AC1514] text-left">
+                        That was when the idea for The Jugnu Project (TJP) was born.
                     </p>
 
                     <p>
-                        We Are A Crowd-Funded Resource And Are Blessed To Have Such A Dedicated Number Of Supporters Across The World. Our Work Is Dedicated To Jugnu’s Memory, And To The Thousands Of Victims Of Domestic Violence Who Have Simply Been Wiped Away From Our Collective Memories. We Will Dedicate Ourselves To Creating A Safer, Better Society For Survivors Of Domestic Violence.
+                        The Jugnu Project is a digital resource centre dedicated to helping survivors of domestic violence and abuse across Pakistan. We help connect survivors with legal aid services, get access to deep trauma therapy and find shelter and resources for financial independence.
+                    </p>
+
+                    <p>
+                        We are a crowd-funded resource and are blessed to have such a dedicated number of supporters across the world. Our work is dedicated to Jugnu’s memory, and to the thousands of victims of domestic violence who have simply been wiped away from our collective memories. We will dedicate ourselves to creating a safer, better society for survivors of domestic violence.
                     </p>
 
                 </div>

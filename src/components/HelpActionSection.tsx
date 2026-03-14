@@ -5,7 +5,7 @@ export default function HelpActionSection() {
         <section className="bg-white py-12 md:py-16">
             <div className="max-w-7xl mx-auto px-6 md:px-16">
                 {/* Header */}
-                <h2 className="text-2xl md:text-3xl underline decoration-[black]  font-bold text-center mb-8 md:mb-12">
+                <h2 className="text-2xl md:text-3xl underline decoration-[black]  font-extrabold text-center mb-8 md:mb-12">
                     <span className="text-[#AC1514]  underline decoration-[black]">
                         If you, or someone you know,
                     </span>{" "}

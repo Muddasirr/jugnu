@@ -3,60 +3,60 @@ import React from 'react';
 
 const LegalUpdatePage: React.FC = () => {
   return (
-    <div className="bg-white font-serif">
+    <div className="bg-white">
       <section className="px-10 py-10 md:py-16">
         {/* Header */}
-        <h1 className="text-3xl md:text-4xl font-bold italic text-[#C41E1E] mb-8  leading-tight">
+        <h1 className="text-3xl md:text-4xl font-extrabold italic text-[#C41E1E] mb-8  leading-tight">
           <em>Stay Legally Informed. Stay Empowered. Stay Protected.</em>
         </h1>
 
         {/* Introduction paragraphs */}
         <p className="text-xl font-medium text-gray-900 leading-relaxed mb-6 text-justify">
-          Laws Related To The Family Courts, Domestic Violence, Gender-Based Violence (GBV), Workplace
-          Harassment, Child Protection And Women's Rights Are Constantly Evolving. Understanding These
-          Changes Is Essential For Survivors, Lawyers, Advocates, Community Workers And NGOs And
-          Individuals Who Wish To Protect Themselves And Their Loved Ones; And Support Others Effectively.
+          Laws related to the family courts, domestic violence, gender-based violence (GBV), workplace
+          harassment, child protection and women's rights are constantly evolving. Understanding these
+          changes is essential for survivors, lawyers, advocates, community workers and NGOs and
+          individuals who wish to protect themselves and their loved ones; and support others effectively.
         </p>
 
         <p className="text-xl font-medium text-gray-900 leading-relaxed mb-8 text-justify">
-          This Page Is Dedicated To Providing Reliable, Survivor-Centered Judgements, Case Laws And Legal
-          Developments In Pakistan. Our Goal Is To Make Legal Judgments More Accessible To The Common
-          Person, So That They May Be More Aware Of Their Legal Rights And May Use These For Guidance In
-          Real Life (Especially In Litigation).
+          This page is dedicated to providing reliable, survivor-centered judgements, case laws and legal
+          developments in Pakistan. Our goal is to make legal judgments more accessible to the common
+          person, so that they may be more aware of their legal rights and may use these for guidance in
+          real life (especially in litigation).
         </p>
 
         {/* What You'll Find Here section */}
-        <h2 className="text-2xl md:text-3xl font-bold text-[#C41E1E] mt-10 mb-6 underline text-center">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-[#C41E1E] mt-10 mb-6 underline text-center">
           What You'll Find Here:
         </h2>
 
         <div className="space-y-4 mb-8">
-          <h3 className="text-2xl font-bold text-gray-900 underline">
+          <h3 className="text-2xl font-extrabold text-gray-900 underline">
             1. Latest Laws And Amendments
           </h3>
 
-          <h3 className="text-2xl font-bold text-gray-900 underline">
+          <h3 className="text-2xl font-extrabold text-gray-900 underline">
             2. Court Judgments And Precedent (Case Law)
           </h3>
         </div>
 
         <p className="text-xl font-medium text-gray-900 leading-relaxed mb-8 text-justify">
-          We Believe That Legal Information Should Not Be Confusing Or Inaccessible. Understanding The
-          Law Empowers Survivors, Strengthens Prevention And Helps Communities Intervene Safely And
-          Effectively.
+          We believe that legal information should not be confusing or inaccessible. Understanding the
+          law empowers survivors, strengthens prevention and helps communities intervene safely and
+          effectively.
         </p>
 
         {/* Stay Updated section */}
-        <h2 className="text-2xl md:text-3xl font-bold text-[#C41E1E] mt-12 mb-6 underline text-left">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-[#C41E1E] mt-12 mb-6 underline text-left">
           Stay Updated
         </h2>
 
-        <p className="text-xl font-medium text-gray-900 leading-relaxed mb-2">
-          We Regularly Update This Page To Keep You Informed.
+        <p className="text-xl font-medium text-gray-900 leading-relaxed mb-2 text-justify">
+          We regularly update this page to keep you informed.
         </p>
-        <p className="text-xl font-medium text-gray-900 leading-relaxed">
-          To Receive Legal Updates Directly To Your Inbox, You Can Sign Up For Our Newsletter, Or Follow
-          Us On Social Media.
+        <p className="text-xl font-medium text-gray-900 leading-relaxed text-justify">
+          To receive legal updates directly to your inbox, you can sign up for our newsletter, or follow
+          us on social media.
         </p>
       </section>
     </div>
