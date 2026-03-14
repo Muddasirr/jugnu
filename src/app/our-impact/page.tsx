@@ -3,75 +3,75 @@ import React from 'react';
 const timelineEvents = [
     {
         date: "|03.09.2025",
-        title: 'Training On "Handling Sexual Exploitation And Abuse (SEA) And Gender-Based Violence (GBV) Disclosures By Call Center Agents"',
+        title: 'Training on "Handling Sexual Exploitation and Abuse (SEA) and Gender-Based Violence (GBV) disclosures by Call Center Agents"',
         descriptions: [
-            "Our Founder, Zohra Ahmed, Was Invited To Conduct A Training Session For Call Center Agents Working Under The Sindh Social Protection Authority's (SSPA) MAMTA Program. It Was Aimed At Enhancing Their Understanding Of Sexual Exploitation And Abuse (SEA) And Gender-Based Violence (GBV), And To Strengthen Their Ability To Respond Appropriately And Professionally To Such Disclosures.",
-            "The Session Equipped Participants With The Knowledge And Skills Needed To Identify, Respond To And Document SEA- And GBV-Related Complaints That May Be Reported By Beneficiaries Of The MAMTA Program - Whether Disclosed Voluntarily Or Inadvertently. It Emphasized Survivor-Centered Communication, Confidentiality, Non-Judgemental Listening And The Appropriate Referral Process / Grievance Redressal Mechanism In Line With Safeguarding Protocols."
+            "Our founder, Zohra Ahmed, was invited to conduct a training session for call center agents working under the Sindh Social Protection Authority's (SSPA) MAMTA program. It was aimed at enhancing their understanding of sexual exploitation and abuse (SEA) and gender-based violence (GBV), and to strengthen their ability to respond appropriately and professionally to such disclosures.",
+            "The session equipped participants with the knowledge and skills needed to identify, respond to and document SEA- and GBV-related complaints that may be reported by beneficiaries of the MAMTA program - whether disclosed voluntarily or inadvertently. It emphasized survivor-centered communication, confidentiality, non-judgemental listening and the appropriate referral process / grievance redressal mechanism in line with safeguarding protocols."
         ],
         components: null
     },
     {
         date: "|17.02.2025",
-        title: 'Stakeholder Consultation On The "Legal Environment Assessment For HIV And Human Rights In Pakistan".',
+        title: 'Stakeholder consultation on the "Legal Environment Assessment for HIV and Human Rights in Pakistan".',
         descriptions: [
-            "Our Founder, Zohra Ahmed, Was Invited To Participate In A Stakeholder Consultation Discussing The Legal Environment For HIV Patients And Human Rights In Pakistan. The Event Was Graced By Lawyers, Social Workers, Government Representatives And Trans Activists. The Consultation Was Conducted By AXIS Law Firm In Collaboration With CERP And UNAIDS."
+            "Our founder, Zohra Ahmed, was invited to participate in a stakeholder consultation discussing the legal environment for HIV patients and human rights in Pakistan. The event was graced by lawyers, social workers, government representatives and trans activists. The consultation was conducted by AXIS Law Firm in collaboration with CERP and UNAIDS."
         ],
         components: null
     },
     {
         date: "|08.02.2025",
-        title: 'MOU Signing Between HerSTASH And The Jugnu Project',
+        title: 'MOU signing between HerSTASH and The Jugnu Project',
         descriptions: [
-            "The Jugnu Project Signed An MOU With HerSTASH, Aimed At Partnering Together To Provide Financial Literacy And Consultancy Services For Women Entrepreneurs Across Pakistan.",
-            "We Are Proud To Join Forces To Introduce Numerous Women-Centric Financial Literacy Programs And Encourage Women Entrepreneurship."
+            "The Jugnu Project signed an MOU with HerSTASH, aimed at partnering together to provide financial literacy and consultancy services for women entrepreneurs across Pakistan.",
+            "We are proud to join forces to introduce numerous women-centric financial literacy programs and encourage women entrepreneurship."
         ],
         components: null
     },
     {
         date: "|21.12.2024",
-        title: 'Workshop On Creating Safe Spaces For Women',
+        title: 'Workshop on creating safe spaces for women',
         descriptions: [
-            'Our Founder, Zohra Ahmed, Represented The Jugnu Project At A Workshop On "Creating Safe Spaces For Women" At IBA Karachi, Conducted By Prof. Syed Hussain Haider. The Event Was Hosted By The Women Leadership Forum, Which Is A Platform Aiming To Provide Training And Capacity Building Workshops To Women In Leadership Positions Across Pakistan'
+            'Our founder, Zohra Ahmed, represented The Jugnu Project at a workshop on "Creating Safe Spaces for Women" at IBA Karachi, conducted by Prof. Syed Hussain Haider. The event was hosted by the Women Leadership Forum, which is a platform aiming to provide training and capacity building workshops to women in leadership positions across Pakistan'
         ],
         components: null
     },
     {
         date: "|19.12.2024",
-        title: 'Training On Domestic Violence At The Sindh Social Protection Authority (SSPA)',
+        title: 'Training on domestic violence at the Sindh Social Protection Authority (SSPA)',
         descriptions: [
-            "Our Founder Zohra Ahmed Was Invited To Conduct A Training Session For The SSPA, Alongside Advocate Khushbaqt Jillani. The Training Focused On The Types Of Gender-Based Violence And Domestic Abuse Usually Witnessed While Working With Survivors On The Ground. The Training Was An Interactive Session Aimed At Enhancing The Skills And Building On The Experiences Of The Coordinators Working On Ground For SSPA's Mamta Program."
+            "Our founder Zohra Ahmed was invited to conduct a training session for the SSPA, alongside advocate Khushbaqt Jillani. The training focused on the types of gender-based violence and domestic abuse usually witnessed while working with survivors on the ground. The training was an interactive session aimed at enhancing the skills and building on the experiences of the coordinators working on ground for SSPA's Mamta program."
         ],
         components: null
     },
     {
         date: "|12.12.2024",
-        title: 'Meeting With Ambassador Of The Kingdom Of Netherlands, Mrs. Henny De Vries.',
+        title: 'Meeting with Ambassador of the Kingdom of Netherlands, Mrs. Henny de Vries.',
         descriptions: [
-            "The Jugnu Project Was Invited To Attend A Luncheon With The Ambassador Of The Kingdom Of Netherlands, Mrs. Henny De Vries. The Meeting Was Aimed At Discussing The Challenges And Opportunities To Combat Gender Based Violence, And The Prevalence Of Violence Against Women In Pakistan. It Was Attended By Various Stakeholders Working In The GBV Sector In Karachi."
+            "The Jugnu Project was invited to attend a luncheon with the ambassador of the Kingdom of Netherlands, Mrs. Henny de Vries. The meeting was aimed at discussing the challenges and opportunities to combat gender based violence, and the prevalence of violence against women in Pakistan. It was attended by various stakeholders working in the GBV sector in Karachi."
         ],
         components: null
     },
     {
         date: "|27.11.2024",
-        title: "16 Days Of Activism: Dialogue Session",
+        title: "16 Days of activism: Dialogue session",
         descriptions: [
-            "As Part Of The Global 16 Days Of Activism Campaign, We Organized A Dialogue Session To Create Awareness And Foster Inter-Communal Understanding Around Issues Of Gender-Based Violence."
+            "As part of the global 16 days of activism campaign, we organized a dialogue session to create awareness and foster inter-communal understanding around issues of gender-based violence."
         ],
         components: null
     },
     {
         date: "|15.11.2024",
-        title: "Online Webinar On Identifying Abuse",
+        title: "Online webinar on identifying abuse",
         descriptions: [
-            "In Collaboration With Fellow Mental Health Advocates, We Hosted An Online Session Reaching Survivors And Allies To Identify Signs Of Coercive Control And Resource Avenues."
+            "In collaboration with fellow mental health advocates, we hosted an online session reaching survivors and allies to identify signs of coercive control and resource avenues."
         ],
         components: null
     },
     {
         date: "|11.10.2024",
-        title: "Capacity Building Workshops",
+        title: "Capacity building workshops",
         descriptions: [
-            "A Multi-Day Workshop Focusing On First Response And Care For Advocates And Social Workers Facing Burnout."
+            "A multi-day workshop focusing on first response and care for advocates and social workers facing burnout."
         ],
         components: null
     }
@@ -80,16 +80,16 @@ const timelineEvents = [
 export default function OurImpact() {
     return (
         <>
-            <main className="min-h-screen bg-white text-black px-6 md:px-16 lg:px-24 py-16 font-sans capitalize text-justify overflow-hidden">
+            <main className="min-h-screen bg-white text-black px-6 md:px-16 lg:px-24 py-16 text-justify overflow-hidden">
                 <div className="max-w-4xl mx-auto text-[15px] md:text-[17px] leading-relaxed">
 
                     {/* Intro */}
                     <div className="space-y-6 mb-20 text-gray-900">
                         <p className="w-full">
-                            The Jugnu Project Conducts Capacity-Building Training(S), Community Dialogue, Workshops And Activities To Spread Awareness About Domestic Violence And Abuse Within Society. Our Aim Is To Combat The Social Stigma Attached To Family Violence, And Build A Network Of Allies Within Society For Survivors.
+                            The Jugnu Project conducts capacity-building training(s), community dialogue, workshops and activities to spread awareness about domestic violence and abuse within society. Our aim is to combat the social stigma attached to family violence, and build a network of allies within society for survivors.
                         </p>
                         <p className="w-full">
-                            Below Is A Timeline Of Our Activities For Social And Communal Impact.
+                            Below is a timeline of our activities for social and communal impact.
                         </p>
                     </div>
 
@@ -100,7 +100,7 @@ export default function OurImpact() {
                                 <div className="text-[#AC1514] font-medium text-[16px] md:text-[18px] mb-4">
                                     {item.date}
                                 </div>
-                                <h2 className="font-bold text-black text-[15px] md:text-[17px] xl:text-[18px] mb-4 text-left leading-snug">
+                                <h2 className="font-extrabold text-black text-[15px] md:text-[17px] xl:text-[18px] mb-4 text-left leading-snug">
                                     {item.title}
                                 </h2>
                                 <div className="space-y-6 text-[15px] md:text-[17px] text-gray-900 leading-relaxed mb-6">

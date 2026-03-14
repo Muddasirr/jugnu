@@ -56,9 +56,9 @@ export default function AboutUsPage() {
             <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20">
                 <div className="grid md:grid-cols-[60%_40%] gap-8 md:gap-16 items-start">
                     {/* Left Content */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 text-justify">
                         <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-                            ABOUT <span className="text-[#AC1514]">US</span>
+                            About <span className="text-[#AC1514]">us</span>
                         </h2>
 
                         <p className="text-lg md:text-lg text-black leading-relaxed">
@@ -105,17 +105,17 @@ export default function AboutUsPage() {
                 <div className="max-w-7xl mx-auto px-6 md:px-16">
                     <div className="text-center space-y-4">
                         <h2 className="text-2xl md:text-3xl font-bold text-[#AC1514] uppercase">
-                            JUGNU'S STORY <span className="text-black">(OUR STORY)</span>
+                            Jugnu's story <span className="text-black">(our story)</span>
                         </h2>
 
-                        <p className=" text-left text-sm md:text-base text-black max-w-5xl mx-auto leading-relaxed">
+                        <p className=" text-left text-sm md:text-base text-black max-w-5xl mx-auto leading-relaxed text-justify">
                             Jugnu was a loving daughter, sister and mother. She lived for 30 years as a prisoner of an abusive husband and in-laws; until her death on the 17th of November, 2021, finally set her free. The Jugnu Project is a dedication to her name and her memory. This is her story.
                         </p>
 
                         <div className="pt-4">
                             <Link href="https://medium.com/@thejugnuproject/jugnus-story-83b596282713" target="_blank" rel="noopener noreferrer">
-                                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-semibold hover:bg-[#8B0E0E] transition-all">
-                                    Jugnu's Story
+                                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
+                                    JUGNU'S STORY
                                 </button>
                             </Link>
                         </div>
@@ -138,9 +138,9 @@ export default function AboutUsPage() {
             <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
                     {/* Left Content */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 text-justify">
                         <h2 className="text-2xl md:text-4xl font-bold text-black mb-6">
-                            ABOUT <span className="text-[#AC1514]">THE FOUNDER</span>
+                            About <span className="text-[#AC1514]">the founder</span>
                         </h2>
 
                         <p className="text-lg md:text-lg text-black leading-relaxed">
@@ -177,7 +177,7 @@ export default function AboutUsPage() {
                     <div className="flex justify-center gap-8 md:gap-16 mb-8 border-b-2 border-gray-200">
                         <button
                             onClick={() => setActiveTab("purpose")}
-                            className={`font-bold text-lg md:text-2xl pb-3 px-8 border-b-4 transition-colors ${activeTab === "purpose"
+                            className={`font-bold uppercase text-lg md:text-2xl pb-3 px-8 border-b-4 transition-colors ${activeTab === "purpose"
                                 ? "text-[#AC1514] border-[#AC1514]"
                                 : "text-gray-400 border-transparent hover:text-gray-600"
                                 }`}
@@ -186,7 +186,7 @@ export default function AboutUsPage() {
                         </button>
                         <button
                             onClick={() => setActiveTab("vision")}
-                            className={`font-bold text-lg md:text-2xl pb-3 border-b-4 transition-colors ${activeTab === "vision"
+                            className={`font-bold uppercase text-lg md:text-2xl pb-3 border-b-4 transition-colors ${activeTab === "vision"
                                 ? "text-[#AC1514] border-[#AC1514]"
                                 : "text-gray-400 border-transparent hover:text-gray-600"
                                 }`}
@@ -195,7 +195,7 @@ export default function AboutUsPage() {
                         </button>
                         <button
                             onClick={() => setActiveTab("mission")}
-                            className={`font-bold text-lg md:text-2xl pb-3 border-b-4 transition-colors ${activeTab === "mission"
+                            className={`font-bold uppercase text-lg md:text-2xl pb-3 border-b-4 transition-colors ${activeTab === "mission"
                                 ? "text-[#AC1514] border-[#AC1514]"
                                 : "text-gray-400 border-transparent hover:text-gray-600"
                                 }`}
@@ -205,7 +205,7 @@ export default function AboutUsPage() {
                     </div>
 
                     {/* Content */}
-                    <div className="max-w-5xl mx-auto  text-base md:text-lg text-black leading-relaxed">
+                    <div className="max-w-5xl mx-auto  text-base md:text-lg text-black leading-relaxed text-justify">
                         {activeTab === "purpose" && (
                             <div className="space-y-6 animate-in fade-in duration-500">
                                 <p>
@@ -304,9 +304,9 @@ export default function AboutUsPage() {
                         {/* First Row - 4 principles */}
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                             {selectedPrinciple === "survivor-centered" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
-                                        Survivor-Centered Systems
+                                        Survivor-centered systems
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
                                         {getSelectedPrincipleData().description}
@@ -317,16 +317,16 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("survivor-centered")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#DED6AA] pb-1">
-                                        Survivor-Centered Systems
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#DED6AA] pb-1">
+                                        SURVIVOR-CENTERED SYSTEMS
                                     </h3>
                                 </button>
                             )}
 
                             {selectedPrinciple === "safety" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
-                                        Safety and Confidentiality
+                                        Safety and confidentiality
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
                                         {getSelectedPrincipleData().description}
@@ -337,16 +337,16 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("safety")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#44A6D9] pb-1">
-                                        Safety and Confidentiality
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#44A6D9] pb-1">
+                                        SAFETY AND CONFIDENTIALITY
                                     </h3>
                                 </button>
                             )}
 
                             {selectedPrinciple === "intersectionality" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
-                                        intersectionality
+                                        Intersectionality
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
                                         {getSelectedPrincipleData().description}
@@ -357,16 +357,16 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("intersectionality")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#A5B1EA] pb-1">
-                                        intersectionality
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#A5B1EA] pb-1">
+                                        INTERSECTIONALITY
                                     </h3>
                                 </button>
                             )}
 
                             {selectedPrinciple === "equality" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline  ">
-                                        Equality and Accessibility
+                                        Equality and accessibility
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
                                         {getSelectedPrincipleData().description}
@@ -377,8 +377,8 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("equality")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#FFCB7F] pb-1">
-                                        Equality and Accessibility
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#FFCB7F] pb-1">
+                                        EQUALITY AND ACCESSIBILITY
                                     </h3>
                                 </button>
                             )}
@@ -387,9 +387,9 @@ export default function AboutUsPage() {
                         {/* Second Row - 3 principles */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {selectedPrinciple === "awareness" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
-                                        Awareness, Empowerment and Healing
+                                        Awareness, empowerment and healing
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
                                         {getSelectedPrincipleData().description}
@@ -400,14 +400,14 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("awareness")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#44A6D9] pb-1">
-                                        Awareness, Empowerment and Healing
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#44A6D9] pb-1">
+                                        AWARENESS, EMPOWERMENT AND HEALING
                                     </h3>
                                 </button>
                             )}
 
                             {selectedPrinciple === "inclusivity" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline ">
                                         Inclusivity
                                     </h3>
@@ -420,16 +420,16 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("inclusivity")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#FFCB7F] pb-1">
-                                        Inclusivity
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#FFCB7F] pb-1">
+                                        INCLUSIVITY
                                     </h3>
                                 </button>
                             )}
 
                             {selectedPrinciple === "accountability" ? (
-                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg">
+                                <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
                                     <h3 className="text-base md:text-lg font-bold mb-3  underline ">
-                                        Accountability and Integrity
+                                        Accountability and integrity
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
                                         {getSelectedPrincipleData().description}
@@ -440,8 +440,8 @@ export default function AboutUsPage() {
                                     onClick={() => setSelectedPrinciple("accountability")}
                                     className="bg-white p-6 text-center min-h-[120px] flex items-center justify-center hover:shadow-md transition-shadow cursor-pointer"
                                 >
-                                    <h3 className="text-base md:text-lg font-semibold text-black border-b-2 border-[#EF1A43] pb-1">
-                                        Accountability and Integrity
+                                    <h3 className="text-base md:text-lg font-bold uppercase text-black border-b-2 border-[#EF1A43] pb-1">
+                                        ACCOUNTABILITY AND INTEGRITY
                                     </h3>
                                 </button>
                             )}

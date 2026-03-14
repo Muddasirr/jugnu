@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Instagram, Facebook, Youtube, Linkedin, Menu, X, Search } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 interface HeaderProps {
   onSearchToggle: () => void;
@@ -11,6 +12,19 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const navLinks = [
+    { label: "HOME", href: "/Social" },
+    { label: "ABOUT", href: "/about" },
+    { label: "GET INVOLVED", href: "/getinvolved" },
+    { label: "PODCAST", href: "/podcast" },
+    { label: "GET HELP", href: "/gethelp" },
+    { label: "CONTACT", href: "/contact" },
+    { label: "BOOK CLUB", href: "/reads" },
+  ];
+
+  const isActiveLink = (href: string) => pathname === href;
 
   return (
     <header className="bg-[#AC1514] text-white top-0 z-50 shadow-md overflow-hidden">
@@ -21,16 +35,17 @@ const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center md:space-x-1.5 lg:space-x-2.5 xl:space-x-5 2xl:space-x-8 text-[10px] md:text-[11px] lg:text-xs xl:text-sm 2xl:text-base font-normal tracking-normal lg:tracking-wide">
-          <Link href="/Social" className="hover:text-gray-200 transition whitespace-nowrap">HOME</Link>
-          <div className="flex items-center hover:text-gray-200 cursor-pointer">
-            <Link href="/about">ABOUT</Link>
-          </div>
-          <Link href="/getinvolved" className="hover:text-gray-200 transition whitespace-nowrap">GET INVOLVED</Link>
-          <Link href="/podcast" className="hover:text-gray-200 transition whitespace-nowrap">PODCAST</Link>
-          <Link href="/gethelp" className="hover:text-gray-200 transition whitespace-nowrap">GET HELP</Link>
-          <Link href="/contact" className="hover:text-gray-200 transition whitespace-nowrap">CONTACT</Link>
-          <Link href="/reads" className="hover:text-gray-200 transition whitespace-nowrap">BOOK CLUB</Link>
+        <nav className="hidden md:flex items-center md:space-x-1.5 lg:space-x-2.5 xl:space-x-5 2xl:space-x-8 text-[10px] md:text-[11px] lg:text-xs xl:text-sm 2xl:text-base font-bold tracking-normal lg:tracking-wide">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`transition whitespace-nowrap ${isActiveLink(link.href) ? "text-black" : "hover:text-gray-200"
+                }`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Desktop Social Icons + Search + Buttons */}
@@ -74,14 +89,17 @@ const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
         className={`fixed inset-0 bg-[#AC1514] z-40 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 ease-in-out ${isMenuOpen ? "translate-x-0" : "translate-x-full"
           } md:hidden`}
       >
-        <nav className="flex flex-col items-center space-y-6 text-lg font-medium tracking-wide">
-          <Link href="/Social" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">HOME</Link>
-          <Link href="/about" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">ABOUT</Link>
-          <Link href="/getinvolved" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">GET INVOLVED</Link>
-          <Link href="/podcast" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">PODCAST</Link>
-          <Link href="/gethelp" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">GET HELP</Link>
-          <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">CONTACT</Link>
-          <Link href="/reads" onClick={() => setIsMenuOpen(false)} className="hover:text-gray-200 transition">BOOK CLUB</Link>
+        <nav className="flex flex-col items-center space-y-6 text-lg font-bold tracking-wide">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+              className={`transition ${isActiveLink(link.href) ? "text-black" : "hover:text-gray-200"}`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         <div className="flex flex-col items-center space-y-6">

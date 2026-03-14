@@ -275,53 +275,53 @@ const books = [
 
 export default function ReadsPage() {
     return (
-        <main className="w-full bg-white font-sans text-black py-12 md:py-20">
+        <main className="w-full bg-white text-black py-12 md:py-20">
             <div className=" px-6 md:px-24 space-y-12">
                 {/* Intro Section */}
                 <section className="space-y-6">
-                    <h1 className="text-3xl md:text-3xl font-bold">
-                        Welcome To <span className="text-[#AC1514] text-3xl md:text-3xl">“Jugnu Reads”</span> – Our Digital Book Club!
+                    <h1 className="text-3xl md:text-3xl font-extrabold">
+                        Welcome to <span className="text-[#AC1514] text-3xl md:text-3xl">“Jugnu Reads”</span> – our digital book club!
                     </h1>
 
-                    <div className="space-y-4 text-base md:text-lg leading-relaxed text-black font-normal ">
+                    <div className="space-y-4 text-base md:text-lg leading-relaxed text-black font-normal text-justify">
                         <p>
-                            This Is An Online Reading Community For People Who Care About Gender Equity, Social Change And Empowerment Of Survivors. Through Books, We Learn, Connect And Explore New Ideas About Gender, Justice, Mental Health, Trauma, Healing From Abuse And Resilience.
+                            This is an online reading community for people who care about gender equity, social change and empowerment of survivors. Through books, we learn, connect and explore new ideas about gender, justice, mental health, trauma, healing from abuse and resilience.
                         </p>
                         <p>
-                            Each Month We Select A Book That Inspires Reflection And Discussion. Members Read At Their Own Pace, And Then Join An Online Session To Share Thoughts, Any Lessons Learnt And Personal Insights In A Safe And Respectful Space.
+                            Each month we select a book that inspires reflection and discussion. Members read at their own pace, and then join an online session to share thoughts, any lessons learnt and personal insights in a safe and respectfull space.
                         </p>
                         <p>
-                            The Book Club Is Open To Everyone – Students, Professionals, Activists, Academics, Lawmakers And Homemakers, Etc – Anyone Who Wants To Increase Their Knowledge Regarding Family And Gender-Based Violence. It Is Aimed At Anyone Who Wants To Grow Through Meaningful Conversation And Shared Learning.
+                            The book club is open to everyone – students, professionals, activists, academics, lawmakers and homemakers, etc – anyone who wants to increase their knowledge regarding family and gender-based violence. It is aimed at anyone who wants to grow through meaningful conversation and shared learning.
                         </p>
                     </div>
                 </section>
 
                 {/* What We Offer Section */}
                 <section className="space-y-4">
-                    <h2 className="text-3xl md:text-3xl font-bold">
+                    <h2 className="text-3xl md:text-3xl font-extrabold">
                         What <span className="text-[#AC1514]">We Offer</span>
                     </h2>
-                    <ul className="space-y-3 text-base md:text-lg font-normal text-black list-none p-1">
-                        <li>-Monthly Book Selections Focused On Gender Equity, Justice, Mental Wellbeing, Family Violence, Trauma And Healing.</li>
-                        <li>-Online Discussion Sessions With Readers From Across Pakistan And Abroad.</li>
-                        <li>-A Supportive And Inclusive Community For Open Dialogue.</li>
-                        <li>-Occasional Guest Speakers And Author Talks</li>
+                    <ul className="space-y-3 text-base md:text-lg font-normal text-black list-none p-1 text-justify">
+                        <li>- Monthly book selections focused on gender equity, justice, mental wellbeing, family violence, trauma and healing.</li>
+                        <li>- Online discussion sessions with readers from across Pakistan and abroad.</li>
+                        <li>- A supportive and inclusive community for open dialogue.</li>
+                        <li>- Occasional guest speakers and author talks.</li>
                     </ul>
                 </section>
 
                 {/* How To Join Section */}
                 <section className="space-y-4">
-                    <h2 className="text-3xl md:text-3xl font-bold">
-                        How <span className="text-[#AC1514]">To Join?</span>
+                    <h2 className="text-3xl md:text-3xl font-extrabold">
+                        How <span className="text-[#AC1514]">to join?</span>
                     </h2>
-                    <p className="text-base md:text-lg font-normal text-black">
-                        Simply Sign Up Online To Become Part Of The Jugnu Reads Community. You Will Receive Regular Updates About Our Upcoming Books, Reading Guides And Discussion Dates. You Can Also Vote For The Book Of Your Choice!
+                    <p className="text-base md:text-lg font-normal text-black text-justify">
+                        Simply sign up online to become part of the Jugnu Reads community. You will receive regular updates about our upcoming books, reading guides and discussion dates. You can also vote for the book of your choice!
                     </p>
                 </section>
 
                 {/* Book Gallery Section */}
                 <section className="pt-8">
-                    <h2 className="text-center text-2xl md:text-3xl font-bold mb-12">
+                    <h2 className="text-center text-2xl md:text-3xl font-extrabold mb-12">
                         Book <span className="text-[#AC1514]">Gallery -</span>
                     </h2>
 

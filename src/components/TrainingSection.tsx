@@ -13,7 +13,7 @@ const TrainingSection = () => {
           <div className="flex items-center  gap-6 mb-6 flex-wrap md:flex-nowrap">
             <Link href="/training" target="_blank" rel="noopener noreferrer">
               <h2 className="text-2xl md:text-4xl font-extrabold leading-tight">
-                TRAINING & DEVELOPMENT
+                Training & development
               </h2>
             </Link>
 
@@ -24,7 +24,7 @@ const TrainingSection = () => {
 
 
           {/* Description */}
-          <p className="text-base mb-8 leading-relaxed">
+          <p className="text-base mb-8 leading-relaxed text-justify">
             We deliver a range of training courses, certifications and workshops to further your knowledge in preventing and responding to family violence.
           </p>
 
@@ -64,7 +64,7 @@ const TrainingSection = () => {
             <Link href="/consultancy" target="_blank" rel="noopener noreferrer">
 
               <h2 className="text-2xl md:text-4xl font-extrabold leading-tight">
-                SOCIAL IMPACT CONSULTANCY
+                Social impact consultancy
               </h2>
             </Link>
 
@@ -76,7 +76,7 @@ const TrainingSection = () => {
 
 
           {/* Description */}
-          <p className="text-base mb-8 leading-relaxed">
+          <p className="text-base mb-8 leading-relaxed text-justify">
             We deliver high-quality training programs that strengthen awareness,
             build expertise, and drive sustainable impact.
           </p>
