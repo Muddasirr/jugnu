@@ -285,11 +285,11 @@ export default function TrainingPage() {
     };
 
     return (
-        <main className="w-full bg-white font-serif text-black py-12 md:py-16">
+        <main className="w-full bg-white text-black py-12 md:py-16">
             <div className="max-w-6xl mx-auto px-6 md:px-8 space-y-12">
 
                 {/* Intro Section */}
-                <section className="space-y-6">
+                <section className="space-y-6 text-justify">
                     <p className="text-base md:text-lg leading-relaxed text-black">
                         At The Jugnu Project, we believe that real change can only happen when both people and institutions are equipped with the knowledge, empathy and tools to prevent and respond to family and gender-based violence effectively. We offer specialized, evidence-based training programs and certified courses, designed to strengthen awareness, improve response skills and promote survivor-centered practices across workplaces, communities and individuals.
                     </p>
@@ -318,7 +318,7 @@ export default function TrainingPage() {
                         Our goal is to help strengthen institutional capacity(s) so that survivors can have easy access to justice, safety and dignity; and be able to live an empowered life.
                     </p>
 
-                    <p className="text-xl font-bold text-[#AC1514] pt-4">
+                    <p className="text-xl font-extrabold text-[#AC1514] pt-4">
                         Check our certification trainings and courses below:
                     </p>
                 </section>
@@ -340,7 +340,7 @@ export default function TrainingPage() {
                                         {program.id}:
                                     </div>
                                     {/* Title */}
-                                    <h3 className="text-base md:text-lg font-normal ">
+                                    <h3 className="text-base md:text-lg font-extrabold uppercase">
                                         {program.title}
                                     </h3>
                                 </div>
@@ -360,7 +360,7 @@ export default function TrainingPage() {
                                 className="overflow-hidden transition-all duration-300"
                             >
                                 <div className="px-6 py-6 bg-gray-50 border-t border-gray-200">
-                                    <div className="text-sm md:text-base text-black leading-relaxed pl-12">
+                                    <div className="text-sm md:text-base text-black leading-relaxed pl-12 text-justify">
                                         {program.content}
                                     </div>
                                 </div>

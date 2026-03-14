@@ -105,7 +105,7 @@ const TestimonialSection = () => {
                   </svg>
 
                   {/* Quote */}
-                  <p className="text-[#3B3B3B] text-[15px] leading-relaxed mb-8 flex-grow">
+                  <p className="text-[#3B3B3B] text-[15px] leading-relaxed mb-8 flex-grow text-justify">
                     {testimonial.quote}
                   </p>
 

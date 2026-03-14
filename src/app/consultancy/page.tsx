@@ -17,13 +17,13 @@ const services: Service[] = [
         modalTitle: "We Provide:",
         modalContent: (
             <div className="space-y-4 font-bold">
-                <p>- How Domestic-Abuse-Informed Is Your Practice?</p>
+                <p>- How domestic-abuse-informed is your practice?</p>
                 <p>- Risk assessments and safeguarding audits</p>
-                <p>- Survivor-Centric Workplace Policies</p>
-                <p>- Gender-Sensitive Policy Design</p>
+                <p>- Survivor-centric workplace policies</p>
+                <p>- Gender-sensitive policy design</p>
                 <p>- Program development and staff training</p>
                 <p>- Monitoring and evaluation frameworks</p>
-                <p>- Legal and Compliance Advisory</p>
+                <p>- Legal and compliance advisory</p>
             </div>
         )
     },
@@ -33,13 +33,13 @@ const services: Service[] = [
         modalTitle: "Our institutional assessment and audit services include:",
         modalContent: (
             <div className="space-y-4 font-bold">
-                <p>- Gender-Sensitive Audits</p>
-                <p>- Gender-Audit of HR Policies and Workplace Practices</p>
+                <p>- Gender-sensitive audits</p>
+                <p>- Gender-audit of HR policies and workplace practices</p>
                 <p>- Development of codes of conduct and safeguarding policies</p>
                 <p>- Leadership and staff training on trauma-informed practices</p>
-                <p>- Service Delivery Gap Analysis</p>
-                <p>- Risk and Safeguarding Frameworks</p>
-                <p>- Designing Internal Reporting and Referral mechanisms</p>
+                <p>- Service delivery gap analysis</p>
+                <p>- Risk and safeguarding frameworks</p>
+                <p>- Designing internal reporting and referral mechanisms</p>
             </div>
         )
     },
@@ -50,13 +50,13 @@ const services: Service[] = [
         modalContent: (
             <div className="space-y-4">
                 <div className="font-bold space-y-2">
-                    <p>- Organizational Risk and Readiness Assessment</p>
+                    <p>- Organizational risk and readiness assessment</p>
                     <p>- Review of organizational policies, procedures and financial practices for risk of financial abuse</p>
                     <p>- Identification of current structural vulnerabilities and barriers to survivor safety</p>
                     <p>- Written findings with prioritized, actionable recommendations</p>
-                    <p>- Financial Abuse Screening Checklists</p>
-                    <p>- Embedding Financial Abuse Risk Assessments into HR and Community Outreach Programs</p>
-                    <p>- Risk Audits for Financial Abuse</p>
+                    <p>- Financial abuse screening checklists</p>
+                    <p>- Embedding financial abuse risk assessments into HR and community outreach programs</p>
+                    <p>- Risk audits for financial abuse</p>
                 </div>
                 <div className="pt-4 border-t border-white/30">
                     <p className="font-bold mb-2 underline">Survivor-Centric Response Framework Design</p>
@@ -79,13 +79,13 @@ const services: Service[] = [
         modalTitle: "Our services include:",
         modalContent: (
             <div className="space-y-4 font-bold">
-                <p>- Policy and Protocol Development for Employees</p>
-                <p>- Referral Pathway Design</p>
-                <p>- Confidentiality and Data-Protection Policies for Survivors (and related sensitive information)</p>
-                <p>- Strategies for Employers to Protect their Employees from Family Violence</p>
-                <p>- Stakeholder Mapping for NGOs and Community Organizations</p>
-                <p>- Equity and Inclusion Consulting</p>
-                <p>- Survivor Support and Resources</p>
+                <p>- Policy and protocol development for employees</p>
+                <p>- Referral pathway design</p>
+                <p>- Confidentiality and data-protection policies for survivors (and related sensitive information)</p>
+                <p>- Strategies for employers to protect their employees from family violence</p>
+                <p>- Stakeholder mapping for NGOs and community organizations</p>
+                <p>- Equity and inclusion consulting</p>
+                <p>- Survivor support and resources</p>
             </div>
         )
     },
@@ -95,17 +95,17 @@ const services: Service[] = [
         modalTitle: "Our service menu includes:",
         modalContent: (
             <div className="space-y-4 font-bold">
-                <p>- CV/ Resume Writing Services</p>
-                <p>- Business Development Support</p>
-                <p>- Legal Structuring for Businesses</p>
-                <p>- Organizational Assessment and Strategy Development</p>
-                <p>- Ideation and Feasibility Reports</p>
-                <p>- Financial Independence and Literacy Coaching</p>
-                <p>- Survivor-Centric Economic Planning (for Employers and Employees)</p>
-                <p>- Equity and Inclusion Consulting for Businesses</p>
-                <p>- Mentorship and Coaching</p>
-                <p>- Linking Women Entrepreneurs with Professional Mentors</p>
-                <p>- Leadership Development Workshops for Women Entrepreneurs</p>
+                <p>- CV/ Resume writing services</p>
+                <p>- Business development support</p>
+                <p>- Legal structuring for businesses</p>
+                <p>- Organizational assessment and strategy development</p>
+                <p>- Ideation and feasibility reports</p>
+                <p>- Financial independence and literacy coaching</p>
+                <p>- Survivor-centric economic planning (for employers and employees)</p>
+                <p>- Equity and inclusion consulting for businesses</p>
+                <p>- Mentorship and coaching</p>
+                <p>- Linking women entrepreneurs with professional mentors</p>
+                <p>- Leadership development workshops for women entrepreneurs</p>
             </div>
         )
     },
@@ -118,10 +118,10 @@ const services: Service[] = [
                 <p>- Policy formulation and implementation</p>
                 <p>- Employee sensitization workshop</p>
                 <p>- Complaint committee and grievance redressal mechanism setup</p>
-                <p>- Capacity Building and Gender-Sensitization workshops</p>
-                <p>- Employee training for Workplace Harassment Laws</p>
-                <p>- Employee training for essential Labour Laws</p>
-                <p>- Employee training for Laws Regarding Violence Against Women and the Domestic Violence Act(s)</p>
+                <p>- Capacity building and gender-sensitization workshops</p>
+                <p>- Employee training for workplace harassment laws</p>
+                <p>- Employee training for essential labour laws</p>
+                <p>- Employee training for laws regarding violence against women and the domestic violence act(s)</p>
             </div>
         )
     },
@@ -133,9 +133,9 @@ const services: Service[] = [
             <div className="space-y-4 font-bold">
                 <p>- Qualitative and quantitative GBV research</p>
                 <p>- Participatory research with survivors and communities</p>
-                <p>- Policy Briefs, case studies and impact assessments on DV and GBV</p>
-                <p>- Developing Toolkits and Handbooks</p>
-                <p>- Designing Impact Assessment Frameworks for Survivor-Support Interventions</p>
+                <p>- Policy briefs, case studies and impact assessments on DV and GBV</p>
+                <p>- Developing toolkits and handbooks</p>
+                <p>- Designing impact assessment frameworks for survivor-support interventions</p>
                 <p>- Knowledge translation for practitioners and policymakers</p>
             </div>
         )
@@ -166,7 +166,7 @@ export default function ConsultancyPage() {
                         <div key={index} className="border-b border-gray-200 pb-12 last:border-0 relative">
                             <div className="flex flex-col gap-6">
                                 <div className="flex flex-col md:flex-row justify-between items-start gap-4">
-                                    <h3 className="text-2xl md:text-3xl font-bold text-[#AC1514] underline decoration-1 underline-offset-8 decoration-[#AC1514]">
+                                    <h3 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] underline decoration-1 underline-offset-8 decoration-[#AC1514]">
                                         {service.title}
                                     </h3>
                                     <button
@@ -187,7 +187,7 @@ export default function ConsultancyPage() {
                 {/* Partner With Us Section */}
                 <section className="space-y-6 pt-8 border-t border-black">
                     <div className="space-y-4">
-                        <h2 className="text-2xl md:text-4xl font-bold mb-5"> Partner <span className="text-[#AC1514]">With Us</span></h2>
+                        <h2 className="text-2xl md:text-4xl font-extrabold mb-5"> Partner <span className="text-[#AC1514]">With Us</span></h2>
                         <p className="text-lg md:text-lg leading-relaxed text-justify">
                             If your organization is committed to strengthening gender equality and creating a safer workplace environment, improving employee protections and / or enhancing survivor support, The Jugnu Project Consultancy can help.
                         </p>
@@ -214,7 +214,7 @@ export default function ConsultancyPage() {
 
                         <div className="p-8 md:p-12 overflow-y-auto">
                             {selectedService.modalTitle && (
-                                <h3 className="text-xl md:text-2xl font-bold mb-6 underline underline-offset-4 decoration-white/50">
+                                <h3 className="text-xl md:text-2xl font-extrabold mb-6 underline underline-offset-4 decoration-white/50">
                                     {selectedService.modalTitle}
                                 </h3>
                             )}

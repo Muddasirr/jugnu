@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function SocialCampaigns() {
     return (
-        <div className="w-full font-serif">
+        <div className="w-full">
             {/* --------------------- Action Banners --------------------- */}
 
             {/* 1. Legal Judgements (Red) */}
@@ -17,7 +17,7 @@ export default function SocialCampaigns() {
                         <Gavel className="w-16 h-16 md:w-20 md:h-20 text-white" />
                     </div>
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold mb-2">Legal Judgements</h2>
+                        <h2 className="text-2xl md:text-3xl font-extrabold mb-2">Legal Judgements</h2>
                     </div>
                 </div>
 
@@ -26,8 +26,8 @@ export default function SocialCampaigns() {
                 </p>
 
                 <Link href="/legal-update" target="_blank" rel="noopener noreferrer">
-                    <button className="bg-white text-[#8B0000] px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
-                        Get Legal Updates
+                    <button className="bg-white text-[#8B0000] px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap uppercase">
+                        GET LEGAL UPDATES
                     </button>
                 </Link>
             </div>
@@ -40,7 +40,7 @@ export default function SocialCampaigns() {
                         <HeartHandshake className="w-16 h-16 md:w-20 md:h-20 text-white" />
                     </div>
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold mb-2">Survivor Stories</h2>
+                        <h2 className="text-2xl md:text-3xl font-extrabold mb-2">Survivor Stories</h2>
                     </div>
                 </div>
 
@@ -49,8 +49,8 @@ export default function SocialCampaigns() {
                 </p>
 
                 <Link href="/survivor-stories" target="_blank" rel="noopener noreferrer">
-                    <button className="bg-white text-black px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
-                        Read their stories
+                    <button className="bg-white text-black px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap uppercase">
+                        READ THEIR STORIES
                     </button>
                 </Link>
             </div>
@@ -62,7 +62,7 @@ export default function SocialCampaigns() {
                         <Users className="w-16 h-16 md:w-20 md:h-20 text-white" />
                     </div>
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold mb-2">Get Involved</h2>
+                        <h2 className="text-2xl md:text-3xl font-extrabold mb-2">Get Involved</h2>
                     </div>
                 </div>
 
@@ -71,8 +71,8 @@ export default function SocialCampaigns() {
                 </p>
 
                 <Link href="/getinvolved" target="_blank" rel="noopener noreferrer">
-                    <button className="bg-white text-[#C8102E] px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap">
-                        Learn More
+                    <button className="bg-white text-[#C8102E] px-6 py-2.5 rounded-[8px] text-sm font-bold hover:bg-gray-100 transition whitespace-nowrap uppercase">
+                        LEARN MORE
                     </button>
                 </Link>
             </div>
@@ -83,7 +83,7 @@ export default function SocialCampaigns() {
                 {/* Partners */}
                 <div className="mb-20 container mx-auto px-4">
                     <div className="text-center mb-8">
-                        <h2 className="text-3xl md:text-4xl text-black font-bold mb-4 font-serif">
+                        <h2 className="text-3xl md:text-4xl text-black font-extrabold mb-4">
                             <span className="text-[#C8102E]">Our</span> Partners
                         </h2>
                         <p className="text-gray-600 max-w-3xl mx-auto">
@@ -105,7 +105,7 @@ export default function SocialCampaigns() {
                 {/* Clients */}
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-8">
-                        <h2 className="text-3xl  text-black md:text-4xl font-bold mb-4 font-serif">
+                        <h2 className="text-3xl  text-black md:text-4xl font-extrabold mb-4">
                             <span className="text-[#C8102E]">Our</span> Clients
                         </h2>
                         <p className="text-gray-600 max-w-3xl mx-auto">
@@ -128,7 +128,7 @@ export default function SocialCampaigns() {
 
             <div className="py-16 bg-white container mx-auto px-16">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold font-serif">
+                    <h2 className="text-3xl md:text-4xl font-extrabold">
                         <span className="text-[#C8102E]">News</span> Updates
                     </h2>
                 </div>
@@ -160,7 +160,7 @@ export default function SocialCampaigns() {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-xl font-bold leading-tight mb-4 text-[#C8102E] group-hover:text-black transition">
+                            <h3 className="text-xl font-extrabold leading-tight mb-4 text-[#C8102E] group-hover:text-black transition">
                                 women Domestic voilence issue to the United Nations
                             </h3>
 
@@ -180,7 +180,7 @@ export default function SocialCampaigns() {
 
                                 {/* Read More Button */}
                                 <button className="bg-[#B22222] text-white text-[10px] uppercase font-bold px-4 py-2 rounded flex items-center gap-1 hover:bg-[#8B0000] transition">
-                                    Read More
+                                    READ MORE
                                     <div className="bg-white rounded-full p-[1px]">
                                         <MoveRight className="w-2 h-2 text-[#B22222]" />
                                     </div>

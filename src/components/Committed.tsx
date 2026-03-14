@@ -30,7 +30,7 @@ const CommittedSection = () => {
             </h2>
 
 
-            <div className="space-y-6 text-gray-200 text-base md:text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-200 text-base md:text-lg leading-relaxed text-justify">
               <p>
                 Our work aligns with CEDAW, ILO Conventions, and the UN Sustainable Development
                 Goals, ensuring international credibility and accountability.
@@ -64,8 +64,8 @@ const CommittedSection = () => {
             {/* SDG Button */}
             <div className="mt-8">
               <Link href="/sdgs" target="_blank" rel="noopener noreferrer">
-                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-3 text-sm font-bold hover:bg-[#8B0000] transition-all">
-                  Learn More About the SDGs We Implement
+                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-3 text-sm font-bold hover:bg-[#8B0000] transition-all uppercase">
+                  LEARN MORE ABOUT THE SDGS WE IMPLEMENT
                 </button>
               </Link>
             </div>

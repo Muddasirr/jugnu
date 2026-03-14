@@ -10,52 +10,49 @@ export default function GetHelp() {
 
             <div className="  space-y-8 ">
                 {/* Is Your Life In Danger? */}
-                <h2 className="text-2xl md:text-3xl font-bold text-black underline decoration-[#AC1514]">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-black underline decoration-[#AC1514]">
                     Is Your Life <span className="text-[#AC1514] underline">In Danger?</span>
                 </h2>
 
                 {/* Immediate Risk Text */}
-                <p className="text-base md:text-lg font-medium leading-relaxed text-black">
-                    If You, Or Someone You Know, Is At Immediate Risk Or In Danger, Please Call The{" "}
+                <p className="text-base md:text-lg font-medium leading-relaxed text-black text-justify">
+                    If you, or someone you know, is at immediate risk or in danger, please call the{" "}
                     <span className="text-[#C8102E]  underline font-bold cursor-pointer hover:underline">
-                        POLICE (Contact Number: 15).
+                        POLICE (contact number: 15).
                     </span>
                 </p>
 
                 {/* Crisis Support Text */}
-                <p className="text-base md:text-lg text-black leading-relaxed">
-                    While We Don’t Offer Crisis Support At The Moment, We Can Do Our Best To Help You Get Connected To The Kind Of Support You
-                    Need. Check Our{" "}
+                <p className="text-base md:text-lg text-black leading-relaxed text-justify">
+                    While we don’t offer crisis support at the moment, we can do our best to help you get connected to the kind of support you
+                    need. Check our{" "}
                     <span className="text-[#C8102E] underline font-bold cursor-pointer hover:underline">
                         VICTIM'S DIRECTORY
                     </span>{" "}
-                    To Gain Access To Emergency Numbers / Service Providers Near You.
+                    to gain access to emergency numbers / service providers near you.
                 </p>
 
                 {/* Resources Text */}
-                <p className="text-base md:text-lg text-black leading-relaxed">
-                    You Can Also Check Out Our Various{" "}
+                <p className="text-base md:text-lg text-black leading-relaxed text-justify">
+                    You can also check out our various{" "}
                     <span className="text-[#C8102E] underline font-bold cursor-pointer hover:underline">
                         RESOURCES
                     </span>{" "}
-                    For Added Support.
+                    for added support.
                 </p>
 
                 {/* Contact Text */}
-                <p className="text-base md:text-lg text-black leading-relaxed">
-                    If You Need To, You Can Get In Touch With Us Through Our Social Media, Or Email Us
+                <p className="text-base md:text-lg text-black leading-relaxed text-justify">
+                    If you need to, you can get in touch with us through our social media, or email us
                     <a
-                        href="mailto:Thejugnuproject@Gmail.Com"
+                        href="mailto:thejugnuproject@gmail.com"
                         className="text-[#C8102E] font-bold block mt-2 underline"
                     >
-                        (Thejugnuproject@Gmail.Com){" "}
+                        (thejugnuproject@gmail.com){" "}
                         <span className="inline-block text-black font-normal no-underline">
-                            {" "}And We Will Do Our Best To Help.
+                            {" "}and we will do our best to help.
                         </span>
                     </a>
-
-
-
                 </p>
             </div>
 

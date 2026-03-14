@@ -11,58 +11,58 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
     {
         name: "Amaal Jafar",
-        role: "Founder of Island Feminism, and Co-Founder of Sisters Media",
+        role: "Founder of Island Feminism, and Co-founder of Sisters Media",
         location: "",
-        text: "As an expert in Family Violence, Zahra founded an Right Violence by Our Youth As Amaal At One Best At Engage With Wider Survivors, Including At The Right For Of Engaging Addressing With Media and 1000 Younger Girls. For One Particular Receiving With A Talk Titled Confronting Domestic Violence And Abuse: Empowering Survivors Through Awareness And Support. Zahra's Expertise And Dedication Were Evident In Her Presentation. She Provided Valuable Insights Into The Complexities Of Domestic Violence And Abuse, Shedding Light On The Challenges Faced By Survivors And The Importance Of Providing Them With The Necessary Support. Zahra's Presentation Was Informative And Impactful, Leaving A Lasting Impression On All Who Attended. Her Commitment To Raising Awareness And Advocating For Survivors Is Commendable, And Her Dedication To Empowering Individuals And Combating Domestic Violence Is Truly Inspiring. I Highly Recommend Zahra For Any Speaking Engagements Or Initiatives Related To Domestic Violence And Abuse. Her Passion, Knowledge, And Advocacy Make Her An Invaluable Asset In The Fight Against Domestic Violence, And I Am Confident That Her Continued Contributions Will Continue To Make A Positive Impact In The Lives Of Survivors And Communities Worldwide.",
+        text: "As an expert in family violence, Zahra founded an Right Violence by Our Youth As Amaal At One Best At Engage With Wider Survivors, Including At The Right For Of Engaging Addressing With Media and 1000 Younger Girls. For one particular receiving with a talk titled confronting domestic violence and abuse: empowering survivors through awareness and support. Zahra's expertise and dedication were evident in her presentation. She provided valuable insights into the complexities of domestic violence and abuse, shedding light on the challenges faced by survivors and the importance of providing them with the necessary support. Zahra's presentation was informative and impactful, leaving a lasting impression on all who attended. Her commitment to raising awareness and advocating for survivors is commendable, and her dedication to empowering individuals and combating domestic violence is truly inspiring. I highly recommend Zahra for any speaking engagements or initiatives related to domestic violence and abuse. Her passion, knowledge, and advocacy make her an invaluable asset in the fight against domestic violence, and I am confident that her continued contributions will continue to make a positive impact in the lives of survivors and communities worldwide.",
         image: "/testimonials/amaal.jpg",
     },
     {
         name: "E. Omar",
         role: "Survivor (USA)",
         location: "",
-        text: "As someone who has gone through domestic violence, I was blessed to have found Zahra At The Jugnu. What Zahra And Jugnu Represent And Advocate For Is So Important. I have personally benefited from Zahra's guidance and support. She is incredibly knowledgeable and compassionate. Zahra has been a source of comfort and strength for me during one of the most difficult times in my life. I cannot recommend Zahra and The Jugnu Project enough. Her work is truly life-changing and has made a significant impact on my healing journey. I am forever grateful for the work that Zahra does and I know that she will continue to make a difference in the lives of countless survivors.",
+        text: "As someone who has gone through domestic violence, I was blessed to have found Zahra at The Jugnu. What Zahra and Jugnu represent and advocate for is so important. I have personally benefited from Zahra's guidance and support. She is incredibly knowledgeable and compassionate. Zahra has been a source of comfort and strength for me during one of the most difficult times in my life. I cannot recommend Zahra and The Jugnu Project enough. Her work is truly life-changing and has made a significant impact on my healing journey. I am forever grateful for the work that Zahra does and I know that she will continue to make a difference in the lives of countless survivors.",
         image: "/testimonials/omar.jpg",
     },
     {
         name: "Azza Maqsood",
         role: "Development Sector Specialist and Trainer",
         location: "",
-        text: "I had the pleasure of Attending a Workshop, I Have Been Privileged For Zahra's Profound Understanding of The Legal And Social Landscape Surrounding Gender-based Violence And Abuse. Her Expertise In Navigating The Complexities Of Domestic Violence, Including Legal Frameworks And Support Systems, Is Truly Commendable. Zahra's Dedication To Empowering Survivors And Raising Awareness About These Critical Issues Is Evident In Her Work. Her Ability To Engage And Educate Audiences On The Nuances Of Domestic Violence And Abuse Is Remarkable. Zahra's Passion For Advocating For Survivors And Her Commitment To Creating A Safer And More Supportive Environment For Those Affected By Domestic Violence Is Inspiring. I Highly Recommend Zahra For Any Initiatives Or Projects Related To Domestic Violence And Abuse. Her Knowledge, Compassion, And Advocacy Make Her An Invaluable Asset In The Fight Against Gender-based Violence, And I Am Confident That Her Continued Efforts Will Have A Lasting Impact On The Lives Of Survivors And Communities.",
+        text: "I had the pleasure of attending a workshop, I have been privileged for Zahra's profound understanding of the legal and social landscape surrounding gender-based violence and abuse. Her expertise in navigating the complexities of domestic violence, including legal frameworks and support systems, is truly commendable. Zahra's dedication to empowering survivors and raising awareness about these critical issues is evident in her work. Her ability to engage and educate audiences on the nuances of domestic violence and abuse is remarkable. Zahra's passion for advocating for survivors and her commitment to creating a safer and more supportive environment for those affected by domestic violence is inspiring. I highly recommend Zahra for any initiatives or projects related to domestic violence and abuse. Her knowledge, compassion, and advocacy make her an invaluable asset in the fight against gender-based violence, and I am confident that her continued efforts will have a lasting impact on the lives of survivors and communities.",
         image: "/testimonials/azza.jpg",
     },
     {
         name: "M. Abdullah",
         role: "Survivor (USA)",
         location: "",
-        text: "I Cannot Express Enough How Grateful I Am For Zahra And The Jugnu Project. After My Divorce, I Was Lost And Didn't Know Where To Turn. Zahra Provided Me With The Support And Guidance I Desperately Needed. She Helped Me Navigate The Legal System And Connected Me With Resources That I Didn't Even Know Existed. Zahra's Compassion And Understanding Made Me Feel Heard And Validated During One Of The Most Difficult Times In My Life. I Am Forever Grateful For The Jugnu Project And The Work That Zahra Does. She Is A True Advocate For Survivors And I Cannot Recommend Her Enough.",
+        text: "I cannot express enough how grateful I am for Zahra and The Jugnu Project. After my divorce, I was lost and didn't know where to turn. Zahra provided me with the support and guidance I desperately needed. She helped me navigate the legal system and connected me with resources that I didn't even know existed. Zahra's compassion and understanding made me feel heard and validated during one of the most difficult times in my life. I am forever grateful for The Jugnu Project and the work that Zahra does. She is a true advocate for survivors and I cannot recommend her enough.",
         image: "/testimonials/abdullah.jpg",
     },
     {
         name: "Waseela",
         role: "Survivor (Pakistan)",
         location: "",
-        text: "I Want To Thank Zahra And The Jugnu Project For Everything They Have Done For Me. I Was In An Abusive Marriage. I Had No Idea What My Rights Were As A Wife, Restaurateur And Victim. My Family Refused To Support Me And I Didn't Know What My Daughters As A Single Mother Anymore. The Jugnu Project Informed Me With A Help From Them Navigated The Legal System And Connected Me With Resources That I Didn't Even Know Existed. Zahra's Compassion And Understanding Made Me Feel Heard And Validated During One Of The Most Difficult Times In My Life. I Am Forever Grateful For The Jugnu Project And The Work That Zahra Does. She Is A True Advocate For Survivors And I Cannot Recommend Her Enough.",
+        text: "I want to thank Zahra and The Jugnu Project for everything they have done for me. I was in an abusive marriage. I had no idea what my rights were as a wife, restaurateur and victim. My family refused to support me and I didn't know what my daughters as a single mother anymore. The Jugnu Project informed me with a help from them navigated the legal system and connected me with resources that I didn't even know existed. Zahra's compassion and understanding made me feel heard and validated during one of the most difficult times in my life. I am forever grateful for The Jugnu Project and the work that Zahra does. She is a true advocate for survivors and I cannot recommend her enough.",
         image: "/testimonials/waseela.jpg",
     },
     {
         name: "Ellena",
         role: "Survivor (USA / Pakistan)",
         location: "",
-        text: "I Deeply Thankful Zahra For The Jugnu. She Stood Beside From When I Found Away The \"Good Wife\" Living With My Husband And In-laws. But My Mother Wouldn't Help. I Advocated For My Own Rights And Fought For My Freedom. Zahra Helped Me Understand My Legal Rights And Connected Me With Resources That I Didn't Even Know Existed. The Jugnu Project Has Been A Lifeline For Me And I Am Forever Grateful For The Support And Guidance That Zahra Has Provided. She Is A True Advocate For Survivors And I Cannot Recommend Her Enough.",
+        text: "I deeply thankful Zahra for the Jugnu. She stood beside from when I found away the \"good wife\" living with my husband and in-laws. But my mother wouldn't help. I advocated for my own rights and fought for my freedom. Zahra helped me understand my legal rights and connected me with resources that I didn't even know existed. The Jugnu Project has been a lifeline for me and I am forever grateful for the support and guidance that Zahra has provided. She is a true advocate for survivors and I cannot recommend her enough.",
         image: "/testimonials/ellena.jpg",
     },
     {
         name: "Aneeqa",
         role: "Survivor (Pakistan)",
         location: "",
-        text: "I Want To Thank Zahra And The Jugnu Project For Everything They Have Done For Me. She Has Stood Alongside Me Exactly For The Marriage. I Was Very Young And My Parents Refused To Let Me Get A Divorce. Zahra Helped Me Understand My Legal Rights And Connected Me With Resources That I Didn't Even Know Existed. She Helped Me Navigate The Legal System And Provided Me With The Support And Guidance I Desperately Needed. Zahra's Compassion And Understanding Made Me Feel Heard And Validated During One Of The Most Difficult Times In My Life. I Am Forever Grateful For The Jugnu Project And The Work That Zahra Does. She Is A True Advocate For Survivors And I Cannot Recommend Her Enough. I Hope To See More Women Like Zahra Who Are Dedicated To Helping Survivors And Making A Difference In The Lives Of Those Affected By Domestic Violence. She Is Changing The Way That Two Years And More Newly Joined To Jugnu My Udyam's.",
+        text: "I want to thank Zahra and The Jugnu Project for everything they have done for me. She has stood alongside me exactly for the marriage. I was very young and my parents refused to let me get a divorce. Zahra helped me understand my legal rights and connected me with resources that I didn't even know existed. She helped me navigate the legal system and provided me with the support and guidance I desperately needed. Zahra's compassion and understanding made me feel heard and validated during one of the most difficult times in my life. I am forever grateful for The Jugnu Project and the work that Zahra does. She is a true advocate for survivors and I cannot recommend her enough. I hope to see more women like Zahra who are dedicated to helping survivors and making a difference in the lives of those affected by domestic violence. She is changing the way that two years and more newly joined to jugnu my udyam's.",
         image: "/testimonials/aneeqa.jpg",
     },
     {
         name: "E. Rida",
         role: "Survivor (Pakistan)",
         location: "",
-        text: "I Want To Thank Zahra And The Jugnu For It. Anyway - She Has Shown To Budgets Preserve Our Wounds Saw Say - She Able My Appear In Welfare. Rida Are Whom Years Zahra Made Whom Zahra Zahra Has Made Whom Zahra Has Made Whom Zahra Zahra Zahra Zahra Zahra.",
+        text: "I want to thank Zahra and the Jugnu for it. Anyway - she has shown to budgets preserve our wounds saw say - she able my appear in welfare. Rida are whom years Zahra made whom zahra zahra has made whom zahra has made whom zahra zahra zahra zahra zahra.",
         image: "/testimonials/rida.jpg",
     },
 ];
@@ -72,12 +72,12 @@ export default function TestimonialsPage() {
         <div className="bg-white">
             {/* Header Section */}
             <section className="  px-24 py-12">
-                <p className="text-[24px] text-black leading-relaxed mb-8">
-                    The Jugnu Project Is Proud To Have Had The Chance To Work With Various{" "}
+                <p className="text-[24px] text-black leading-relaxed mb-8 text-justify">
+                    The Jugnu Project is proud to have had the chance to work with various{" "}
                     <span className="text-[#AC1514] font-semibold">
-                        Organizations, NGOs, Civil Society Organizations, Community Centers And Government Agencies
+                        organizations, NGOs, civil society organizations, community centers and government agencies
                     </span>{" "}
-                    In An Effort To Create A Society That Is Supportive For Survivors. We Feel Truly Blessed To Have Been Able To Help Implement Policies And Spread Awareness To Change The Trajectory Of The Work That Goes Into The Welfare.
+                    in an effort to create a society that is supportive for survivors. We feel truly blessed to have been able to help implement policies and spread awareness to change the trajectory of the work that goes into the welfare.
                 </p>
             </section>
 
@@ -87,28 +87,28 @@ export default function TestimonialsPage() {
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="flex gap-4 md:gap-6 relative">
                             {/* Left side - Profile Picture */}
-                          
+
                             {/* Right side - Content */}
                             <div className="flex-1 pb-8 border-l-4 !border-[#AC1514]  pl-6 md:pl-8">
                                 <div className="flex gap-4" >
-                                 <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-200 border-2  ">
-                                    <Image
-                                        src={testimonial.image}
-                                        alt={testimonial.name}
-                                        fill
-                                        className="object-cover"
-                                    />
+                                    <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-200 border-2  ">
+                                        <Image
+                                            src={testimonial.image}
+                                            alt={testimonial.name}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-lg md:text-xl font-bold text-[#AC1514] mb-1 text-justify">
+                                            {testimonial.name}
+                                        </h3>
+                                        <p className="text-sm md:text-base text-gray-600 mb-3">
+                                            {testimonial.role}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                <h3 className="text-lg md:text-xl font-bold text-[#AC1514] mb-1">
-                                    {testimonial.name}XX
-                                </h3>
-                                <p className="text-sm md:text-base text-gray-600 mb-3">
-                                    {testimonial.role}
-                                </p>
-                                </div>
-                                </div>
-                                <p className="text-sm md:text-base text-gray-800 leading-relaxed">
+                                <p className="text-sm md:text-base text-gray-800 leading-relaxed text-justify">
                                     {testimonial.text}
                                 </p>
                             </div>

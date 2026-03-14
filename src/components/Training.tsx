@@ -129,7 +129,7 @@ export default function Training() {
                                 onClick={() => toggleAccordion(index)}
                                 className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 transition-colors"
                             >
-                                <span className="text-sm md:text-base font-medium pr-4">
+                                <span className="text-sm md:text-base font-bold uppercase pr-4">
                                     {index + 1}. {item.title}
                                 </span>
                                 <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-black flex items-center justify-center">
