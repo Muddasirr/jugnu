@@ -30,11 +30,11 @@ const Footer = () => {
           Subscribe to our newsletter to stay updated with the latest news, exclusive content, and special offers. Join our
           community and be the first to know about exciting events and opportunities. Don't miss out—sign up today!
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto justify-center items-center">
           <input
             type="email"
             placeholder="Enter your email address"
-            className="bg-[hsl(var(--footer-input))]  border border-white rounded-full px-6 h-12 flex-1 focus:outline-none focus:ring-2 focus:ring-white/50"
+            className="bg-transparent border-2 border-white/50 text-white placeholder:text-white/70 rounded-full px-6 h-12 flex-1 focus:outline-none focus:border-white focus:ring-2 focus:ring-white/30"
           />
           <button className="bg-[white] text-[black] hover:bg-white/90 rounded-full px-8 h-12 font-bold uppercase transition-colors cursor-pointer">
             SUBSCRIBE
