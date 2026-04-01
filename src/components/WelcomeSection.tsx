@@ -63,7 +63,7 @@ export default function WelcomeSection() {
                                 ABOUT US
                             </button>
                             </Link>
-                            <Link href="https://medium.com/@thejugnuproject/jugnus-story-83b596282713">
+                            <Link href="/jugnus-story">
                                 <button className="bg-[#AC1514] rounded-[8px] text-white px-6 py-2.5 text-sm font-bold hover:bg-[#8B0000] transition-all">
                                     JUGNU'S STORY
                                 </button>

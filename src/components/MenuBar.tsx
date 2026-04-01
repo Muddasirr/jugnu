@@ -28,7 +28,7 @@ const MenuBar = () => {
               <li key={index} className="px-2 text-center whitespace-normal min-w-[120px] md:min-w-0 flex-shrink-0 md:flex-shrink">
                 <Link
                   href={item.href}
-                  className={`transition-colors block ${isActive ? "text-black" : "text-[#AC1514] hover:text-black"}`}
+                  className={`transition-colors block ${isActive ? "text-[#AC1514] " : "text-black hover:text-[#AC1514]"}`}
                   dangerouslySetInnerHTML={{ __html: item.label }}
                 ></Link>
               </li>
