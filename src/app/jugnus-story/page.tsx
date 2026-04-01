@@ -148,7 +148,7 @@ export default function JugnusStory() {
                     </div>
 
                     <p className="text-[#AC1514] text-left text-sm md:text-base">
-                        <a href="#" className="hover:underline">You can read the full Twitter thread (and its responses) here.</a>
+                        <a href="https://twitter.com/Zohra_Ahmed_/status/1461023450319970304" className="hover:underline">You can read the full Twitter thread (and its responses) here.</a>
                     </p>
 
                     <p>
