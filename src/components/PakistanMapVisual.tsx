@@ -13,7 +13,7 @@ export default function PakistanMapVisual() {
     const regionalData = [
         {
             name: "Islamabad Capital Territory (ICT)",
-            position: [33.6844, 73.0479],
+            position: [33.7215, 73.0433],
             stats: {
                 total: "220 cases of gender based violence reported in 2024 (SSDO GBV Report for 2024)",
                 details: [
@@ -25,7 +25,7 @@ export default function PakistanMapVisual() {
         },
         {
             name: "Punjab",
-            position: [31.5204, 74.3587],
+            position: [30.3753, 71.6876],
             stats: {
                 total: "26,753 cases of gender based violence reported in 2024. (SSDO GBV Report for 2024)",
                 details: [
@@ -35,7 +35,7 @@ export default function PakistanMapVisual() {
         },
         {
             name: "Sindh",
-            position: [24.8607, 67.0011],
+            position: [26.0, 68.5],
             stats: {
                 total: "1,781 cases of gender based violence reported in 2024. (SSDO GBV Report for 2024)",
                 details: [
@@ -47,7 +47,7 @@ export default function PakistanMapVisual() {
         },
         {
             name: "Khyber Pakhtunkhwa (KP)",
-            position: [34.0150, 71.5805],
+            position: [34.5553, 71.5785],
             stats: {
                 total: "3,397 cases of gender based violence reported in 2024 (SSDO GBV Report for 2024)",
                 details: [
@@ -59,7 +59,7 @@ export default function PakistanMapVisual() {
         },
         {
             name: "Balochistan",
-            position: [27.7089, 68.8354],
+            position: [28.5, 65.5],
             stats: {
                 total: "398 cases of gender based violence reported in 2024 (SSDO GBV Report for 2024)",
                 details: [
@@ -70,7 +70,7 @@ export default function PakistanMapVisual() {
         },
         {
             name: "Gilgit Baltistan",
-            position: [35.9200, 74.3080],
+            position: [36.1, 74.6],
             stats: {
                 total: "Married women reported a higher level of domestic violence:",
                 details: [
@@ -167,8 +167,8 @@ export default function PakistanMapVisual() {
                             }}
                         >
                             <Tooltip
-                                direction="top"
-                                offset={[0, -10]}
+                                direction={(region.position as [number, number])[0] > 33.5 ? "bottom" : "top"}
+                                offset={[0, (region.position as [number, number])[0] > 33.5 ? 10 : -10]}
                                 opacity={1}
                                 permanent={false}
                                 className="custom-tooltip"
