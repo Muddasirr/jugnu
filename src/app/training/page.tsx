@@ -362,6 +362,14 @@ export default function TrainingPage() {
                                 <div className="px-6 py-6 bg-gray-50 border-t border-gray-200">
                                     <div className="text-sm md:text-base text-black leading-relaxed pl-12 text-justify">
                                         {program.content}
+                                        <div className="mt-6 flex justify-start">
+                                            <a
+                                                href={`mailto:thejugnuproject@gmail.com?subject=Registration for ${program.title}`}
+                                                className="bg-[#AC1514] text-white px-8 py-3 rounded-md font-bold  transition-all uppercase text-sm shadow-md"
+                                            >
+                                                Register Now
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
