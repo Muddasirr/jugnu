@@ -46,10 +46,10 @@ const PolicyPage: React.FC = () => {
     <div className="bg-white text-black">
       {/* Hero / Intro Section */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-20 text-justify">
-        <p className="text-lg md:text-lg text-[#AC1514] mb-6 leading-relaxed">
+        <p className="text-[18px] text-[#AC1514] mb-6 leading-[1.7]">
           <em>Driving systemic change for a safer, survivor-centric and more just Pakistan.</em>
         </p>
-        <p className="text-lg md:text-lg text-black leading-relaxed">
+        <p className="text-[18px] text-black leading-[1.7]">
           At The Jugnu Project, we believe meaningful change can only come through the implementation of
           strong laws, the establishment of survivor-centric and responsible institutions, and the creation
           of public and judicial systems that protect survivors instead of failing them. Our work in policy
@@ -60,31 +60,39 @@ const PolicyPage: React.FC = () => {
 
       {/* Our Approach Section */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-8">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] mb-6 text-center underline decoration-auto">Our Approach</h2>
-        <div className="flex flex-col gap-3">
-          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Survivor-centered policy reform</p>
-          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Research-informed advocacy</p>
-          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Collaborating for national impact</p>
-          <p className="text-xl md:text-2xl font-extrabold text-black m-0 underline leading-relaxed">Strengthening legal and protection systems</p>
+        <h2 className="text-[32px] font-extrabold text-[#AC1514] mb-6 text-center underline decoration-auto">Our Approach</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+          <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
+            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Survivor-centered policy reform</p>
+          </div>
+          <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
+            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Research-informed advocacy</p>
+          </div>
+          <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
+            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Collaborating for national impact</p>
+          </div>
+          <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
+            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Strengthening legal and protection systems</p>
+          </div>
         </div>
       </section>
 
       {/* Key Advocacy Areas */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-8 border-t border-[#e0e0e0] text-justify">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] mb-6 text-center underline">Our Key Advocacy Areas</h2>
-        <p className="text-lg md:text-lg text-black text-center mb-8 leading-relaxed">
+        <h2 className="text-[32px] font-extrabold text-[#AC1514] mb-6 text-center underline">Our Key Advocacy Areas</h2>
+        <p className="text-[18px] text-black text-center mb-8 leading-[1.7]">
           Our multi-faceted advocacy encompasses the following key areas:
         </p>
 
         <div className="flex flex-col gap-8">
           {advocacyAreas.map((area) => (
             <div key={area.id} className="flex flex-col gap-0">
-              <h3 className="text-xl md:text-2xl font-extrabold text-black mb-3 leading-relaxed underline">
+              <h3 className="text-[24px] font-extrabold text-black mb-3 leading-[1.7] underline">
                 {area.id}. {area.title}
               </h3>
-              <p className="text-lg md:text-lg text-black leading-relaxed m-0">{area.content}</p>
+              <p className="text-[18px] text-black leading-[1.7] m-0">{area.content}</p>
               {area.extra && (
-                <p className="text-lg md:text-lg text-black leading-relaxed mt-4">
+                <p className="text-[18px] text-black leading-[1.7] mt-4">
                   {area.extra}
                 </p>
               )}
@@ -95,11 +103,11 @@ const PolicyPage: React.FC = () => {
 
       {/* Our Advocacy Philosophy */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 text-justify">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-black underline mb-5 leading-relaxed">Our Advocacy Philosophy</h2>
-        <p className="text-lg md:text-lg text-black mb-4 leading-relaxed">
+        <h2 className="text-[32px] font-extrabold text-black underline mb-5 leading-[1.7]">Our Advocacy Philosophy</h2>
+        <p className="text-[18px] text-black mb-4 leading-[1.7]">
           <em>Bold. Evidence-based. Survivor-led. System focused.</em>
         </p>
-        <p className="text-lg md:text-lg text-black leading-relaxed m-0">
+        <p className="text-[18px] text-black leading-[1.7] m-0">
           Our advocacy challenges harmful norms within society head on. We work to provide survivors with a
           stage, and do our best to amplify the voices of those who are most affected by the violence.
         </p>
@@ -107,19 +115,19 @@ const PolicyPage: React.FC = () => {
 
       {/* Partner With Us */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 text-justify">
-        <h2 className="text-2xl md:text-4xl font-extrabold text-black underline mb-5 leading-relaxed">Partner With Us</h2>
-        <p className="text-lg md:text-lg text-black leading-relaxed mb-2">
+        <h2 className="text-[32px] font-extrabold text-black underline mb-5 leading-[1.7]">Partner With Us</h2>
+        <p className="text-[18px] text-black leading-[1.7] mb-2">
           We welcome partnerships with the government, corporations, members of civil society, researchers
           and community workers, committed to advancing justice, safety and equality.
         </p>
-        <Link href="/getinvolved" className="block text-lg md:text-lg font-bold text-[#AC1514] no-underline mb-6 leading-relaxed">Partner with us</Link>
-        <p className="text-lg md:text-lg text-black leading-relaxed mb-5">
+        <Link href="/getinvolved" className="block text-[18px] font-bold text-[#AC1514] no-underline mb-6 leading-[1.7]">Partner with us</Link>
+        <p className="text-[18px] text-black leading-[1.7] mb-5">
           If you&apos;d like to collaborate with us on one of our campaigns, get in touch:{' '}
           <a href="mailto:thejugnuproject@gmail.com" className="text-[#AC1514] no-underline">
             thejugnuproject@gmail.com
           </a>
         </p>
-        <p className="text-lg md:text-lg text-[#AC1514] m-0 underline leading-relaxed">
+        <p className="text-[18px] text-[#AC1514] m-0 underline leading-[1.7]">
           Together, we can build a Pakistan where every survivor is heard, protected and empowered.
         </p>
       </section>
