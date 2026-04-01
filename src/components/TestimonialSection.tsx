@@ -2,31 +2,32 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const testimonials = [
   {
     id: 1,
     quote:
-      "The team's dedication to quality and excellence truly exceeded my expectations. From the initial consultation to the final deliverable, every detail was carefully managed, and they took the time to understand my unique needs and vision. Communication was clear and consistent, which made the entire process smooth and enjoyable. I could see their commitment to delivering not just a product but a complete, polished experience. It's rare to find such a blend of professionalism, creativity, and responsiveness, and I would highly recommend them to anyone looking for top-tier service.",
-    name: "Mason Brooks",
-    title: "Business Development Lead",
-    avatar: "/placeholder.svg",
+      "As an expert in family violence, Zahra founded an Right Violence by Our Youth As Amaal At One Best At Engage With Wider Survivors, Including At The Right For Of Engaging Addressing With Media and 1000 Younger Girls. For one particular receiving with a talk titled confronting domestic violence and abuse: empowering survivors through awareness and support. Zahra's expertise and dedication were evident in her presentation. She provided valuable insights into the complexities of domestic violence and abuse, shedding light on the challenges faced by survivors and the importance of providing them with the necessary support. Zahra's presentation was informative and impactful, leaving a lasting impression on all who attended. Her commitment to raising awareness and advocating for survivors is commendable, and her dedication to empowering individuals and combating domestic violence is truly inspiring.",
+    name: "Amaal Jafar",
+    title: "Founder of Island Feminism, and Co-founder of Sisters Media",
+    avatar: "/testimonials/amaal.jpg",
   },
   {
     id: 2,
     quote:
-      "I am incredibly impressed by the professionalism and dedication shown throughout our collaboration. The team demonstrated a deep understanding of our project goals and went out of their way to ensure everything was perfect. Not only did they deliver a high-quality product, but they also kept us informed every step of the way. Their responsiveness and attention to detail transformed our ideas into reality with expertise that exceeded expectations.",
-    name: "Noah Smith",
-    title: "Chief Operations Officer",
-    avatar: "/placeholder.svg",
+      "As someone who has gone through domestic violence, I was blessed to have found Zahra at The Jugnu. What Zahra and Jugnu represent and advocate for is so important. I have personally benefited from Zahra's guidance and support. She is incredibly knowledgeable and compassionate. Zahra has been a source of comfort and strength for me during one of the most difficult times in my life. I cannot recommend Zahra and The Jugnu Project enough. Her work is truly life-changing and has made a significant impact on my healing journey. I am forever grateful for the work that Zahra does and I know that she will continue to make a difference in the lives of countless survivors.",
+    name: "E. Omar",
+    title: "Survivor (USA)",
+    avatar: "/testimonials/omar.jpg",
   },
   {
     id: 3,
     quote:
-      "Working with this team has been an absolute pleasure. Their innovative approach and attention to detail set them apart from others in the industry. They listened carefully to our requirements and delivered beyond what we imagined possible.",
-    name: "Emma Wilson",
-    title: "Marketing Director",
-    avatar: "/placeholder.svg",
+      "I had the pleasure of attending a workshop, I have been privileged for Zahra's profound understanding of the legal and social landscape surrounding gender-based violence and abuse. Her expertise in navigating the complexities of domestic violence, including legal frameworks and support systems, is truly commendable. Zahra's dedication to empowering survivors and raising awareness about these critical issues is evident in her work. Her ability to engage and educate audiences on the nuances of domestic violence and abuse is remarkable. Zahra's passion for advocating for survivors and her commitment to creating a safer and more supportive environment for those affected by domestic violence is inspiring.",
+    name: "Azza Maqsood",
+    title: "Development Sector Specialist and Trainer",
+    avatar: "/testimonials/azza.jpg",
   },
 ];
 
@@ -110,25 +111,29 @@ const TestimonialSection = () => {
                   </p>
 
                   {/* Author */}
-                  <div className="flex items-center gap-4 mt-4">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-md object-cover"
-                    />
-                    <div>
-                      <h4 className="text-[#3B3B3B] font-semibold text-lg">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-[#3B3B3B]/70 text-sm">
-                        {testimonial.title}
-                      </p>
-                    </div>
+                  <div className="mt-4">
+                    <h4 className="text-[#3B3B3B] font-semibold text-lg">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-[#3B3B3B]/70 text-sm">
+                      {testimonial.title}
+                    </p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Read More Button */}
+        <div className="flex justify-center mt-10">
+          <Link
+            href="/testimonials"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-[#AC1514] text-white font-semibold rounded-full hover:bg-[#8f1111] transition-colors duration-200"
+          >
+            Read All Testimonials
+            <ChevronRight className="w-4 h-4" />
+          </Link>
         </div>
       </div>
     </section>
