@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center md:space-x-1.5 lg:space-x-2.5 xl:space-x-5 2xl:space-x-8 text-[10px] md:text-[11px] lg:text-xs xl:text-sm 2xl:text-base font-bold tracking-normal lg:tracking-wide">
+        <nav className="hidden md:flex items-center md:space-x-1.5 lg:space-x-2.5 xl:space-x-5 2xl:space-x-8 text-[10px] md:text-[11px] lg:text-xs xl:text-sm 2xl:text-base font-semibold tracking-normal lg:tracking-wide">
           {navLinks.map((link) => (
             <Link
               key={link.href}
