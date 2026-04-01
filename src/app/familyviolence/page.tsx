@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Link from 'next/link';
 import { Search, Globe, Instagram, Facebook, Youtube, Linkedin, MoveRight } from 'lucide-react';
