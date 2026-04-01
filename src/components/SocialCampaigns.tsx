@@ -128,7 +128,7 @@ export default function SocialCampaigns() {
 
             <div className="py-16 bg-white container mx-auto px-16">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-extrabold">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-black" >
                         <span className="text-[#C8102E]">News</span> Updates
                     </h2>
                 </div>

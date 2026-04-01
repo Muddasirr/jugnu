@@ -113,7 +113,7 @@ export default function AboutUsPage() {
                         </p>
 
                         <div className="pt-4">
-                            <Link href="https://medium.com/@thejugnuproject/jugnus-story-83b596282713" target="_blank" rel="noopener noreferrer">
+                            <Link href="/jugnus-story" target="_blank" rel="noopener noreferrer">
                                 <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
                                     JUGNU'S STORY
                                 </button>
@@ -289,7 +289,7 @@ export default function AboutUsPage() {
 
             {/* Our Core Principles Section */}
             <section className="bg-white py-12 md:py-16">
-                <div className="max-w-7xl mx-auto px-6 md:px-16">
+                <div className="max-w-7xl mx-auto px-6 md:px-4">
                     <div className="text-center mb-8">
                         <h2 className="text-2xl md:text-4xl font-bold mb-4">
                             <span className="text-[#AC1514]">Our Core</span> <span className="text-black">Principles</span>
@@ -305,7 +305,7 @@ export default function AboutUsPage() {
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                             {selectedPrinciple === "survivor-centered" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Survivor-centered systems
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
@@ -325,7 +325,7 @@ export default function AboutUsPage() {
 
                             {selectedPrinciple === "safety" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Safety and confidentiality
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
@@ -345,7 +345,7 @@ export default function AboutUsPage() {
 
                             {selectedPrinciple === "intersectionality" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Intersectionality
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
@@ -365,7 +365,7 @@ export default function AboutUsPage() {
 
                             {selectedPrinciple === "equality" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline  ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Equality and accessibility
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
@@ -388,7 +388,7 @@ export default function AboutUsPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {selectedPrinciple === "awareness" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline  underline ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Awareness, empowerment and healing
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
@@ -408,7 +408,7 @@ export default function AboutUsPage() {
 
                             {selectedPrinciple === "inclusivity" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Inclusivity
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
@@ -428,7 +428,7 @@ export default function AboutUsPage() {
 
                             {selectedPrinciple === "accountability" ? (
                                 <div className="bg-[#AC1514] text-white p-8 min-h-[200px] flex flex-col justify-center rounded-md shadow-lg text-justify">
-                                    <h3 className="text-base md:text-lg font-bold mb-3  underline ">
+                                    <h3 className="text-base md:text-lg font-bold mb-3 underline text-left">
                                         Accountability and integrity
                                     </h3>
                                     <p className="text-xs md:text-sm leading-relaxed">
