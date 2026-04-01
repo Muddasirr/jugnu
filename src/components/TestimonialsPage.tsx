@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 interface Testimonial {
     name: string;
@@ -89,24 +89,14 @@ export default function TestimonialsPage() {
                             {/* Left side - Profile Picture */}
 
                             {/* Right side - Content */}
-                            <div className="flex-1 pb-8 border-l-4 !border-[#AC1514]  pl-6 md:pl-8">
-                                <div className="flex gap-4" >
-                                    <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden bg-gray-200 border-2  ">
-                                        <Image
-                                            src={testimonial.image}
-                                            alt={testimonial.name}
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <div>
-                                        <h3 className="text-lg md:text-xl font-bold text-[#AC1514] mb-1 text-justify">
-                                            {testimonial.name}
-                                        </h3>
-                                        <p className="text-sm md:text-base text-gray-600 mb-3">
-                                            {testimonial.role}
-                                        </p>
-                                    </div>
+                            <div className="flex-1 pb-8 border-l-4 !border-[#AC1514] pl-6 md:pl-8">
+                                <div>
+                                    <h3 className="text-lg md:text-xl font-bold text-[#AC1514] mb-1 text-justify">
+                                        {testimonial.name}
+                                    </h3>
+                                    <p className="text-sm md:text-base text-gray-600 mb-3">
+                                        {testimonial.role}
+                                    </p>
                                 </div>
                                 <p className="text-sm md:text-base text-gray-800 leading-relaxed text-justify">
                                     {testimonial.text}

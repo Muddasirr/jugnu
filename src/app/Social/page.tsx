@@ -45,7 +45,7 @@ export default function LandingPage() {
       <Impact />
       <JugnuCarouselSection />
       <SectorsWeServe />
-      {/* <SocialCampaigns /> */}
+      <SocialCampaigns />
 
 
 
