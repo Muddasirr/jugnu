@@ -63,16 +63,16 @@ const PolicyPage: React.FC = () => {
         <h2 className="text-[32px] font-extrabold text-[#AC1514] mb-6 text-center underline decoration-auto">Our Approach</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
           <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
-            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Survivor-centered policy reform</p>
+            <p className="text-[16px] font-extrabold text-black leading-tight uppercase">Survivor-centered policy reform</p>
           </div>
           <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
-            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Research-informed advocacy</p>
+            <p className="text-[16px] font-extrabold text-black leading-tight uppercase">Research-informed advocacy</p>
           </div>
           <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
-            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Collaborating for national impact</p>
+            <p className="text-[16px] font-extrabold text-black leading-tight uppercase">Collaborating for national impact</p>
           </div>
           <div className="bg-gray-50 p-8 border-l-4 border-[#AC1514] shadow-sm hover:shadow-md transition-shadow">
-            <p className="text-[22px] font-extrabold text-black leading-tight uppercase">Strengthening legal and protection systems</p>
+            <p className="text-[16px] font-extrabold text-black leading-tight uppercase">Strengthening legal and protection systems</p>
           </div>
         </div>
       </section>
