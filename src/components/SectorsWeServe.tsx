@@ -1,12 +1,12 @@
 export default function SectorsWeServe() {
     const sectors = [
         {
-            title: "WOMEN SECTOR",
+            title: "WOMEN & GIRLS",
             bgColor: "bg-[#AC1514]",
             bgImage: "url('/sector1.png')",
         },
         {
-            title: "GBV-F Research",
+            title: "CHILD WELFARE",
             bgColor: "bg-[#F31A18]",
             bgImage: "url('/sector2.png')",
         },
@@ -16,19 +16,34 @@ export default function SectorsWeServe() {
             bgImage: "url('/sector3.png')",
         },
         {
-            title: "REPLACING ADVOCACY WOMEN SECTOR",
+            title: "GOVERNMENT AGENCIES",
             bgColor: "bg-[#000000]",
-            bgImage: "url('/sectors/advocacy1.jpg')",
+            bgImage: "none",
         },
         {
-            title: "REPLACING ADVOCACY WOMEN SECTOR",
+            title: "CIVIL SOCIETY ORGANIZATIONS",
             bgColor: "bg-[#6E0A0A]",
-            bgImage: "url('/sectors/advocacy2.jpg')",
+            bgImage: "none",
         },
         {
-            title: "REPLACING ADVOCACY WOMEN SECTOR",
+            title: "NON-GOVERNMENTAL ORGANIZATIONS",
             bgColor: "bg-[#2C2727]",
-            bgImage: "url('/sectors/advocacy3.jpg')",
+            bgImage: "none",
+        },
+        {
+            title: "CORPORATIONS & FINANCIAL INSTITUTIONS",
+            bgColor: "bg-[#000000]",
+            bgImage: "none",
+        },
+        {
+            title: "HEALTHCARE & EDUCATIONAL INSTITUTIONS",
+            bgColor: "bg-[#6E0A0A]",
+            bgImage: "none",
+        },
+        {
+            title: "LAW ENFORCEMENT & LEGAL OFFICES",
+            bgColor: "bg-[#2C2727]",
+            bgImage: "none",
         },
     ];
 
@@ -74,7 +89,7 @@ export default function SectorsWeServe() {
                             <div
                                 className={`absolute inset-0 ${sector.bgColor}`}
                                 style={{
-                                    opacity: index === 1 ? 0.7 : 0.85 // Less opacity for second card to show image better
+                                    opacity: sector.bgImage !== "none" ? (index === 1 ? 0.7 : 0.85) : 1
                                 }}
                             ></div>
                             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
