@@ -408,14 +408,14 @@ export default function VolunteerPage() {
             {/* Header Section */}
             <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 md:py-16 text-justify">
                 <div className="space-y-6">
-                    <h1 className="md:text-[24px] font-extrabold text-black leading-relaxed">
+                    <h1 className="md:text-[18px] font-extrabold text-black leading-relaxed">
                         Our volunteers are at <span className="text-[#AC1514] font-medium italic">the heart of our mission</span> - helping us create a community where each individual can live a life of <span className="text-[#AC1514] font-medium">safety, dignity, empowerment and respect</span>
                     </h1>
 
-                    <p className="md:text-[24px] font-normal text-black leading-relaxed">
+                    <p className="md:text-[18px] leading-[1.7] font-normal text-black">
                         Whether you have just a few hours per week, or can commit to working with us long-term, your skills and compassion can make <span className="text-[#AC1514] font-medium italic">a life-changing difference for survivors across Pakistan;</span> and in the Desi community across the world.
                     </p>
-                    <p className="md:text-[24px] font-normal text-black leading-relaxed">
+                    <p className="md:text-[18px] leading-[1.7] font-normal text-black">
                         All volunteers will receive a certificate and a reference letter upon completion of their tenure.
                     </p>
                 </div>
@@ -428,12 +428,12 @@ export default function VolunteerPage() {
                         <div key={index} className="bg-white border-b border-gray-100 pb-12 last:border-0">
                             {/* Title and Button Row */}
                             <div className="flex justify-between items-start mb-6">
-                                <h2 className="text-[32px] md:text-[40px] underline font-extrabold text-[#AC1514] flex-1 pr-8 leading-tight">
+                                <h2 className="text-[32px] font-extrabold text-[#AC1514] flex-1 pr-8 leading-tight underline underline-offset-4 decoration-[#AC1514]">
                                     {position.title}
                                 </h2>
                                 <button
                                     onClick={() => setSelectedPosition(position)}
-                                    className="bg-[#AC1514] rounded-[8px] text-white px-8 py-3 text-sm md:text-base font-bold hover:bg-[#8B0E0D] transition-all whitespace-nowrap shadow-md"
+                                    className="bg-[#AC1514] rounded-sm text-white px-6 py-2 text-[12px] font-bold hover:bg-[#8B0E0D] transition-all whitespace-nowrap shadow-md"
                                 >
                                     READ MORE
                                 </button>
@@ -441,14 +441,14 @@ export default function VolunteerPage() {
 
                             {/* Overview */}
                             <div className="mb-6">
-                                <p className="text-[20px] md:text-[24px] text-black leading-relaxed">
+                                <p className="text-[18px] leading-[1.7] text-black">
                                     <span className="font-bold text-[#AC1514] underline">Role overview:</span> {position.overview}
                                 </p>
                             </div>
 
                             {/* Short Description */}
                             <div>
-                                <p className="text-[20px] md:text-[24px] text-black leading-relaxed">
+                                <p className="text-[18px] leading-[1.7] text-black">
                                     {position.shortDescription}
                                 </p>
                             </div>
@@ -460,20 +460,19 @@ export default function VolunteerPage() {
             {/* Modal */}
             {selectedPosition && (
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4 md:p-8 overflow-y-auto"
+                    className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-white/10 p-4 md:p-8 overflow-y-auto"
                     onClick={() => setSelectedPosition(null)}
                 >
                     <div
-                        className="w-full max-w-4xl min-h-[80vh] rounded-[20px] shadow-2xl relative p-8 md:p-12 overflow-y-auto max-h-[90vh]"
-                        style={{ background: 'linear-gradient(108.29deg, #FFFFFF -50%, #FF0000 40%)' }}
+                        className="w-full max-w-4xl min-h-[80vh] rounded-[20px] shadow-2xl relative p-8 md:p-12 overflow-y-auto max-h-[90vh] bg-white"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Close Button */}
                         <button
                             onClick={() => setSelectedPosition(null)}
-                            className="absolute top-6 left-6 text-white hover:opacity-70 transition-opacity"
+                            className="absolute top-6 left-6 text-black hover:opacity-70 transition-opacity"
                         >
-                            <div className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center">
+                            <div className="w-8 h-8 rounded-full border-2 border-black flex items-center justify-center">
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                                     <line x1="18" y1="6" x2="6" y2="18"></line>
                                     <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -481,7 +480,7 @@ export default function VolunteerPage() {
                             </div>
                         </button>
 
-                        <div className="mt-8 space-y-10 text-white pb-8 text-justify">
+                        <div className="mt-8 space-y-10 text-black pb-8 text-justify">
                             {/* Responsibilities */}
                             <div>
                                 <h3 className="text-2xl font-extrabold underline mb-4">Responsibilities:</h3>
@@ -555,7 +554,7 @@ export default function VolunteerPage() {
                             </div>
 
                             {/* Our Promise */}
-                            <div className="pt-6 border-t border-white/20">
+                            <div className="pt-6 border-t border-black/20">
                                 <h3 className="text-2xl font-extrabold mb-4">Our Promise</h3>
                                 <p className="text-lg md:text-xl italic font-medium leading-relaxed">
                                     {selectedPosition.promise}
