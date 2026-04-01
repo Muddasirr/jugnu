@@ -435,7 +435,7 @@ export default function VolunteerPage() {
                                     onClick={() => setSelectedPosition(position)}
                                     className="bg-[#AC1514] rounded-sm text-white px-6 py-2 text-[12px] font-bold hover:bg-[#8B0E0D] transition-all whitespace-nowrap shadow-md"
                                 >
-                                    READ MORE
+                                    VOLUNTEER
                                 </button>
                             </div>
 
