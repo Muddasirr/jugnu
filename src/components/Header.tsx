@@ -95,7 +95,7 @@ const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
               key={link.href}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className={`transition ${isActiveLink(link.href) ? "text-black" : "hover:text-gray-200"}`}
+              className={`transition ${isActiveLink(link.href) ? "text-[#AC1514] bg-[white] px-4 py-2 rounded-full" : "hover:text-gray-200" }`}
             >
               {link.label}
             </Link>
