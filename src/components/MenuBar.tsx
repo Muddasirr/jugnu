@@ -21,7 +21,7 @@ const MenuBar = () => {
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">
       <div className="mx-auto px-4">
-        <ul className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible md:justify-between text-sm font-bold py-4 space-x-4 scrollbar-hide">
+        <ul className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible md:justify-between text-sm font-semibold py-4 space-x-4 scrollbar-hide">
           {menuItems.map((item, index) => {
             const isActive = pathname === item.href;
             return (
