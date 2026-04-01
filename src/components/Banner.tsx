@@ -78,7 +78,7 @@ export const Banner = () => {
           className="animate-bounce cursor-pointer items-center justify-center flex flex-col"
           onClick={handleScrollClick}
         >
-          <ChevronDown className="w-8 h-8 md:w-10 md:h-10 text-white/70 mx-auto" strokeWidth={1.5} />
+          <ChevronDown className="w-8 h-8 md:w-10 md:h-10 text-white/70 mx-auto" strokeWidth={1.5}  />
         </div>
       </div>
 
