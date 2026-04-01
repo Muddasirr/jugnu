@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CircleArrowLeft } from "lucide-react";
+import { CircleArrowLeft, CircleChevronDown } from "lucide-react";
 
 type Service = {
     title: string;
@@ -144,6 +144,7 @@ const services: Service[] = [
 
 export default function ConsultancyPage() {
     const [selectedService, setSelectedService] = useState<Service | null>(null);
+    const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
     return (
         <main className="w-full bg-white text-black py-12 md:py-16 relative">
@@ -160,7 +161,7 @@ export default function ConsultancyPage() {
                     </p>
                 </section>
 
-                {/* Services List */}
+                {/* Previous Services List (Commented out)
                 <section className="space-y-16">
                     {services.map((service, index) => (
                         <div key={index} className="border-b border-gray-200 pb-12 last:border-0 relative">
@@ -183,6 +184,68 @@ export default function ConsultancyPage() {
                         </div>
                     ))}
                 </section>
+                */}
+
+                {/* Accordion Section */}
+                <section className="space-y-4">
+                    {services.map((service, index) => (
+                        <div
+                            key={index}
+                            className="border border-[#AC1514] rounded-lg overflow-hidden"
+                        >
+                            <button
+                                onClick={() => setOpenAccordion(openAccordion === index ? null : index)}
+                                className="w-full flex items-center justify-between px-6 py-5 bg-white hover:bg-gray-50 transition-colors text-left"
+                            >
+                                <div className="flex items-center gap-4">
+                                    <div className="w-8 h-8 rounded-full text-black flex items-center justify-center font-normal text-sm flex-shrink-0">
+                                        {index + 1}:
+                                    </div>
+                                    <h3 className="text-base md:text-lg font-extrabold uppercase">
+                                        {service.title}
+                                    </h3>
+                                </div>
+                                <CircleChevronDown
+                                    className={`w-6 h-6 text-black transition-transform duration-200 flex-shrink-0 ${openAccordion === index ? "rotate-180" : ""
+                                        }`}
+                                />
+                            </button>
+
+                            <div
+                                style={{
+                                    maxHeight: openAccordion === index ? '2000px' : '0px',
+                                    opacity: openAccordion === index ? 1 : 0,
+                                }}
+                                className="overflow-hidden transition-all duration-300"
+                            >
+                                <div className="px-6 py-6 bg-gray-50 border-t border-gray-200">
+                                    <div className="text-sm md:text-base text-black leading-relaxed pl-4 md:pl-12 space-y-6">
+                                        <p className="text-justify font-medium italic">{service.description}</p>
+                                        
+                                        {service.modalTitle && (
+                                            <h4 className="text-lg font-extrabold text-[#AC1514] underline underline-offset-4 decoration-[#AC1514]">
+                                                {service.modalTitle}
+                                            </h4>
+                                        )}
+                                        
+                                        <div className="text-justify">
+                                            {service.modalContent}
+                                        </div>
+
+                                        <div className="mt-6 flex justify-start">
+                                            <a
+                                                href={`mailto:thejugnuproject@gmail.com?subject=Consultancy Inquiry: ${service.title}`}
+                                                className="bg-[#AC1514] text-white px-8 py-3 rounded-md font-bold hover:bg-black transition-all uppercase text-sm shadow-md"
+                                            >
+                                                Register Now
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </section>
 
                 {/* Partner With Us Section */}
                 <section className="space-y-6 pt-8 border-t border-black">
@@ -199,12 +262,10 @@ export default function ConsultancyPage() {
 
             </div>
 
-            {/* Modal Overlay */}
+            {/* Modal Overlay (Commented out)
             {selectedService && (
                 <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-                    {/* Modal Content */}
                     <div className="bg-[#AC1514] text-white w-full max-w-2xl rounded-lg shadow-2xl relative flex flex-col max-h-[90vh]">
-                        {/* Close Button */}
                         <button
                             onClick={() => setSelectedService(null)}
                             className="absolute top-4 left-4 z-10 hover:opacity-80 transition-opacity text-white"
@@ -225,6 +286,7 @@ export default function ConsultancyPage() {
                     </div>
                 </div>
             )}
+            */}
         </main>
     );
 }
