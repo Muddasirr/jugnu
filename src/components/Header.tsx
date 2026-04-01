@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
             <Link
               key={link.href}
               href={link.href}
-              className={`transition whitespace-nowrap ${isActiveLink(link.href) ? "text-black" : "hover:text-gray-200"
+              className={`transition whitespace-nowrap ${isActiveLink(link.href) ? "text-[#AC1514] bg-[white] px-4 py-2 rounded-full" : "hover:text-gray-200"
                 }`}
             >
               {link.label}
