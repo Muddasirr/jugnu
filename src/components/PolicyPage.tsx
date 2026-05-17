@@ -104,9 +104,16 @@ const PolicyPage: React.FC = () => {
       {/* Our Advocacy Philosophy */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 py-12 text-justify">
         <h2 className="text-[32px] font-extrabold text-black underline mb-5 leading-[1.7]">Our Advocacy Philosophy</h2>
-        <p className="text-[18px] text-black mb-4 leading-[1.7]">
-          <em>Bold. Evidence-based. Survivor-led. System focused.</em>
-        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          {['Bold', 'Evidence-based', 'Survivor-led', 'System focused'].map((label) => (
+            <div
+              key={label}
+              className="bg-[#AC1514] text-white text-center px-4 py-6 rounded-md font-bold text-base md:text-lg"
+            >
+              {label}
+            </div>
+          ))}
+        </div>
         <p className="text-[18px] text-black leading-[1.7] m-0">
           Our advocacy challenges harmful norms within society head on. We work to provide survivors with a
           stage, and do our best to amplify the voices of those who are most affected by the violence.
@@ -120,14 +127,19 @@ const PolicyPage: React.FC = () => {
           We welcome partnerships with the government, corporations, members of civil society, researchers
           and community workers, committed to advancing justice, safety and equality.
         </p>
-        <Link href="/getinvolved" className="block text-[18px] font-bold text-[#AC1514] no-underline mb-6 leading-[1.7]">Partner with us</Link>
+        <Link
+          href="/getinvolved"
+          className="inline-block bg-[#AC1514] text-white px-8 py-3 rounded-md text-sm font-bold hover:bg-[#8B0000] transition-all mb-6"
+        >
+          Partner with us
+        </Link>
         <p className="text-[18px] text-black leading-[1.7] mb-5">
           If you&apos;d like to collaborate with us on one of our campaigns, get in touch:{' '}
           <a href="mailto:thejugnuproject@gmail.com" className="text-[#AC1514] no-underline">
             thejugnuproject@gmail.com
           </a>
         </p>
-        <p className="text-[18px] text-[#AC1514] m-0 underline leading-[1.7]">
+        <p className="text-[18px] text-black font-bold m-0 leading-[1.7]">
           Together, we can build a Pakistan where every survivor is heard, protected and empowered.
         </p>
       </section>

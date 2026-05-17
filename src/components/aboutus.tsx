@@ -54,7 +54,7 @@ export default function AboutUs() {
             If you would like to find specialist family violence services or
             NGOs/organizations supporting survivors, please view our{" "}
             <span className="font-semibold text-red-600 cursor-pointer underline">
-              VICTIM’S DIRECTORY
+              SURVIVOR’S DIRECTORY
             </span>
             .
           </p>

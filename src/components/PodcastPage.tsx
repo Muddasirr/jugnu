@@ -1,45 +1,14 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
+const popularEpisodes = [
+  { id: "43JGXUd_7pk", url: "https://youtu.be/43JGXUd_7pk?si=n4mPjNqbyiyiREIY" },
+  { id: "vo425Vt-rh4", url: "https://www.youtube.com/watch?v=vo425Vt-rh4" },
+  { id: "HZ_zdndQick", url: "https://www.youtube.com/watch?v=HZ_zdndQick&t=663s" },
+  { id: "gE1q6iyXksE", url: "https://youtu.be/gE1q6iyXksE?si=wJ5ZPvzFXk-rJpZY" },
+];
+
 const PodcastPage: React.FC = () => {
-  const popularEpisodes = [
-    {
-      id: 1,
-      thumbnail: '/gallery1.png',
-      title: 'Build a Low-Stress Business with Time Blocking',
-      duration: '45:23',
-    },
-    {
-      id: 2,
-      thumbnail: '/gallery2.png',
-      title: 'Productizing Your Business (Part 1)',
-      duration: '38:15',
-    },
-    {
-      id: 3,
-      thumbnail: '/gallery3.png',
-      title: 'Why and How to Start a Podcast',
-      duration: '52:10',
-    },
-    {
-      id: 4,
-      thumbnail: '/gallery4.png',
-      title: 'Stop Trading Your Time for Money',
-      duration: '41:30',
-    },
-    {
-      id: 5,
-      thumbnail: '/gallery5.png',
-      title: 'Turn Your Business Into a Profit Machine',
-      duration: '47:45',
-    },
-    {
-      id: 6,
-      thumbnail: '/gallery6.png',
-      title: '5 Habits to Massively Grow Your Business',
-      duration: '55:20',
-    },
-  ];
 
   return (
     <div>
@@ -120,17 +89,24 @@ const PodcastPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Popular Episodes Section */}
+      {/* Popular Episodes — YouTube thumbnails */}
       <section className="bg-[#f5f5f5] pt-10 pb-[60px] px-[30px] md:px-20">
         <h2 className="text-2xl md:text-3xl text-[black] font-extrabold mb-[30px] text-center">Popular Episodes</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[900px] mx-auto">
-          {popularEpisodes.map((episode) => (
-            <div key={episode.id} className="bg-white rounded-lg overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
-              <div className=" overflow-hidden">
-                <img src={"Link.png"} alt={episode.title} className="w-full h-full object-cover" />
-
-              </div>
-            </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {popularEpisodes.map((video) => (
+            <a
+              key={video.id}
+              href={video.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block aspect-video rounded-lg overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:opacity-90 transition"
+            >
+              <img
+                src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                alt="Podcast episode thumbnail"
+                className="w-full h-full object-cover"
+              />
+            </a>
           ))}
         </div>
       </section>

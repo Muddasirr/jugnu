@@ -285,6 +285,16 @@ export default function PakistanMap() {
             However, the actual numbers on the ground far exceed these statistics.
           </p>
         </div>
+
+        {/* Femicide Watch Pakistan */}
+        <div className="pt-12 mt-8 border-t border-gray-200">
+          <h3 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] mb-4">
+            Femicide Watch — Pakistan
+          </h3>
+          <p className="text-base md:text-lg text-black leading-relaxed text-justify">
+            &ldquo;Femicide Watch — Pakistan&rdquo; is dedicated to the countless, unnamed women and girls that are killed across Pakistan for the flimsiest of reasons — ranging from besmirched &ldquo;family honour&rdquo; to serving the men in the family a cold meal.
+          </p>
+        </div>
       </div>
     </section>
   );
