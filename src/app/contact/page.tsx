@@ -18,6 +18,19 @@ export default function ContactPage() {
 
                         <div className="space-y-8 text-base md:text-lg font-light text-justify">
                             <p>
+                                Reach out to us on our WhatsApp Helpline (
+                                <a
+                                    href="https://wa.me/923341122014"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline font-bold hover:no-underline"
+                                >
+                                    +92 334 1122014
+                                </a>
+                                ) between 9am to 9pm.
+                            </p>
+
+                            <p>
                                 Or check our <Link href="/gethelp" className="underline font-bold hover:no-underline">GET HELP</Link> page
                             </p>
 
