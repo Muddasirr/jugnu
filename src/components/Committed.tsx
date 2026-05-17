@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+/** Add `public/committed-to-sdgs.pdf` when the SDG document is available. */
+const SDG_PDF = "/committed-to-sdgs.pdf";
+
 const CommittedSection = () => {
   return (
     <section className="relative bg-gray-900 overflow-hidden">
@@ -63,7 +66,7 @@ const CommittedSection = () => {
 
             {/* SDG Button */}
             <div className="mt-8">
-              <Link href="/sdgs" target="_blank" rel="noopener noreferrer">
+              <Link href={SDG_PDF} target="_blank" rel="noopener noreferrer">
                 <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-3 text-sm font-bold hover:bg-[#8B0000] transition-all uppercase">
                   LEARN MORE ABOUT THE SDGS WE IMPLEMENT
                 </button>

@@ -377,6 +377,24 @@ export default function TrainingPage() {
                     ))}
                 </section>
 
+                {/* Partner With Us Section */}
+                <section className="space-y-6 pt-8 border-t border-black">
+                    <div className="space-y-4">
+                        <h2 className="text-2xl md:text-4xl font-extrabold mb-5">
+                            Partner <span className="text-[#AC1514]">With Us</span>
+                        </h2>
+                        <p className="text-lg leading-relaxed text-justify">
+                            If your organization is committed to strengthening gender equality and creating a safer workplace environment, improving employee protections and / or enhancing survivor support, The Jugnu Project can help.
+                        </p>
+                        <p className="text-lg font-bold">
+                            Contact Us:{" "}
+                            <a href="mailto:thejugnuproject@gmail.com" className="hover:underline text-[#AC1514]">
+                                thejugnuproject@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </section>
+
             </div>
         </main>
     );

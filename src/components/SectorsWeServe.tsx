@@ -101,7 +101,7 @@ export default function SectorsWeServe() {
                 {/* Description Text */}
                 <div className="space-y-4 text-black leading-relaxed text-justify">
                     <p className="text-base">
-                        To ensure domestic violence practices and policies support the goal of keeping both the survivor and child safe, we partner globally with sectors touching on family violence and child wellbeing.
+                        To ensure domestic violence practices and policies support the goal of keeping both the survivor and child safe, we partner globally with sectors touching on family violence and child wellbeing. We work together with various agencies, organizations and institutions to create trauma-informed practices and policies tailored to each profession and cultural context.
                     </p>
                     <p className="text-base">
                         We work together with{" "}
@@ -112,7 +112,7 @@ export default function SectorsWeServe() {
                         <span className="text-[#AC1514] font-semibold">financial institutions</span>,{" "}
                         <span className="text-[#AC1514] font-semibold">healthcare and educational institutions</span>,{" "}
                         <span className="text-[#AC1514] font-semibold">law enforcement agencies</span> and{" "}
-                        <span className="text-[#AC1514] font-semibold">judicial institutions</span> to create domestic abuse-inform practices and policies tailored to each profession and cultural context.
+                        <span className="text-[#AC1514] font-semibold">judicial institutions</span> to strengthen coordinated, survivor-centered responses across every sector we serve.
                     </p>
                 </div>
             </div>

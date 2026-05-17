@@ -17,9 +17,7 @@ import { AboutPage } from "@/components/about-page";
 import SectorsSection from "@/components/SectorsSection";
 import WhatWeDoSection from "@/components/Whatwedo";
 import JugnuCarouselSection from "@/components/jugnu-carousel-section";
-import dynamic from "next/dynamic";
-
-const PakistanMap = dynamic(() => import("@/components/map"), { ssr: false });
+import PakistanMapSection from "@/components/PakistanMapSection";
 import SupportCard from "@/components/SupportCard";
 import ResourcesSection from "@/components/ResourcesSection";
 import JugnuPage from "@/components/jugnu";
@@ -35,7 +33,7 @@ export default function LandingPage() {
       <Banner />
       <SlidingHeadline />
       <WelcomeSection />
-      <PakistanMap />
+      <PakistanMapSection />
 
       <HelpActionSection />
 

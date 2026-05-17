@@ -154,9 +154,23 @@ export default function AboutUsPage() {
                         <p className="text-lg md:text-lg text-black leading-relaxed">
                             Zohra is a Lawyer, Social Consultant and Capacity Building Trainer, with a focus on Gender-Based Violence (GBV).
                         </p>
-                        <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
+                        <div className="flex flex-wrap gap-4">
+                            <Link href="/about">
+                                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
                                     OUR TEAM
                                 </button>
+                            </Link>
+                            <Link href="/getinvolved">
+                                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
+                                    READ MORE
+                                </button>
+                            </Link>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <button className="bg-transparent border-2 border-[#AC1514] text-[#AC1514] rounded-[8px] px-8 py-2.5 text-sm font-bold hover:bg-[#AC1514] hover:text-white transition-all uppercase">
+                                    VOLUNTEER
+                                </button>
+                            </a>
+                        </div>
                     </div>
 
                     {/* Right Image */}

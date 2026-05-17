@@ -8,13 +8,7 @@ const reports = [
         title: "Annual Femicide Cases – 2023",
         description: "Media-based documentation of reported femicide cases across Pakistan, compiled for research, awareness, and advocacy purposes.",
         image: "/femicide.png", // Using a relevant placeholder image
-        pdfLink: "#"
-    },
-    {
-        title: "Annual Femicide Cases – 2023",
-        description: "Media-based documentation of reported femicide cases across Pakistan, compiled for research, awareness, and advocacy purposes.",
-        image: "/femicide.png", // Using a relevant placeholder image
-        pdfLink: "#"
+        pdfLink: "/resources/documents"
     }
 ];
 

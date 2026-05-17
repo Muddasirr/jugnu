@@ -22,7 +22,7 @@ export default function HelpActionSection() {
                             </p>
                         </div>
                         <p className="text-sm md:text-base text-black text-center leading-relaxed">
-                            Check our Victim's Directory to find support nearest to you.
+                            Check our Survivors Directory to find support nearest to you.
                         </p>
                     </Link>
 

@@ -43,7 +43,8 @@ const Footer = () => {
       </div>
 
       {/* Links Section */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+      <div className="relative z-10 bg-black w-full px-4 py-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-bold mb-6">Quick Links</h3>
@@ -96,6 +97,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-2 text-sm uppercase tracking-wide">Legal Updates</h4>
             <h4 className="font-semibold text-sm uppercase tracking-wide">Upcoming Events</h4>
           </div>
+        </div>
         </div>
       </div>
 

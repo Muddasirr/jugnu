@@ -54,13 +54,10 @@ export default function FamilyViolencePage() {
                         <div className="mt-16 space-y-20">
                             {/* Prevention */}
                             <div className="border-b border-gray-200 pb-12">
-                                <div className="flex justify-between items-center mb-6">
-                                    <h3 className="text-[28px] font-extrabold text-[#AC1514] underline underline-offset-8 decoration-[#AC1514]">
+                                <div className="mb-6">
+                                    <h3 className="text-[28px] font-extrabold text-black underline underline-offset-8 decoration-black">
                                         (1) What is "prevention – or primary prevention"?
                                     </h3>
-                                    <button className="bg-[#AC1514] text-white px-6 py-2 text-[12px] font-bold hover:bg-black transition-colors rounded-sm">
-                                        READ MORE
-                                    </button>
                                 </div>
                                 <p className="text-[18px] leading-[1.7] text-[#333] text-justify">
                                     This refers to initiatives taken to prevent violence from happening in the first place. It involves challenging and / or addressing the factors and mindsets that drive family violence. These are usually referred to as "gendered drivers", due to the imbalance of power in the family social structure. These initiatives / activities may be undertaken across communities, organizations and social settings where people live, learn work and socialise every day.
@@ -69,13 +66,10 @@ export default function FamilyViolencePage() {
 
                             {/* Early Intervention */}
                             <div className="border-b border-gray-200 pb-12">
-                                <div className="flex justify-between items-center mb-6">
-                                    <h3 className="text-[28px] font-extrabold text-[#AC1514] underline underline-offset-8 decoration-[#AC1514]">
+                                <div className="mb-6">
+                                    <h3 className="text-[28px] font-extrabold text-black underline underline-offset-8 decoration-black">
                                         (2) What is "early intervention – or secondary prevention"?
                                     </h3>
-                                    <button className="bg-[#AC1514] text-white px-6 py-2 text-[12px] font-bold hover:bg-black transition-colors rounded-sm">
-                                        READ MORE
-                                    </button>
                                 </div>
                                 <p className="text-[18px] leading-[1.7] text-[#333] text-justify">
                                     This refers to initiatives that are designed to (i) stop early signs of abuse from escalating, (ii) prevent violence from recurring, and / or (iii) reduce the long-term impacts of family and gender-based violence. This involves working with individuals (or communities) that may be at risk of either perpetrating or experiencing violence. The efforts are focused mainly on areas / situations where violence is most likely to occur. It spans across communities and social groups, and aims to improve approaches in recognizing and responding to signs of abuse.
@@ -84,13 +78,10 @@ export default function FamilyViolencePage() {
 
                             {/* Response */}
                             <div className="border-b border-gray-200 pb-12">
-                                <div className="flex justify-between items-center mb-6">
-                                    <h3 className="text-[28px] font-extrabold text-[#AC1514] underline underline-offset-8 decoration-[#AC1514]">
+                                <div className="mb-6">
+                                    <h3 className="text-[28px] font-extrabold text-black underline underline-offset-8 decoration-black">
                                         (3) What is "response – or tertiary prevention"?
                                     </h3>
-                                    <button className="bg-[#AC1514] text-white px-6 py-2 text-[12px] font-bold hover:bg-black transition-colors rounded-sm">
-                                        READ MORE
-                                    </button>
                                 </div>
                                 <p className="text-[18px] leading-[1.7] text-[#333] text-justify">
                                     This refers to responding to survivors when they need support in order to stay safe from someone using family violence against them. This may take place when they are still living with the abuser(s), are planning to leave, or have already left the abusive situation / relationship. Initiatives under this category can include crisis response, case management, specialist counselling and recovery support. Some service providers can also administer frontline support for individuals experiencing family violence.

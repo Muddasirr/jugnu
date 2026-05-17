@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { documentsPageUrl } from "@/lib/publicAssets";
 
 export default function ResourceGridSection() {
     const resources = [
@@ -132,7 +133,7 @@ export default function ResourceGridSection() {
                                 <p className="text-xs md:text-sm leading-relaxed mb-4 flex-grow">
                                     {resource.description}
                                 </p>
-                                <Link href="/resources" target="_blank" rel="noopener noreferrer">
+                                <Link href={documentsPageUrl()} target="_blank" rel="noopener noreferrer">
                                     <button className="bg-[#AC1514] rounded-[8px] text-white px-6 py-2 text-xs font-bold hover:bg-[#8B0000] transition-all self-start">
                                         READ MORE
                                     </button>

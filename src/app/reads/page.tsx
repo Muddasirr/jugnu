@@ -1,4 +1,4 @@
-import Image from "next/image";
+import BookGallery from "@/components/BookGallery";
 
 const books = [
     {
@@ -325,26 +325,7 @@ export default function ReadsPage() {
                         Book <span className="text-[#AC1514]">Gallery -</span>
                     </h2>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-10">
-                        {books.map((book, index) => (
-                            <div key={index} className="group flex flex-col space-y-3 cursor-pointer">
-                                <div className={`w-full aspect-[2/3] rounded-lg shadow-lg ${book.color} flex items-center justify-center p-4 text-center transition-all duration-300 group-hover:shadow-2xl group-hover:scale-105 group-hover:-translate-y-1 relative overflow-hidden`}>
-                                    {/* Decorative book spine effect */}
-                                    <div className="absolute left-0 top-0 bottom-0 w-2 bg-black/20"></div>
-                                    {/* Inner shadow for depth */}
-                                    <div className="absolute inset-0 shadow-inner pointer-events-none"></div>
-                                    {/* Book title on cover */}
-                                    <div className={`${book.textColor} font-bold text-[10px] md:text-xs leading-tight px-2 text-center drop-shadow-sm`}>
-                                        {book.title}
-                                    </div>
-                                </div>
-                                <div className="text-xs space-y-1 transition-all duration-300 group-hover:translate-y-0.5">
-                                    <p className="font-bold leading-tight text-gray-900 line-clamp-2">{book.title}</p>
-                                    <p className="text-gray-600 text-[10px] uppercase tracking-wide">{book.author}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <BookGallery books={books} />
                 </section>
             </div>
         </main>

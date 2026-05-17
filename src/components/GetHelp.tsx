@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
-import { Search } from "lucide-react";
+import Link from "next/link";
+
+const WHATSAPP_HELPLINE = "+92 334 1122014";
 
 export default function GetHelp() {
     return (
@@ -22,14 +24,28 @@ export default function GetHelp() {
                     </span>
                 </p>
 
+                {/* WhatsApp Helpline */}
+                <p className="text-base md:text-lg text-black leading-relaxed text-justify">
+                    Reach out to us on our WhatsApp Helpline (
+                    <a
+                        href={`https://wa.me/923341122014`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#C8102E] underline font-bold hover:underline"
+                    >
+                        {WHATSAPP_HELPLINE}
+                    </a>
+                    ) between 9am to 9pm. You can also check our{" "}
+                    <Link href="/survivor-stories" className="text-[#C8102E] underline font-bold hover:underline">
+                        Survivors Directory
+                    </Link>{" "}
+                    to gain access to emergency numbers and service providers near you.
+                </p>
+
                 {/* Crisis Support Text */}
                 <p className="text-base md:text-lg text-black leading-relaxed text-justify">
                     While we don’t offer crisis support at the moment, we can do our best to help you get connected to the kind of support you
-                    need. Check our{" "}
-                    <span className="text-[#C8102E] underline font-bold cursor-pointer hover:underline">
-                        VICTIM'S DIRECTORY
-                    </span>{" "}
-                    to gain access to emergency numbers / service providers near you.
+                    need.
                 </p>
 
                 {/* Resources Text */}

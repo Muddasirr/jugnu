@@ -4,6 +4,7 @@ import React from "react";
 import { Gavel, HeartHandshake, Users } from "lucide-react";
 import { MoveRight, Calendar, MessageSquare } from "lucide-react";
 import Link from "next/link";
+import { PARTNER_LOGOS } from "@/lib/publicAssets";
 
 export default function SocialCampaigns() {
     return (
@@ -91,37 +92,18 @@ export default function SocialCampaigns() {
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
-                        {/* Using text placeholders consistent with 'logoipsum' style in screenshot */}
-                        {[1, 2, 3, 4, 5, 6].map((i) => (
-                            <div key={i} className="flex items-center gap-2">
-                                <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-                                <span className="font-bold text-gray-500 text-xl">Logoipsum</span>
-                            </div>
+                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                        {PARTNER_LOGOS.map((logo, i) => (
+                            <img
+                                key={i}
+                                src={logo}
+                                alt={`Partner logo ${i + 1}`}
+                                className="h-10 md:h-12 max-w-[120px] object-contain grayscale hover:grayscale-0 transition"
+                            />
                         ))}
                     </div>
                 </div>
 
-                {/* Clients */}
-                <div className="container mx-auto px-4">
-                    <div className="text-center mb-8">
-                        <h2 className="text-3xl  text-black md:text-4xl font-extrabold mb-4">
-                            <span className="text-[#C8102E]">Our</span> Clients
-                        </h2>
-                        <p className="text-gray-600 max-w-3xl mx-auto">
-                            We are proud to work alongside leading organizations, networks, and advocates committed to ending abuse
-                        </p>
-                    </div>
-
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-70">
-                        {[1, 2, 3, 4, 5, 6].map((i) => (
-                            <div key={i} className="flex items-center gap-2">
-                                <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
-                                <span className="font-bold text-gray-500 text-xl">Logoipsum</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
             </div>
 
             {/* --------------------- News Updates --------------------- */}
