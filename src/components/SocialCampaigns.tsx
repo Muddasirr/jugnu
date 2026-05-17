@@ -2,9 +2,9 @@
 
 import React from "react";
 import { Gavel, HeartHandshake, Users } from "lucide-react";
-import { MoveRight, Calendar, MessageSquare } from "lucide-react";
 import Link from "next/link";
 import { PARTNER_LOGOS } from "@/lib/publicAssets";
+import InTheNewsSection from "@/components/InTheNewsSection";
 
 export default function SocialCampaigns() {
     return (
@@ -106,73 +106,7 @@ export default function SocialCampaigns() {
 
             </div>
 
-            {/* --------------------- News Updates --------------------- */}
-
-            <div className="py-16 bg-white container mx-auto px-16">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-black" >
-                        <span className="text-[#C8102E]">News</span> Updates
-                    </h2>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                    {[1, 2, 3].map((item) => (
-                        <div key={item} className="flex flex-col group">
-                            {/* Card Image */}
-                            <div className="w-full h-64 bg-gray-100 overflow-hidden rounded-lg mb-6 relative">
-                                {/* Placeholder for the UN flags image seen in screenshot */}
-                                <img
-                                    src={`https://images.unsplash.com/photo-1520697517317-6415a7700e4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80`}
-                                    alt="News Update"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                                />
-                            </div>
-
-                            {/* Meta Data */}
-                            <div className="flex items-center gap-4 text-xs font-bold text-gray-500 mb-3 uppercase tracking-wider">
-                                <div className="flex items-center gap-1.5">
-                                    <Calendar className="w-4 h-4 text-[#C8102E]" />
-                                    <span>24 Oct, 2021</span>
-                                </div>
-                                <div className="w-px h-3 bg-gray-300"></div>
-                                <div className="flex items-center gap-1.5">
-                                    <MessageSquare className="w-4 h-4 text-[#C8102E]" />
-                                    <span>136 Comments</span>
-                                </div>
-                            </div>
-
-                            {/* Title */}
-                            <h3 className="text-xl font-extrabold leading-tight mb-4 text-[#C8102E] group-hover:text-black transition">
-                                women Domestic voilence issue to the United Nations
-                            </h3>
-
-                            {/* Snippet */}
-                            <p className="text-gray-600 text-xs leading-relaxed mb-6 line-clamp-4">
-                                Get inspired by this revived W.H. Auden's Hymn to the United Nations. "Let music for peace Be the paradigm, For peace means to change At the right time, As the World-Clock, Goes Tick and Tock.So may the story Of our human city Presently move
-                            </p>
-
-                            <div className="mt-auto flex items-center justify-between border-t border-gray-100 pt-4">
-                                {/* Author */}
-                                <div className="flex items-center gap-2">
-                                    <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200">
-                                        <img src="https://i.pravatar.cc/150?img=32" alt="Author" className="w-full h-full object-cover" />
-                                    </div>
-                                    <span className="text-xs font-bold text-black">Windy Bond</span>
-                                </div>
-
-                                {/* Read More Button */}
-                                <button className="bg-[#B22222] text-white text-[10px] uppercase font-bold px-4 py-2 rounded flex items-center gap-1 hover:bg-[#8B0000] transition">
-                                    READ MORE
-                                    <div className="bg-white rounded-full p-[1px]">
-                                        <MoveRight className="w-2 h-2 text-[#B22222]" />
-                                    </div>
-                                </button>
-                            </div>
-
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <InTheNewsSection id="in-the-news" />
 
         </div>
     );

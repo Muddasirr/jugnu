@@ -18,7 +18,7 @@ export const PARTNER_LOGOS = [
   "partners/Chayn Logo.png",
   "partners/Law Offices of Zohra Ahmed.png",
   "partners/Logo_Herstash-purple.png",
-  "partners/Logo_Rocky Books  circular-01.png",
+  "partners/Logo_Rocky_Books.png",
   "partners/Logo_Sahara Sisters Collective.jpeg",
   "partners/Logo_ Umeed.jpg",
   "partners/Logo_Unfiltered_With_Maleeka_Bokhari.png",

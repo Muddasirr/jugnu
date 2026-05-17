@@ -42,7 +42,7 @@ const menuItems: MenuItem[] = [
     items: [
       { label: "About", href: "/about" },
       { label: "Jugnu's Story", href: "/jugnus-story" },
-      { label: "In the News", href: "/our-impact" },
+      { label: "In the News", href: "/Social#in-the-news" },
     ],
   },
 ];
