@@ -79,9 +79,14 @@ export default function ResourceGridSection() {
             isDark: true,
         },
         {
-            title: "External Resources",
-            description: "Gain access to numerous external resources regarding family violence and survivor-centric support from around the globe.",
+            title: "Care Gap",
+            description: "Understand the unpaid care work gap that falls heavily on women and girls, and how closing it supports survivor safety and economic empowerment.",
             isDark: false,
+        },
+        {
+            title: "Animal Abuse",
+            description: "Learn how animal abuse intersects with family and intimate-partner violence, and why protecting animals is part of a survivor-centered response.",
+            isDark: true,
         },
     ];
 

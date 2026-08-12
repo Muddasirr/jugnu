@@ -21,7 +21,7 @@ type MenuItem = MenuLink | MenuDropdown;
 
 const menuItems: MenuItem[] = [
   { type: "link", label: "UNDERSTANDING<br />FAMILY VIOLENCE", href: "/familyviolence" },
-  { type: "link", label: "WORKING IN<br />FAMILY VIOLENCE", href: "/volunteer" },
+  { type: "link", label: "WORKING IN<br />FAMILY VIOLENCE", href: "/familyviolence" },
   { type: "link", label: "TRAINING &<br />DEVELOPMENT", href: "/training" },
   { type: "link", label: "CONSULTANCY<br />SERVICES", href: "/consultancy" },
   { type: "link", label: "POLICY &<br />ADVOCACY", href: "/policy" },
@@ -40,9 +40,9 @@ const menuItems: MenuItem[] = [
     type: "dropdown",
     label: "ABOUT US",
     items: [
-      { label: "About", href: "/about" },
-      { label: "Jugnu's Story", href: "/jugnus-story" },
-      { label: "In the News", href: "/Social#in-the-news" },
+      { label: "About Us", href: "/about" },
+      { label: "Jugnu Story", href: "/jugnus-story" },
+      { label: "In the News", href: "/#in-the-news" },
     ],
   },
 ];
@@ -50,14 +50,28 @@ const menuItems: MenuItem[] = [
 const MenuBar = () => {
   const pathname = usePathname();
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const closeTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const isActive = (href: string) => pathname === href;
 
   const isDropdownActive = (items: { href: string }[]) =>
     items.some((item) => pathname === item.href);
 
+  const openMenu = (label: string) => {
+    if (closeTimer.current) {
+      clearTimeout(closeTimer.current);
+      closeTimer.current = null;
+    }
+    setOpenDropdown(label);
+  };
+
+  const scheduleClose = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setOpenDropdown(null), 150);
+  };
+
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-white shadow-sm border-b border-gray-200 relative z-40">
       <div className="mx-auto px-4">
         <ul className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-visible md:justify-between text-sm font-semibold py-4 space-x-4 scrollbar-hide">
           {menuItems.map((item, index) => {
@@ -84,14 +98,15 @@ const MenuBar = () => {
               <li
                 key={index}
                 className="relative px-2 flex items-center justify-center text-center whitespace-normal min-w-[120px] md:min-w-0 flex-shrink-0 md:flex-shrink"
-                onMouseEnter={() => setOpenDropdown(item.label)}
-                onMouseLeave={() => setOpenDropdown(null)}
+                onMouseEnter={() => openMenu(item.label)}
+                onMouseLeave={scheduleClose}
               >
                 <button
                   type="button"
-                  className={`transition-colors inline-flex items-center justify-center gap-1 w-full ${active ? "text-[#AC1514]" : "text-black hover:text-[#AC1514]"}`}
+                  className={`transition-colors inline-flex items-center justify-center gap-1 w-full py-1 ${active ? "text-[#AC1514]" : "text-black hover:text-[#AC1514]"}`}
                   onClick={() => setOpenDropdown(isOpen ? null : item.label)}
                   aria-expanded={isOpen}
+                  aria-haspopup="true"
                 >
                   <span
                     className="leading-tight text-center"
@@ -104,7 +119,7 @@ const MenuBar = () => {
                 </button>
 
                 {isOpen && (
-                  <ul className="absolute left-1/2 -translate-x-1/2 top-full mt-2 min-w-[200px] bg-white border border-gray-200 shadow-lg rounded-md py-2 z-50 text-left">
+                  <ul className="absolute left-1/2 -translate-x-1/2 top-full min-w-[200px] bg-white border border-gray-200 shadow-lg rounded-md py-2 z-50 text-left">
                     {item.items.map((sub) => (
                       <li key={sub.href}>
                         <Link

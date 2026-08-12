@@ -370,7 +370,7 @@ export default function FamilyViolencePage() {
                             <p>
                                 You can check our resources for legislative and policy frameworks regarding family violence <Link href="/resources" className="font-bold underline text-[#AC1514]">here</Link>.
                             </p>
-                            <p className="text-[#AC1514] font-medium uppercase">
+                            <p className="text-black font-bold uppercase">
                                 WELLBEING, SELF-CARE AND PROFESSIONAL SUSTAINABILITY - FOR FAMILY VIOLENCE PRACTITIONERS
                             </p>
                             <p>

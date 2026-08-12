@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ onSearchToggle, isSearchOpen }) => {
   const pathname = usePathname();
 
   const navLinks = [
-    { label: "HOME", href: "/Social" },
+    { label: "HOME", href: "/" },
     { label: "ABOUT", href: "/about" },
     { label: "GET INVOLVED", href: "/getinvolved" },
     { label: "PODCAST", href: "/podcast" },

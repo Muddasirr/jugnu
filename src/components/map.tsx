@@ -291,9 +291,15 @@ export default function PakistanMap() {
           <h3 className="text-2xl md:text-3xl font-extrabold text-[#AC1514] mb-4">
             Femicide Watch — Pakistan
           </h3>
-          <p className="text-base md:text-lg text-black leading-relaxed text-justify">
+          <p className="text-base md:text-lg text-black leading-relaxed text-justify mb-6">
             &ldquo;Femicide Watch — Pakistan&rdquo; is dedicated to the countless, unnamed women and girls that are killed across Pakistan for the flimsiest of reasons — ranging from besmirched &ldquo;family honour&rdquo; to serving the men in the family a cold meal.
           </p>
+          <Link
+            href="/femicide-report"
+            className="inline-block bg-[#AC1514] text-white px-8 py-2.5 rounded-[8px] text-sm font-bold uppercase hover:bg-[#8B0E0E] transition-all"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
     </section>

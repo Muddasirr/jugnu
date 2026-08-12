@@ -3,7 +3,7 @@
 import React from "react";
 import { Gavel, HeartHandshake, Users } from "lucide-react";
 import Link from "next/link";
-import { PARTNER_LOGOS } from "@/lib/publicAssets";
+import { PARTNERS } from "@/lib/publicAssets";
 import InTheNewsSection from "@/components/InTheNewsSection";
 
 export default function SocialCampaigns() {
@@ -92,15 +92,36 @@ export default function SocialCampaigns() {
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                        {PARTNER_LOGOS.map((logo, i) => (
-                            <img
-                                key={i}
-                                src={logo}
-                                alt={`Partner logo ${i + 1}`}
-                                className="h-10 md:h-12 max-w-[120px] object-contain grayscale hover:grayscale-0 transition"
-                            />
-                        ))}
+                    <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14">
+                        {PARTNERS.map((partner) => {
+                            const img = (
+                                <img
+                                    src={partner.logo}
+                                    alt={partner.name}
+                                    className="h-16 md:h-20 lg:h-24 max-w-[180px] md:max-w-[220px] w-auto object-contain"
+                                />
+                            );
+                            return partner.url ? (
+                                <a
+                                    key={partner.name}
+                                    href={partner.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center hover:opacity-80 transition"
+                                    title={partner.name}
+                                >
+                                    {img}
+                                </a>
+                            ) : (
+                                <div
+                                    key={partner.name}
+                                    className="inline-flex items-center justify-center"
+                                    title={partner.name}
+                                >
+                                    {img}
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 

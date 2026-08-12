@@ -14,15 +14,49 @@ const LEGAL_COVER_DIR =
 const IMPACT_GALLERY_DIR =
   "Our Impact_Gallery-20260517T203113Z-3-001/Our Impact_Gallery";
 
-export const PARTNER_LOGOS = [
-  "partners/Chayn Logo.png",
-  "partners/Law Offices of Zohra Ahmed.png",
-  "partners/Logo_Herstash-purple.png",
-  "partners/Logo_Rocky_Books.png",
-  "partners/Logo_Sahara Sisters Collective.jpeg",
-  "partners/Logo_ Umeed.jpg",
-  "partners/Logo_Unfiltered_With_Maleeka_Bokhari.png",
-].map(publicPath);
+export const PARTNERS: { name: string; logo: string; url?: string }[] = [
+  {
+    name: "Chayn",
+    logo: publicPath("partners/Chayn Logo.png"),
+    url: "https://www.chayn.co",
+  },
+  {
+    name: "Law Offices of Zohra Ahmed",
+    logo: publicPath("partners/Law Offices of Zohra Ahmed.png"),
+    url: "https://zohraahmedlaw.com/",
+  },
+  {
+    name: "Herstash",
+    logo: publicPath("partners/Logo_Herstash-purple.png"),
+    url: "https://www.herstash.com",
+  },
+  {
+    name: "Rocky Books",
+    logo: publicPath("partners/Logo_Rocky_Books.png"),
+  },
+  {
+    name: "Sahara Sisters Collective",
+    logo: publicPath("partners/Logo_Sahara Sisters Collective.jpeg"),
+    url: "https://hudasyyed.org/",
+  },
+  {
+    name: "Umeed",
+    logo: publicPath("partners/Logo_ Umeed.jpg"),
+  },
+  {
+    name: "Unfiltered With Maleeka Bokhari",
+    logo: publicPath("partners/Logo_Unfiltered_With_Maleeka_Bokhari.png"),
+    url: "https://www.instagram.com/unfilteredmaleeka/",
+  },
+  {
+    name: "Womxn on the Climate",
+    logo: publicPath("partners/womxn-climate-1.png"),
+    url: "https://www.linkedin.com/company/womxnontheclimatefront",
+  },
+];
+
+/** @deprecated use PARTNERS */
+export const PARTNER_LOGOS = PARTNERS.map((p) => p.logo);
 
 export type ResourcePdf = {
   id: string;

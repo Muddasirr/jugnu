@@ -63,7 +63,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-6">Explore</h3>
           <ul className="space-y-3">
             <li><a href="/familyviolence" className="hover:underline text-sm uppercase tracking-wide">Understanding Family Violence</a></li>
-            <li><a href="/getinvolved" className="hover:underline text-sm uppercase tracking-wide">Working in Family Violence</a></li>
+            <li><a href="/familyviolence" className="hover:underline text-sm uppercase tracking-wide">Working in Family Violence</a></li>
             <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Our Impact</a></li>
             <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Training & Development</a></li>
             <li><a href="#" className="hover:underline text-sm uppercase tracking-wide">Consultancy Services</a></li>
