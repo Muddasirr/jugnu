@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import ClientOnly from "@/components/ClientOnly";
 import MapPlaceholder from "@/components/MapPlaceholder";
 import { KNOW_YOUR_NUMBERS_COVERS } from "@/lib/publicAssets";
@@ -29,7 +30,23 @@ const statsCards = [
   },
 ];
 
+type PdfItem = {
+  id?: string;
+  title: string;
+  description?: string;
+  file?: string;
+};
+
 export default function KnowTheNumbersPage() {
+  const [pdfs, setPdfs] = useState<PdfItem[]>([]);
+
+  useEffect(() => {
+    fetch("/cms/know-your-numbers/items.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((d) => setPdfs(Array.isArray(d) ? d : []))
+      .catch(() => undefined);
+  }, []);
+
   return (
     <main className="w-full bg-white text-black py-12 md:py-16">
       <div className="max-w-6xl mx-auto px-6 md:px-8 space-y-12">
@@ -79,6 +96,37 @@ export default function KnowTheNumbersPage() {
             </div>
           ))}
         </div>
+
+        {pdfs.length > 0 && (
+          <section className="space-y-4 pt-8 border-t border-gray-200">
+            <h3 className="text-2xl font-extrabold text-black">Reports &amp; PDFs</h3>
+            <ul className="space-y-3">
+              {pdfs.map((pdf) => (
+                <li
+                  key={pdf.id || pdf.title}
+                  className="border border-gray-200 p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
+                >
+                  <div>
+                    <p className="font-bold">{pdf.title}</p>
+                    {pdf.description && (
+                      <p className="text-sm text-gray-600">{pdf.description}</p>
+                    )}
+                  </div>
+                  {pdf.file && (
+                    <a
+                      href={pdf.file}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#AC1514] text-white px-4 py-2 text-sm font-bold uppercase"
+                    >
+                      View PDF
+                    </a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
       </div>
     </main>
   );

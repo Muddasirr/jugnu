@@ -92,8 +92,32 @@ body {
   }
 }
 
-.animate-marquee {
-  display: flex;
-  white-space: nowrap;
-  animation: marquee 25s linear infinite;
+.admin-cms {
+  color: #111827;
+}
+
+.admin-cms input:not([type="file"]),
+.admin-cms textarea,
+.admin-cms select {
+  background-color: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+.admin-cms input:not([type="file"])::placeholder,
+.admin-cms textarea::placeholder {
+  color: #9ca3af;
+}
+
+.admin-cms input:not([type="file"]):focus,
+.admin-cms textarea:focus,
+.admin-cms select:focus {
+  outline: none;
+  border-color: #AC1514;
+  box-shadow: 0 0 0 1px #AC1514;
+}
+
+.admin-cms button:focus-visible {
+  outline: 2px solid #AC1514;
+  outline-offset: 2px;
 }
