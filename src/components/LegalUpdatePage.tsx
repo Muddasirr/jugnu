@@ -1,104 +1,169 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { LEGAL_JUDGEMENT_COVERS } from "@/lib/publicAssets";
 
-const judgementTopics = [
-  { title: "Family Law & Domestic Violence", cover: LEGAL_JUDGEMENT_COVERS[0] },
-  { title: "Property & Inheritance", cover: LEGAL_JUDGEMENT_COVERS[1] },
-  { title: "Workplace Harassment", cover: LEGAL_JUDGEMENT_COVERS[2] },
-  { title: "Child Protection & Custody", cover: LEGAL_JUDGEMENT_COVERS[3] },
-];
+type JudgementItem = {
+  id?: string;
+  title: string;
+  description?: string;
+  file?: string;
+};
+
+const courts = [
+  {
+    key: "sc",
+    court: "SUPREME COURT",
+    blurb:
+      "Find latest (and leading) judgements from the Supreme Court of Pakistan regarding domestic violence, family law and property / inheritance matters.",
+  },
+  {
+    key: "fsc",
+    court: "FEDERAL SHARIAT COURT",
+    blurb:
+      "Find latest (and leading) judgements from the Federal Shariat Court regarding domestic violence, family law and property / inheritance matters.",
+  },
+  {
+    key: "hc",
+    court: "HIGH COURT",
+    blurb:
+      "Find latest (and leading) judgements from the High Courts regarding domestic violence, family law and property / inheritance matters.",
+  },
+  {
+    key: "cc",
+    court: "CONSTITUTIONAL COURT",
+    blurb:
+      "Find latest (and leading) judgements from the Constitutional Court regarding domestic violence, family law and related matters.",
+  },
+] as const;
 
 const LegalUpdatePage: React.FC = () => {
   return (
     <div className="bg-white">
-      <section className="px-6 md:px-10 py-10 md:py-16 max-w-5xl mx-auto">
-        <h1 className="text-[32px] font-extrabold italic text-[#C41E1E] mb-8 leading-[1.7]">
-          <em>Stay Legally Informed. Stay Empowered. Stay Protected.</em>
-        </h1>
+      <section className="relative h-[320px] md:h-[420px] flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url("/heroes/banner-10.jpg")' }}
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-md">
+            Find legal judgements and cases to prepare for court
+          </h1>
+        </div>
+      </section>
 
-        <p className="text-[18px] font-medium text-gray-900 leading-[1.7] mb-6 text-justify">
-          Laws related to the family courts, domestic violence, gender-based violence
-          (GBV), workplace harassment, child protection and women&apos;s rights are
-          constantly evolving. Understanding these changes is essential for survivors,
-          lawyers, advocates, community workers and NGOs and individuals who wish to
-          protect themselves and their loved ones; and support others effectively.
+      <section className="px-6 md:px-10 py-12 md:py-16 max-w-6xl mx-auto">
+        <p className="text-xl md:text-2xl font-extrabold italic text-[#AC1514] mb-8 leading-snug max-w-3xl">
+          Stay Legally Informed. Stay Empowered. Stay Protected.
         </p>
 
-        <p className="text-[18px] font-medium text-gray-900 leading-[1.7] mb-8 text-justify">
-          This page is dedicated to providing reliable, survivor-centered judgements,
-          case laws and legal developments in Pakistan. Our goal is to make legal
-          judgments more accessible to the common person, so that they may be more
-          aware of their legal rights and may use these for guidance in real life
-          (especially in litigation).
-        </p>
+        <div className="space-y-5 max-w-4xl mb-14">
+          <p className="text-lg md:text-xl text-black leading-relaxed text-justify">
+            Laws related to the family courts, domestic violence, gender-based violence
+            (GBV), workplace harassment, child protection and women&apos;s rights are
+            constantly evolving. Understanding these changes is essential for survivors,
+            lawyers, advocates, community workers and NGOs and individuals who wish to
+            protect themselves and their loved ones; and support others effectively.
+          </p>
+        </div>
 
-        <h2 className="text-[28px] font-extrabold text-[#C41E1E] mt-10 mb-6 underline text-center leading-[1.7]">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#AC1514] mb-10 text-center">
           Legal Judgements & Updates
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-          {judgementTopics.map((item, index) => (
-            <Link
-              key={index}
-              href="/resources/documents"
-              className="group block border border-gray-200 rounded-lg overflow-hidden hover:border-[#AC1514] transition-colors shadow-sm"
-            >
-              <div className="relative w-full aspect-[4/3] bg-gray-100">
-                <Image
-                  src={item.cover}
-                  alt=""
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(max-width: 640px) 100vw, 50vw"
-                />
-              </div>
-              <div className="p-4 bg-[#8B0000] text-white">
-                <h3 className="font-bold text-base leading-snug">{item.title}</h3>
-                <span className="inline-block mt-2 text-xs font-bold uppercase tracking-wide underline">
-                  View resources →
-                </span>
-              </div>
-            </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16 max-w-4xl mx-auto">
+          {courts.map((item) => (
+            <CourtCard key={item.key} courtKey={item.key} court={item.court} blurb={item.blurb} />
           ))}
         </div>
 
-        <h2 className="text-[32px] font-extrabold text-[#C41E1E] mt-12 mb-6 underline text-left leading-[1.7]">
-          What You&apos;ll Find Here:
-        </h2>
-
-        <div className="space-y-4 mb-8">
-          <h3 className="text-[24px] font-extrabold text-gray-900 underline leading-[1.7]">
-            1. Latest Laws And Amendments
-          </h3>
-          <h3 className="text-[24px] font-extrabold text-gray-900 underline leading-[1.7]">
-            2. Court Judgments And Precedent (Case Law)
-          </h3>
+        <div className="max-w-4xl border-t border-gray-200 pt-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-8">
+            What You&apos;ll Find Here
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+            <div className="border-l-4 border-[#AC1514] bg-gray-50 px-5 py-5">
+              <h3 className="text-xl font-extrabold text-black">
+                1. Latest Laws And Amendments
+              </h3>
+            </div>
+            <div className="border-l-4 border-[#AC1514] bg-gray-50 px-5 py-5">
+              <h3 className="text-xl font-extrabold text-black">
+                2. Court Judgments And Precedent (Case Law)
+              </h3>
+            </div>
+          </div>
+          <p className="text-lg md:text-xl text-black leading-relaxed text-justify">
+            We regularly update this page to keep you informed. To receive legal updates
+            directly to your inbox, you can sign up for our newsletter, or follow us on
+            social media.
+          </p>
         </div>
-
-        <p className="text-[18px] font-medium text-gray-900 leading-[1.7] mb-8 text-justify">
-          We believe that legal information should not be confusing or inaccessible.
-          Understanding the law empowers survivors, strengthens prevention and helps
-          communities intervene safely and effectively.
-        </p>
-
-        <h2 className="text-[32px] font-extrabold text-[#C41E1E] mt-12 mb-6 underline text-left leading-[1.7]">
-          Stay Updated
-        </h2>
-
-        <p className="text-[18px] font-medium text-gray-900 leading-[1.7] mb-2 text-justify">
-          We regularly update this page to keep you informed.
-        </p>
-        <p className="text-[18px] font-medium text-gray-900 leading-[1.7] text-justify">
-          To receive legal updates directly to your inbox, you can sign up for our
-          newsletter, or follow us on social media.
-        </p>
       </section>
     </div>
   );
 };
+
+function CourtCard({
+  courtKey,
+  court,
+  blurb,
+}: {
+  courtKey: string;
+  court: string;
+  blurb: string;
+}) {
+  const [items, setItems] = useState<JudgementItem[]>([]);
+
+  useEffect(() => {
+    fetch(`/cms/legal/${courtKey}.json`)
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data) => setItems(Array.isArray(data) ? data : []))
+      .catch(() => setItems([]));
+  }, [courtKey]);
+
+  const firstFile = items.find((i) => i.file)?.file || `/cms/legal/pdfs/${courtKey}/`;
+
+  return (
+    <div className="flex flex-col border-[3px] border-black overflow-hidden bg-white">
+      <div className="flex flex-col flex-1 px-6 py-8 md:py-10 border-b-[3px] border-[#AC1514] min-h-[260px] md:min-h-[300px]">
+        <h3 className="text-xl md:text-2xl font-extrabold text-black uppercase text-center mb-4 leading-tight">
+          {court}
+        </h3>
+        <p className="text-base md:text-lg text-black leading-relaxed text-center flex-1 mb-6">
+          {blurb}
+        </p>
+        <Link
+          href={`/legal-update/${courtKey}`}
+          className="mx-auto inline-block bg-[#AC1514] text-white px-5 py-2.5 text-sm md:text-base font-bold uppercase tracking-wide hover:bg-[#8B0E0E] transition"
+        >
+          Read the Judgements
+        </Link>
+      </div>
+      <div className="bg-[#AC1514] text-white px-5 py-5 md:py-6 flex flex-col justify-center min-h-[100px]">
+        <p className="font-bold text-base md:text-lg leading-snug mb-1">
+          {items.length > 0 ? `${items.length} judgement(s) available` : "Judgements coming soon"}
+        </p>
+        <Link
+          href={`/legal-update/${courtKey}`}
+          className="text-sm md:text-base font-bold uppercase tracking-wide underline underline-offset-2 hover:opacity-90"
+        >
+          View resources →
+        </Link>
+        {firstFile && items[0]?.file ? (
+          <a
+            href={items[0].file}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs mt-2 underline opacity-90"
+          >
+            Open latest PDF
+          </a>
+        ) : null}
+      </div>
+    </div>
+  );
+}
 
 export default LegalUpdatePage;

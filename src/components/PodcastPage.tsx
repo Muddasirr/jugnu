@@ -1,14 +1,36 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-const popularEpisodes = [
+
+const fallbackEpisodes = [
   { id: "43JGXUd_7pk", url: "https://youtu.be/43JGXUd_7pk?si=n4mPjNqbyiyiREIY" },
   { id: "vo425Vt-rh4", url: "https://www.youtube.com/watch?v=vo425Vt-rh4" },
   { id: "HZ_zdndQick", url: "https://www.youtube.com/watch?v=HZ_zdndQick&t=663s" },
   { id: "gE1q6iyXksE", url: "https://youtu.be/gE1q6iyXksE?si=wJ5ZPvzFXk-rJpZY" },
 ];
 
+function youtubeId(url: string, fallbackId?: string) {
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/);
+  return match?.[1] || fallbackId || "";
+}
+
 const PodcastPage: React.FC = () => {
+  const [popularEpisodes, setPopularEpisodes] = useState(fallbackEpisodes);
+
+  useEffect(() => {
+    fetch("/cms/podcasts/items.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data) => {
+        if (!Array.isArray(data) || data.length === 0) return;
+        setPopularEpisodes(
+          data.map((item: { id?: string; url: string }) => ({
+            id: youtubeId(item.url, item.id),
+            url: item.url,
+          })).filter((e: { id: string }) => e.id)
+        );
+      })
+      .catch(() => undefined);
+  }, []);
 
   return (
     <div>

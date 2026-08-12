@@ -2,17 +2,45 @@
 
 import Link from "next/link";
 import { Calendar, ExternalLink } from "lucide-react";
-import { IN_THE_NEWS_INTRO, NEWS_ITEMS } from "@/lib/newsItems";
+import { useEffect, useState } from "react";
+import { IN_THE_NEWS_INTRO, NEWS_ITEMS, type NewsItem } from "@/lib/newsItems";
 
 type InTheNewsSectionProps = {
   id?: string;
   showHeading?: boolean;
 };
 
+function youtubeThumb(url: string): string | undefined {
+  const match = url.match(
+    /(?:youtu\.be\/|youtube\.com\/watch\?v=)([a-zA-Z0-9_-]{11})/
+  );
+  return match ? `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg` : undefined;
+}
+
 export default function InTheNewsSection({
   id = "in-the-news",
   showHeading = true,
 }: InTheNewsSectionProps) {
+  const [items, setItems] = useState<NewsItem[]>(NEWS_ITEMS);
+
+  useEffect(() => {
+    fetch("/cms/news/items.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then((data) => {
+        if (!Array.isArray(data) || data.length === 0) return;
+        const mapped: NewsItem[] = data.map((n: any) => ({
+          id: n.id || n.title,
+          date: n.date || "1970-01-01",
+          dateLabel: n.dateLabel || n.date || "",
+          title: n.title,
+          url: n.url,
+          source: n.source,
+          thumbnail: n.thumbnail || youtubeThumb(n.url || ""),
+        }));
+        setItems(mapped);
+      })
+      .catch(() => undefined);
+  }, []);
   return (
     <section id={id} className="py-16 bg-white">
       <div className="container mx-auto px-6 md:px-16 max-w-6xl">
@@ -29,7 +57,7 @@ export default function InTheNewsSection({
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {NEWS_ITEMS.map((item) => (
+          {items.map((item) => (
             <article
               key={item.id}
               className="flex flex-col group border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white"

@@ -1,0 +1,18 @@
+[
+  {"id":1,"title":"Terminology","description":"Glossary and terminology for family violence resources.","cover":"","link":"/resources/documents?category=1"},
+  {"id":2,"title":"Survivor's Directory","description":"Find local support services near you.","cover":"","link":"/survivor-stories"},
+  {"id":3,"title":"Toxic Relationships","description":"Identify abuse tactics and build safer relationships.","cover":"","link":"/resources/documents?category=3"},
+  {"id":4,"title":"Mental Health and Healing","description":"Tools for mental health and wellbeing.","cover":"","link":"/resources/documents"},
+  {"id":5,"title":"Gender-Based Violence","description":"Learn about types of GBV to stay informed and safe.","cover":"","link":"/resources/documents?category=5"},
+  {"id":6,"title":"Child Marriage","description":"Resources to help end child marriage in Pakistan.","cover":"","link":"/resources/documents"},
+  {"id":7,"title":"Know Your Legal Rights","description":"Marriage, divorce, inheritance, custody and more.","cover":"","link":"/legal-update"},
+  {"id":8,"title":"Financial Independence","description":"Build financial security and independence.","cover":"","link":"/resources/documents?category=8"},
+  {"id":9,"title":"Sexual and Reproductive Health and Rights","description":"Informed decisions about your body and rights.","cover":"","link":"/resources/documents"},
+  {"id":10,"title":"Digital & Online Safety","description":"Protect yourself from technology-facilitated abuse.","cover":"","link":"/resources/documents?category=10"},
+  {"id":11,"title":"Resources for Professionals","description":"Guidance for family violence professionals.","cover":"","link":"/resources/documents?category=11"},
+  {"id":12,"title":"General Help & Advice for Survivors","description":"Important advice for survivors.","cover":"","link":"/resources/documents?category=12"},
+  {"id":13,"title":"Campaigns, Advocacy and Policy Making","description":"Toolkits for awareness and policy work.","cover":"","link":"/policy"},
+  {"id":14,"title":"Feminist Studies","description":"Patriarchy, consent, feminism and gender parity.","cover":"","link":"/reads"},
+  {"id":15,"title":"The Care Gap","description":"Unpaid care work and survivor economic empowerment.","cover":"","link":"/resources/documents"},
+  {"id":16,"title":"Animal Abuse","description":"How animal abuse intersects with family violence.","cover":"","link":"/resources/documents"}
+]

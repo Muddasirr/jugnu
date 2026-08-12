@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import { IMPACT_GALLERY_IMAGES } from '@/lib/publicAssets';
+import ImpactGallery from '@/components/ImpactGallery';
 
 const timelineEvents = [
     {
@@ -115,28 +114,7 @@ export default function OurImpact() {
                         ))}
                     </div>
 
-                    <section className="mt-24 pt-12 border-t border-gray-200">
-                        <h2 className="text-2xl md:text-3xl font-extrabold text-center mb-10">
-                            <span className="text-[#AC1514]">Impact</span> Gallery
-                        </h2>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-
-                            {IMPACT_GALLERY_IMAGES.map((src, i) => (
-                                <div
-                                    key={i}
-                                    className="relative aspect-square rounded-lg overflow-hidden shadow-md bg-gray-100"
-                                >
-                                    <Image
-                                        src={src}
-                                        alt={`Impact event ${i + 1}`}
-                                        fill
-                                        className="object-cover"
-                                        sizes="(max-width: 768px) 50vw, 25vw"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </section>
+                    <ImpactGallery />
 
                 </div>
             </main>
