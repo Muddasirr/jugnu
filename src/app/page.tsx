@@ -1,10 +1,5 @@
-import First from "./Home/page";
-import Volunteer from "./volunteer/page";
+import LandingPage from "./Social/page";
 
 export default function Home() {
-  return (
-    <div>
-      <First />
-    </div>
-  );
+  return <LandingPage />;
 }

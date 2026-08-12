@@ -25,6 +25,7 @@ const searchData = [
     { title: "Survivor Stories", path: "/survivor-stories", keywords: "survivor stories real life testimonials" },
     { title: "Testimonials", path: "/testimonials", keywords: "testimonials reviews feedback stories" },
     { title: "Training", path: "/training", keywords: "training education learn courses workshops" },
+    { title: "Working in Family Violence", path: "/familyviolence", keywords: "working family violence professionals practitioners sector" },
     { title: "Volunteer", path: "/volunteer", keywords: "volunteer help work join donate time" },
 ];
 

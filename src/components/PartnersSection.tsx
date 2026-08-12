@@ -1,6 +1,9 @@
 "use client";
 
-import { PARTNER_LOGOS } from "@/lib/publicAssets";
+import { PARTNERS } from "@/lib/publicAssets";
+
+const logoClass =
+  "h-16 md:h-20 lg:h-24 max-w-[180px] md:max-w-[220px] w-auto object-contain";
 
 const PartnersSection = () => {
   return (
@@ -14,15 +17,36 @@ const PartnersSection = () => {
         advocates committed to ending abuse
       </p>
 
-      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 max-w-6xl mx-auto px-4">
-        {PARTNER_LOGOS.map((logo, index) => (
-          <img
-            key={index}
-            src={logo}
-            alt={`Partner logo ${index + 1}`}
-            className="h-12 md:h-14 max-w-[140px] object-contain grayscale hover:grayscale-0 transition"
-          />
-        ))}
+      <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14 max-w-6xl mx-auto px-4">
+        {PARTNERS.map((partner) => {
+          const img = (
+            <img
+              src={partner.logo}
+              alt={partner.name}
+              className={logoClass}
+            />
+          );
+          return partner.url ? (
+            <a
+              key={partner.name}
+              href={partner.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center hover:opacity-80 transition"
+              title={partner.name}
+            >
+              {img}
+            </a>
+          ) : (
+            <div
+              key={partner.name}
+              className="inline-flex items-center justify-center"
+              title={partner.name}
+            >
+              {img}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

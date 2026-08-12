@@ -155,19 +155,15 @@ export default function AboutUsPage() {
                             Zohra is a Lawyer, Social Consultant and Capacity Building Trainer, with a focus on Gender-Based Violence (GBV).
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <Link href="/about">
+                            {/* Notion URLs to be provided by Zohra */}
+                            <a href="#" target="_blank" rel="noopener noreferrer">
                                 <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
                                     OUR TEAM
                                 </button>
-                            </Link>
-                            <Link href="/getinvolved">
-                                <button className="bg-[#AC1514] rounded-[8px] text-white px-8 py-2.5 text-sm font-bold hover:bg-[#8B0E0E] transition-all uppercase">
-                                    READ MORE
-                                </button>
-                            </Link>
+                            </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
                                 <button className="bg-transparent border-2 border-[#AC1514] text-[#AC1514] rounded-[8px] px-8 py-2.5 text-sm font-bold hover:bg-[#AC1514] hover:text-white transition-all uppercase">
-                                    VOLUNTEER
+                                    OUR VOLUNTEERS
                                 </button>
                             </a>
                         </div>
@@ -177,10 +173,10 @@ export default function AboutUsPage() {
                     <div className="relative h-full ">
                         <div className="relative h-full min-h-[250px] md:min-h-[400px] bg-gray-200 rounded-sm overflow-hidden">
                             <Image
-                                src="/about4.png"
-                                alt="Founder"
+                                src="/heroes/founder-photo.jpeg"
+                                alt="Zohra Ahmed, Founder of The Jugnu Project"
                                 fill
-                                className="object-cover"
+                                className="object-cover object-top"
                             />
                         </div>
                     </div>
