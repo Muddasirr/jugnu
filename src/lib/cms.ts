@@ -3,34 +3,38 @@ import { createHash, timingSafeEqual } from "crypto";
 import fs from "fs/promises";
 import path from "path";
 
-export const ADMIN_USER = process.env.ADMIN_USER || "***REMOVED***";
-export const ADMIN_PASS = process.env.ADMIN_PASS || "***REMOVED***";
 export const SESSION_COOKIE = "jugnu_admin_session";
 
-const SESSION_SECRET = process.env.ADMIN_SESSION_SECRET || "***REMOVED***";
+// Admin credentials come only from the environment. If any are missing,
+// login is disabled rather than falling back to defaults in the source.
+function adminConfig() {
+  const user = process.env.ADMIN_USER;
+  const pass = process.env.ADMIN_PASS;
+  const secret = process.env.ADMIN_SESSION_SECRET;
+  if (!user || !pass || !secret) return null;
+  return { user, pass, secret };
+}
+
+const sha256 = (value: string) => createHash("sha256").update(value).digest("hex");
 
 export function makeSessionToken(): string {
-  return createHash("sha256")
-    .update(`${ADMIN_USER}:${ADMIN_PASS}:${SESSION_SECRET}`)
-    .digest("hex");
+  const cfg = adminConfig();
+  if (!cfg) throw new Error("Admin login is not configured");
+  return sha256(`${cfg.user}:${cfg.pass}:${cfg.secret}`);
 }
 
 export function verifyCredentials(username: string, password: string): boolean {
-  const uHash = createHash("sha256").update(username).digest("hex");
-  const pHash = createHash("sha256").update(password).digest("hex");
-  const expectedU = createHash("sha256").update(ADMIN_USER).digest("hex");
-  const expectedP = createHash("sha256").update(ADMIN_PASS).digest("hex");
-  try {
-    return (
-      timingSafeEqual(Buffer.from(uHash), Buffer.from(expectedU)) &&
-      timingSafeEqual(Buffer.from(pHash), Buffer.from(expectedP))
-    );
-  } catch {
-    return false;
-  }
+  const cfg = adminConfig();
+  if (!cfg) return false;
+  return (
+    timingSafeEqual(Buffer.from(sha256(username)), Buffer.from(sha256(cfg.user))) &&
+    timingSafeEqual(Buffer.from(sha256(password)), Buffer.from(sha256(cfg.pass)))
+  );
 }
 
 export async function isAdminAuthenticated(): Promise<boolean> {
+  const cfg = adminConfig();
+  if (!cfg) return false;
   const jar = await cookies();
   const token = jar.get(SESSION_COOKIE)?.value;
   if (!token) return false;
