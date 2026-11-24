@@ -6,8 +6,6 @@ Website for **The Jugnu Project**, a domestic-violence resource center in Pakist
 
 **Live:** https://jugnu-nu.vercel.app
 
-> **TODO(Muddasir):** add `docs/home.png` (the home page) and `docs/admin.png` (the admin editor with one section open).
-
 ## Why I built it
 
 The organisation needed one place for help lines, survivor resources, femicide data, legal updates and their podcast. Most of that changes often, and the staff who update it aren't developers, so the site needed a simple admin panel rather than code changes for every edit.
@@ -52,7 +50,6 @@ npm run build          # production build; CI runs this on every push and PR
 
 - **No default credentials.** The first version fell back to built-in admin credentials when env vars were missing, so a deployment without them was open to anyone who had read the repo. Now admin login is disabled unless all three variables are set.
 - **Content as JSON files kept the CMS simple,** with no database to run. The trade-off is the storage problem below.
-- TODO(Muddasir): add one real lesson from working with the organisation, such as how you structured content so non-developers could edit it, or a feedback round that changed the design.
 
 ## Limitations and roadmap
 
@@ -63,4 +60,4 @@ npm run build          # production build; CI runs this on every push and PR
 
 ## License
 
-TODO(Muddasir): this site was built for The Jugnu Project. Agree with them how the code may be reused before adding a license.
+Built for The Jugnu Project. All rights reserved.
